@@ -1,0 +1,13 @@
+/*상단 메뉴바의 빈공간을 채워줄 div*/
+#menubar_space{
+  width: 100%;
+  height: 100px;
+}
+/*플레이 버튼을 가로정렬해준다.*/
+#play_button_div{
+  text-align: center;
+}
+#explanation{
+  text-align: center;
+  margin: 30px;
+}

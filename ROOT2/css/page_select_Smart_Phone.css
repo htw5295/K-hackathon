@@ -1,0 +1,8 @@
+@CHARSET "EUC-KR";
+/*상단 메뉴바의 빈공간을 채워줄 div*/
+#menubar_space{
+  height: 200px;
+}
+#layout {
+	text-align: center;
+}	
