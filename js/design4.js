@@ -264,3 +264,6 @@ function unSelectedShopBTNClick() {
 function postBTNClick() {
   location.href="diaryDetail.html";
 }
+function editBTNClick() {
+  location.href="diaryEdit.html";
+}

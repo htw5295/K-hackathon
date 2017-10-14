@@ -1,9 +1,8 @@
-#bg1{
+#bg01{
   margin: 0px;
   padding: 0px;
 }
 html{
-
   margin:0px;
   padding: 0px;
 }
@@ -14,7 +13,6 @@ body{
 #aboutUsBtn{
   position: absolute;
   cursor: pointer;
-
 }
 #contackUsBtn{
   position: absolute;
