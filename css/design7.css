@@ -1,0 +1,32 @@
+#bg07{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.positionAbsolute{
+  position: absolute;
+  cursor: pointer;
+}
+#rFairyTaleDiv{
+  overflow-y: scroll;
+  position: absolute;
+  cursor: pointer;
+}
+.fairyTaleCount{
+	position:absolute;
+
+  color:#BDB9B9;
+}
+.fairyTaleName{
+  position:absolute;
+
+  color:#BDB9B9;
+}
