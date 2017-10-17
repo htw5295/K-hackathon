@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    @font-face {
+      font-family: 'nbg';
+      src: url('./font/NanumBarunGothic.ttf');
+    }
+    #scriptCount {
+      font-family: nbg;
+      color: #B7B7B7;
+    }
+    #recordState, #scriptArea {
+      font-family: nbg;
+      color: #AAAAAA;
+    }
+  </style>
   <head>
     <meta charset="utf-8">
     <title>Dodam Dodam</title>
@@ -19,11 +33,40 @@
     <img src="./img/09/unSelectedMypageBTN.png" alt="" id="unSelectedMypageBtn" class="positionAbsolute">
     <img src="./img/09/unSelectedShopBTN.png" alt="" id="unSelectedShopBtn" class="positionAbsolute" onclick="unSelectedShopBTNClick()">
 
-    <img src="./img/09/bigBox.png" alt="" id="bigBox" class="postitionAbsolute">
-    <img src="./img/09/finishedRecordingBTN.png" alt="" id="finishedRecordingBTN" class="postitionAbsolute">
-    <img src="./img/09/recordingStartBTN.png" alt="" id="recordingStartBTN" class="postitionAbsolute">
-    <img src="./img/09/recordingStopBTN.png" alt="" id="recordingStopBTN" class="postitionAbsolute">
-    <img src="./img/09/reRecordingBTN.png" alt="" id="reRecordingBTN" class="postitionAbsolute">
-    <img src="./img/09/smallBox.png" alt="" id="smallBox" class="postitionAbsolute">
+    <img src="./img/09/bigBox.png" alt="" id="bigBox" class="positionAbsolute">
+    <img src="./img/09/finishedRecordingBTN.png" alt="" id="finishedRecordingBTN" class="positionAbsolute" onClick="finishedRecordingBtnClick()">
+    <img src="./img/09/recordingStartBTN.png" alt="" id="recordingBTN" class="positionAbsolute">
+    <img src="./img/09/reRecordingBTN.png" alt="" id="reRecordingBTN" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox1" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox2" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox3" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox4" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox5" class="positionAbsolute">
+    <img src="./img/09/smallBox.png" alt="" id="smallBox6" class="positionAbsolute">
+
+    <div id="scriptCount" class="positionAbsolute">
+      <span id="number"></span>
+    </div>
+    <div id="recordState" class="positionAbsolute">
+			<span id="recordStateText">동화 녹음중</span>
+      <span id="recordStateTime"></span>
+		</div>
+    <div id="scriptArea" class="positionAbsolute">
+
+    </div>
+
+    <div id="popup" class="positionAbsolute" style="display: none;">
+      <img src="./img/10/bg10.png" alt="" id="bg10" class="positionAbsolute">
+      <img src="./img/10/popupCloseBTN.png" alt="" id="popupCloseBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+      <div id="title" class="positionAbsolute">
+        <span id="titleText">녹음 완료</span>
+      </div>
+      <img src="./img/10/image01.png" alt="" id="image01" class="positionAbsolute">
+      <img src="./img/10/popupPicChangeBTN.png" alt="" id="popupPicChangeBtn" class="positionAbsolute">
+      <div id="titleChange" class="positionAbsolute">
+        <span id="titleChangeText"></span>
+      </div>
+      <img src="./img/10/popupSaveBTN.png" alt="" id="popupSaveBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+    </div>
   </body>
 </html>

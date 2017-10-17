@@ -13,6 +13,15 @@
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<style>
+	@font-face {
+		font-famliy: 'nbg';
+		src: url('./font/NanumBarunGothic.ttf');
+	}
+	.fairyTaleName, .fairyTaleCount {
+		font-family: nbg;
+	}
+</style>
 <head>
 <meta charset="utf-8">
 <title>Dodam Doam</title>
@@ -182,8 +191,8 @@
 					}
 			fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
 			</script>
-	<% 
-		
+	<%
+
 		count=0;
 
 		dirFile = new File(savePath + "info/2/");
@@ -202,10 +211,10 @@
 					}else{
 						document.getElementById("fairyTaleCount2Text").innerHTML = <%=count%>+"개의 녹음파일";
 					}
-				
+
 			</script>
-	<% 
-		
+	<%
+
 	count=0;
 
 	dirFile = new File(savePath + "info/3/");
@@ -224,9 +233,9 @@ var temp = <%=count%>;
 				}else{
 					document.getElementById("fairyTaleCount3Text").innerHTML = <%=count%>+"개의 녹음파일";
 				}
-			
+
 		</script>
-<% 
+<%
 count=0;
 
 dirFile = new File(savePath + "info/4/");
@@ -245,10 +254,10 @@ var temp = <%=count%>;
 			}else{
 				document.getElementById("fairyTaleCount4Text").innerHTML = <%=count%>+"개의 녹음파일";
 			}
-		
+
 	</script>
-<% 
-		
+<%
+
 count=0;
 
 dirFile = new File(savePath + "info/5/");
@@ -267,9 +276,9 @@ var temp = <%=count%>;
 			}else{
 				document.getElementById("fairyTaleCount5Text").innerHTML = <%=count%>+"개의 녹음파일";
 			}
-		
+
 	</script>
-<% 
+<%
 count=0;
 
 dirFile = new File(savePath + "info/6/");
@@ -288,9 +297,9 @@ var temp = <%=count%>;
 			}else{
 				document.getElementById("fairyTaleCount6Text").innerHTML = <%=count%>+"개의 녹음파일";
 			}
-		
+
 	</script>
-<% 
+<%
 	%>
 </body>
 </html>
