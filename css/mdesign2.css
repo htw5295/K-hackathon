@@ -1,0 +1,24 @@
+#mbg02{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.positionAbsolute{
+  position: absolute;
+  cursor: pointer;
+}
+#emailBox,#pwdBox{
+  border:0px;
+  background-color: inherit;
+  font-family: "나눔바름고딕 regular";
+  font-size:23;
+  color:#FFFFFF;
+}
