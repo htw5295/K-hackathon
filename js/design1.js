@@ -6,6 +6,9 @@ var Ratio;
 var letsStartBtn;
 
 function onload(){
+  if (screen.width <= 750) {
+    location.href = "mintro.html";
+  }
   bg01Img = document.getElementById("bg01");
   aboutUsBtn = document.getElementById("aboutUsBtn");
   contackUsBtn = document.getElementById("contackUsBtn");

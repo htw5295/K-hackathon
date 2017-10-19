@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'nbg';
+  src: url('../font/NanumBarunGothic.ttf');
+}
+#mbg08{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.positionAbsolute{
+  position: absolute;
+  cursor: pointer;
+}
+
+#writeText {
+  font-family: nbg;
+  font-size: 13px;
+  color: #6E6E6E;
+}

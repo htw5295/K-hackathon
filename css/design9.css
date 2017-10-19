@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'nbg';
+  src: url('../font/NanumBarunGothic.ttf');
+}
 #bg09{
   margin: 0px;
   padding: 0px;
@@ -16,4 +20,13 @@ body{
 .positionAbsolute{
   position: absolute;
   cursor: pointer;
+}
+
+#scriptCount {
+  font-family: nbg;
+  color: #B7B7B7;
+}
+#recordState, #scriptArea {
+  font-family: nbg;
+  color: #AAAAAA;
 }

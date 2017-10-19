@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'nbg';
+  src: url('../font/NanumBarunGothic.ttf');
+}
+#mbg09{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.positionAbsolute{
+  position: absolute;
+  cursor: pointer;
+}
+
+#number {
+  font-family: nbg;
+  font-size: 22px;
+  color: #B7B7B7;
+}
+#recordStateText, #recordStateTime {
+  font-family: nbg;
+  font-size: 22px;
+  color: #AAAAAA;
+}
