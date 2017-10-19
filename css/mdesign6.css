@@ -1,0 +1,22 @@
+#mbg06{
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.positionAbsolute{
+  position: absolute;
+  cursor: pointer;
+}
+
+#div1, #div2 {
+  position: absolute;
+  overflow-y: scroll;
+}

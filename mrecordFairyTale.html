@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-9">
+    <title>Dodam Dodam</title>
+    <link rel="stylesheet" href="./css/mdesign9.css">
+    <script type="text/javascript" src="./js/mdesign9.js"></script>
+  </head>
+  <body onload="onload()" onresize="onChangeSize()">
+    <div id="mMenuSlide" style="position: fixed;z-index: 2;display: none;">
+      <img src="./img/m04/mBlurbg.png" alt="" id="mBlurbg" class="positionAbsolute" style="display: none;">
+      <img src="./img/m04/mMenuBar.png" alt="" id="mMenuBar" class="positionAbsolute">
+      <img src="./img/m04/mMenuBarDiaryBTN.png" alt="" id="mMenuBarDiaryBtn" class="positionAbsolute" onClick="mMenuBarDiaryBtnClick()">
+      <img src="./img/m04/mMenuBarFairyTaleBTN.png" alt="" id="mMenuBarFairyTaleBtn" class="positionAbsolute" onClick="mMenuBarFairyTaleBtnClick()">
+      <img src="./img/m04/mMenuBarMarketBTN.png" alt="" id="mMenuBarMarketBtn" class="positionAbsolute" onClick="mMenuBarMarketBtnClick()">
+      <img src="./img/m04/mMenuBarMypageBTN.png" alt="" id="mMenuBarMypageBtn" class="positionAbsolute" onClick="mMypageBtnClick()">
+      <img src="./img/m04/mMenuBarSettingBTN.png" alt="" id="mMenuBarSettingBtn" class="positionAbsolute" onClcick="mMenuBarSettingBtnClick()">
+    </div>
+      <img src="./img/m09/mbg09.png" alt="" id="mbg09">
+      <img src="./img/m09/mMenuBTN.png" alt="" id="mMenuBtn" class="positionAbsolute" onClick="mMenuBtnClick()">
+      <img src="./img/m09/mMypageBTN.png" alt="" id="mMypageBtn" class="positionAbsolute" onClick="mMypageBtnClick()">
+      <img src="./img/m09/mBox.png" alt="" id="mBox" class="positionAbsolute">
+      <img src="./img/m09/mFinishedRecordingBTN.png" alt="" id="mFinishedRecordingBtn" class="positionAbsolute" onClick="mFinishedRecordingBtnClick()">
+      <img src="./img/m09/mRecordingStartBTN.png" alt="" id="mRecordingStartBtn" class="positionAbsolute" onClick="mRecordingStartBtnClick()">
+      <img src="./img/m09/mRecordingStopBTN.png" alt="" id="mRecordingStopBtn" class="positionAbsolute" onClick="mRecordingStopBtnClick()" style="display: none;">
+      <img src="./img/m09/mReRecordingBTN.png" alt="" id="mReRecordingBtn" class="positionAbsolute" onClick="mMenuBarDiaryBtnClick()">
+      <div id="scriptCount" class="positionAbsolute">
+        <span id="number">1/6</span>
+      </div>
+      <div id="recordState" class="positionAbsolute">
+  			<span id="recordStateText">동화 녹음중</span>
+        <span id="recordStateTime" class="positionAbsolute">01:36</span>
+  		</div>
+      <div id="scriptArea" class="positionAbsolute">
+
+      </div>
+
+      <div id="popup" style="display: none;position: fixed;">
+        <img src="./img/m10/mbg10.png" alt="" id="mbg10" class="positionAbsolute">
+        <img src="./img/m10/mPopupCloseBTN.png" alt="" id="mPopupCloseBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+        <div id="title" class="positionAbsolute">
+          <span id="titleText"><p>녹음 완료</p></span>
+        </div>
+        <img src="./img/m10/mImage01.png" alt="" id="mImage01" class="positionAbsolute">
+        <img src="./img/m10/mPopupPicChangeBTN.png" alt="" id="mPopupPicChangeBtn" class="positionAbsolute">
+        <div id="titleChange" class="positionAbsolute">
+          <span id="titleChangeText"></span>
+        </div>
+        <img src="./img/m10/mPopupSaveBTN.png" alt="" id="mPopupSaveBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+      </div>
+  </body>
+</html>
