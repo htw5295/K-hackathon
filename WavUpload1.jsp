@@ -32,10 +32,20 @@
 	long currentTime = System.currentTimeMillis();
 	SimpleDateFormat simDf = new SimpleDateFormat("yyyyMMddHHmmss");
 
+
 	try {
 
 		MultipartRequest multi = new MultipartRequest(request, savePath + "wav/1", maxSize, "UTF-8",
 				new DefaultFileRenamePolicy());
+
+				Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
+
+					File file1 = new File(savePath + "/wav/1/blob");
+					File file2 = new File(savePath + "/wav/1/1.wav"); //음성
+
+					if (!file1.renameTo(file2)) {
+						System.err.println("이름 변경 에러 : " + file1);
+					}
 
 
 		/**
@@ -84,12 +94,5 @@
 		e.printStackTrace();
 	}
 
-	Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
 
-		File file1 = new File(savePath + "/wav/1/blob");
-		File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
-
-		if (!file1.renameTo(file2)) {
-			System.err.println("이름 변경 에러 : " + file1);
-		}
 %>
