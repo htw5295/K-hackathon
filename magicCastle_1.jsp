@@ -9,14 +9,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=UTF-8">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<audio controls autoplay loop>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k7cF71Z8zB4?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k7cF71Z8zB4?" frameborder="0" allowfullscreen></iframe>
 
-		<source src="../wav/1.wav" type="audio/wav"></source>
+		<source src="../wav/1/1.wav" type="audio/wav"></source>
 		<%
 			//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 			String root = "/dodam/";
