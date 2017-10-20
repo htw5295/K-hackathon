@@ -207,7 +207,9 @@ function startButton(event) {
 
 function nounSub(){
 
+  console.log("nounStart");
   if(flag==0){
+    console.log("flag0");
     for(var i=0; i<fairytaleContent.length;i++){
       for(var j=0;j<noun.length;j++){
 
@@ -219,12 +221,12 @@ function nounSub(){
         }
       }
       if(flag=-1){
-        break; 
+        break;
       }
     }
   }
 
 
-console.log(noun);
+console.log(fairytaleNoun);
 
 }
