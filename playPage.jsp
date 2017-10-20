@@ -153,7 +153,7 @@
 						}else{
 							document.getElementById("fairyTaleCount1Text").innerHTML = <%=count%>+"개의 녹음파일";
 						}
-				fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
+				fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML; 
 				</script>
 		<%
 
