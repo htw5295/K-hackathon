@@ -61,7 +61,7 @@ var langs =
                      ['yue-Hant-HK', '粵語 (香港)']],
  ['日本語',           ['ja-JP']],
  ['Lingua latīna',   ['la']]];
-var noun = ['캐롯','레드'];
+var noun = ['케로','레드'];
  var nounTemp= new Array();
  var flag=0;
 
@@ -207,14 +207,9 @@ function startButton(event) {
 
 function nounSub(){
 
-  console.log("nounStart");
   if(flag==0){
-    console.log("flag0");
-    console.log("zzz"+fairytaleContent.length);
-    console.log(noun.length);
     for(var i=0; i<fairytaleContent.length;i++){
       for(var j=0;j<noun.length;j++){
-        console.log("index비교");
         if(fairytaleContent[i].indexOf(noun[j])!=-1){
           fairytaleContent = noun[j];
           // fairytaleNoun[i] = new Array();

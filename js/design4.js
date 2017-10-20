@@ -267,3 +267,6 @@ function postBTNClick() {
 function editBTNClick() {
   location.href="diaryEdit.html";
 }
+function unSelectedMypageBtnClick(){
+  location.href="playPage.jsp";
+}

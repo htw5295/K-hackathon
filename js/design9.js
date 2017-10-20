@@ -35,6 +35,7 @@ function onload(){
   smallBox4 = document.getElementById("smallBox4");
   smallBox5 = document.getElementById("smallBox5");
   smallBox6 = document.getElementById("smallBox6");
+  smallBox = document.getElementById("smallBox");
 
   bg10Img = document.getElementById("bg10");
   popup=document.getElementById("popup");
@@ -49,6 +50,7 @@ function onload(){
   scriptCount = document.getElementById("scriptCount");
   scriptArea = document.getElementById("scriptArea");
   modalBg = document.getElementById("modalBg");
+  bigBoxImg = document.getElementById("bigBoxImg");
 
   bg09Width = document.body.offsetWidth;
   bg09Height = bg09Width*0.844791667;
@@ -113,6 +115,11 @@ function onload(){
   bigBox.style.top = (Ratio*694*2)+"px";
   bigBox.style.left = (Ratio*352*2)+"px";
 
+  bigBoxImg.width = bigBox.naturalWidth*Ratio -(Ratio*90);
+  bigBoxImg.height = bigBox.naturalHeight*Ratio-(Ratio*110);
+  bigBoxImg.style.top = (Ratio*694*2)+"px";
+  bigBoxImg.style.left = (Ratio*352*2)+(Ratio*50)+"px";
+
   finishedRecordingBTN.width = finishedRecordingBTN.naturalWidth*Ratio;
   finishedRecordingBTN.height = finishedRecordingBTN.naturalHeight*Ratio;
   finishedRecordingBTN.style.top = (Ratio*1531*2)+"px";
@@ -134,33 +141,33 @@ function onload(){
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
   reRecordingBTN.style.left = (Ratio*1293*2)+"px";
 
-  smallBox1.width = smallBox1.naturalWidth*Ratio;
-  smallBox1.height = smallBox1.naturalHeight*Ratio;
+  smallBox1.width = smallBox.naturalWidth*Ratio;
+  smallBox1.height = smallBox.naturalHeight*Ratio;
   smallBox1.style.top = (Ratio*769*2)+"px";
   smallBox1.style.left = (Ratio*1488*2)+"px";
 
-  smallBox2.width = smallBox2.naturalWidth*Ratio;
-  smallBox2.height = smallBox2.naturalHeight*Ratio;
+  smallBox2.width = smallBox.naturalWidth*Ratio;
+  smallBox2.height = smallBox.naturalHeight*Ratio;
   smallBox2.style.top = (Ratio*769*2)+"px";
   smallBox2.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  smallBox3.width = smallBox3.naturalWidth*Ratio;
-  smallBox3.height = smallBox3.naturalHeight*Ratio;
+  smallBox3.width = smallBox.naturalWidth*Ratio;
+  smallBox3.height = smallBox.naturalHeight*Ratio;
   smallBox3.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox3.style.left = (Ratio*1488*2)+"px";
 
-  smallBox4.width = smallBox4.naturalWidth*Ratio;
-  smallBox4.height = smallBox4.naturalHeight*Ratio;
+  smallBox4.width = smallBox.naturalWidth*Ratio;
+  smallBox4.height = smallBox.naturalHeight*Ratio;
   smallBox4.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox4.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  smallBox5.width = smallBox5.naturalWidth*Ratio;
-  smallBox5.height = smallBox5.naturalHeight*Ratio;
+  smallBox5.width = smallBox.naturalWidth*Ratio;
+  smallBox5.height = smallBox.naturalHeight*Ratio;
   smallBox5.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox5.style.left = (Ratio*1488*2)+"px";
 
-  smallBox6.width = smallBox6.naturalWidth*Ratio;
-  smallBox6.height = smallBox6.naturalHeight*Ratio;
+  smallBox6.width = smallBox.naturalWidth*Ratio;
+  smallBox6.height = smallBox.naturalHeight*Ratio;
   smallBox6.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox6.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
@@ -236,59 +243,64 @@ function onChangeSize(){
 
   menuBtn.width=menuBtn.naturalWidth*Ratio;
   menuBtn.height=menuBtn.naturalHeight*Ratio;
-  menuBtn.style.top=(Ratio*36)+"px";
-  menuBtn.style.left=(Ratio*36)+"px";
+  menuBtn.style.top=(Ratio*36*3)+"px";
+  menuBtn.style.left=(Ratio*36*3)+"px";
 
   googleBtn.width=googleBtn.naturalWidth*Ratio;
   googleBtn.height=googleBtn.naturalHeight*Ratio;
-  googleBtn.style.top=(Ratio*36)+"px";
-  googleBtn.style.left=(Ratio*1563*2)+"px";
+  googleBtn.style.top=(Ratio*36*2.7)+"px";
+  googleBtn.style.left=(Ratio*1563*2)-(10*2*Ratio)+"px";
 
   twitterBtn.width=twitterBtn.naturalWidth*Ratio;
   twitterBtn.height=twitterBtn.naturalHeight*Ratio;
-  twitterBtn.style.top=(Ratio*36)+"px";
-  twitterBtn.style.left=(Ratio*1563*2)+googleBtn.width+(Ratio*58*2)+"px";
+  twitterBtn.style.top=(Ratio*36*2.7)+"px";
+  twitterBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+(Ratio*58*2)+"px";
 
   facebookBtn.width=facebookBtn.naturalWidth*Ratio;
   facebookBtn.height=facebookBtn.naturalHeight*Ratio;
-  facebookBtn.style.top=(Ratio*36)+"px";
-  facebookBtn.style.left=(Ratio*1563*2)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
+  facebookBtn.style.top=(Ratio*36*2.7)+"px";
+  facebookBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
 
   loginBtn.width=loginBtn.naturalWidth*Ratio;
   loginBtn.height=loginBtn.naturalHeight*Ratio;
-  loginBtn.style.top=(Ratio*36)+"px";
-  loginBtn.style.left=bg09.width-(Ratio*36)-loginBtn.width+"px";
+  loginBtn.style.top=(Ratio*36*3)+"px";
+  loginBtn.style.left=bg09.width-(Ratio*36*3)-loginBtn.width+"px";
 
   unSelectedDodamBtn.width = unSelectedDodamBtn.naturalWidth*Ratio;
   unSelectedDodamBtn.height = unSelectedDodamBtn.naturalHeight*Ratio;
   unSelectedDodamBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDodamBtn.style.left = (Ratio*99*2)+"px";
+  unSelectedDodamBtn.style.left = (Ratio*99*2)+(200*Ratio)+"px";
 
   unSelectedDiaryBtn.width = unSelectedDiaryBtn.naturalWidth*Ratio;
   unSelectedDiaryBtn.height = unSelectedDiaryBtn.naturalHeight*Ratio;
   unSelectedDiaryBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
+  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
 
   selectedFairytaleBtn.width = selectedFairytaleBtn.naturalWidth*Ratio;
   selectedFairytaleBtn.height = selectedFairytaleBtn.naturalHeight*Ratio;
   selectedFairytaleBtn.style.top = (Ratio*525*2)+"px";
-  selectedFairytaleBtn.style.left = (Ratio*99*2)+(Ratio*69*2*2)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
+  selectedFairytaleBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2*2)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
 
   unSelectedMypageBtn.width = unSelectedMypageBtn.naturalWidth*Ratio;
   unSelectedMypageBtn.height = unSelectedMypageBtn.naturalHeight*Ratio;
   unSelectedMypageBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedMypageBtn.style.left = (Ratio*1715*2)+"px";
+  unSelectedMypageBtn.style.left = (Ratio*1715*2)-(200*Ratio)+"px";
 
   unSelectedShopBtn.width = unSelectedShopBtn.naturalWidth*Ratio;
   unSelectedShopBtn.height = unSelectedShopBtn.naturalHeight*Ratio;
   unSelectedShopBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedShopBtn.style.left = (Ratio*99*2)+(Ratio*69*2*3)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+selectedFairytaleBtn.width+"px";
+  unSelectedShopBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2*3)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+selectedFairytaleBtn.width+"px";
 
-//var bigBox,finishedRecordingBTN,recordingBTN,smallBox;
+  //var bigBox,finishedRecordingBTN,recordingBTN,smallBox;
   bigBox.width = bigBox.naturalWidth*Ratio;
   bigBox.height = bigBox.naturalHeight*Ratio;
   bigBox.style.top = (Ratio*694*2)+"px";
   bigBox.style.left = (Ratio*352*2)+"px";
+
+  bigBoxImg.width = bigBox.naturalWidth*Ratio -(Ratio*90);
+  bigBoxImg.height = bigBox.naturalHeight*Ratio-(Ratio*110);
+  bigBoxImg.style.top = (Ratio*694*2)+"px";
+  bigBoxImg.style.left = (Ratio*352*2)+(Ratio*50)+"px";
 
   finishedRecordingBTN.width = finishedRecordingBTN.naturalWidth*Ratio;
   finishedRecordingBTN.height = finishedRecordingBTN.naturalHeight*Ratio;
@@ -311,33 +323,33 @@ function onChangeSize(){
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
   reRecordingBTN.style.left = (Ratio*1293*2)+"px";
 
-  smallBox1.width = smallBox1.naturalWidth*Ratio;
-  smallBox1.height = smallBox1.naturalHeight*Ratio;
+  smallBox1.width = smallBox.naturalWidth*Ratio;
+  smallBox1.height = smallBox.naturalHeight*Ratio;
   smallBox1.style.top = (Ratio*769*2)+"px";
   smallBox1.style.left = (Ratio*1488*2)+"px";
 
-  smallBox2.width = smallBox2.naturalWidth*Ratio;
-  smallBox2.height = smallBox2.naturalHeight*Ratio;
+  smallBox2.width = smallBox.naturalWidth*Ratio;
+  smallBox2.height = smallBox.naturalHeight*Ratio;
   smallBox2.style.top = (Ratio*769*2)+"px";
   smallBox2.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  smallBox3.width = smallBox3.naturalWidth*Ratio;
-  smallBox3.height = smallBox3.naturalHeight*Ratio;
+  smallBox3.width = smallBox.naturalWidth*Ratio;
+  smallBox3.height = smallBox.naturalHeight*Ratio;
   smallBox3.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox3.style.left = (Ratio*1488*2)+"px";
 
-  smallBox4.width = smallBox4.naturalWidth*Ratio;
-  smallBox4.height = smallBox4.naturalHeight*Ratio;
+  smallBox4.width = smallBox.naturalWidth*Ratio;
+  smallBox4.height = smallBox.naturalHeight*Ratio;
   smallBox4.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox4.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  smallBox5.width = smallBox5.naturalWidth*Ratio;
-  smallBox5.height = smallBox5.naturalHeight*Ratio;
+  smallBox5.width = smallBox.naturalWidth*Ratio;
+  smallBox5.height = smallBox.naturalHeight*Ratio;
   smallBox5.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox5.style.left = (Ratio*1488*2)+"px";
 
-  smallBox6.width = smallBox6.naturalWidth*Ratio;
-  smallBox6.height = smallBox6.naturalHeight*Ratio;
+  smallBox6.width = smallBox.naturalWidth*Ratio;
+  smallBox6.height = smallBox.naturalHeight*Ratio;
   smallBox6.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox6.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
@@ -415,6 +427,9 @@ function selectedFairytaleBtnClick(){
 }
 function unSelectedShopBTNClick() {
   location.href="market.html";
+}
+function unSelectedMypageBtnClick(){
+  location.href="playPage.jsp";
 }
 function finishedRecordingBtnClick() {
   popup.style.display = "block";

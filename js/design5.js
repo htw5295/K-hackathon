@@ -263,3 +263,6 @@ function unSelectedFairytaleBTNClick(){
 function unSelectedShopBTNClick() {
   location.href="market.html";
 }
+function unSelectedMypageBtnClick(){
+  location.href="playPage.jsp";
+}
