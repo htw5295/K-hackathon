@@ -52,7 +52,7 @@
 		e.printStackTrace();
 	}
 
-Runtime.getRuntime().exec("sudo chmod 755 -R /dodam/");
+Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
 
 	File file1 = new File(savePath + "/wav/1/blob");
 	File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
