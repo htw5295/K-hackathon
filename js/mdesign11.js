@@ -71,7 +71,7 @@ function resize() {
 
   mSerchBarBtn.width=mSerchBarBtn.naturalWidth*Ratio;
   mSerchBarBtn.height=mSerchBarBtn.naturalHeight*Ratio;
-  mSerchBarBtn.style.top=(Ratio*130*2)+"px";
+  mSerchBarBtn.style.top=(Ratio*125*2)+"px";
 
   mFairyTalePlayBtn.width=mFairyTalePlayBtn.naturalWidth*Ratio;
   mFairyTalePlayBtn.height=mFairyTalePlayBtn.naturalHeight*Ratio;
