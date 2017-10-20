@@ -10,7 +10,7 @@ var bg09Img,menuBtn,facebookBtn,googleBtn,loginBtn,selectedDiaryBtn,selectedDoda
 var selectedFairytaleBtn,selectedMypageBtn,selectedShopBtn,twitterBtn,unSelectedDiaryBtn;
 var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShopBtn;
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
-var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
+var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,modalBg,scriptCount,scriptArea,recordingStopBTN;
 function onload(){
   bg09Img = document.getElementById("bg09");
   menuBtn = document.getElementById("menuBtn");
@@ -48,6 +48,7 @@ function onload(){
   popupSaveBtn = document.getElementById("popupSaveBtn");
   scriptCount = document.getElementById("scriptCount");
   scriptArea = document.getElementById("scriptArea");
+  modalBg = document.getElementById("modalBg");
 
   bg09Width = document.body.offsetWidth;
   bg09Height = bg09Width*0.844791667;
@@ -84,27 +85,27 @@ function onload(){
   unSelectedDodamBtn.width = unSelectedDodamBtn.naturalWidth*Ratio;
   unSelectedDodamBtn.height = unSelectedDodamBtn.naturalHeight*Ratio;
   unSelectedDodamBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDodamBtn.style.left = (Ratio*99*2)+"px";
+  unSelectedDodamBtn.style.left = (Ratio*99*2)+(200*Ratio)+"px";
 
   unSelectedDiaryBtn.width = unSelectedDiaryBtn.naturalWidth*Ratio;
   unSelectedDiaryBtn.height = unSelectedDiaryBtn.naturalHeight*Ratio;
   unSelectedDiaryBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
+  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
 
   selectedFairytaleBtn.width = selectedFairytaleBtn.naturalWidth*Ratio;
   selectedFairytaleBtn.height = selectedFairytaleBtn.naturalHeight*Ratio;
   selectedFairytaleBtn.style.top = (Ratio*525*2)+"px";
-  selectedFairytaleBtn.style.left = (Ratio*99*2)+(Ratio*69*2*2)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
+  selectedFairytaleBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2*2)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
 
   unSelectedMypageBtn.width = unSelectedMypageBtn.naturalWidth*Ratio;
   unSelectedMypageBtn.height = unSelectedMypageBtn.naturalHeight*Ratio;
   unSelectedMypageBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedMypageBtn.style.left = (Ratio*1715*2)+"px";
+  unSelectedMypageBtn.style.left = (Ratio*1715*2)-(200*Ratio)+"px";
 
   unSelectedShopBtn.width = unSelectedShopBtn.naturalWidth*Ratio;
   unSelectedShopBtn.height = unSelectedShopBtn.naturalHeight*Ratio;
   unSelectedShopBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedShopBtn.style.left = (Ratio*99*2)+(Ratio*69*2*3)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+selectedFairytaleBtn.width+"px";
+  unSelectedShopBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2*3)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+selectedFairytaleBtn.width+"px";
 
 //var bigBox,finishedRecordingBTN,recordingBTN,smallBox;
   bigBox.width = bigBox.naturalWidth*Ratio;
@@ -421,6 +422,7 @@ function finishedRecordingBtnClick() {
 }
 function popupCloseBtnClick() {
     popup.style.display = "none";
+      modalBg.style.display="none";
 }
 function recordingBTNClick(){
   startRecording();
@@ -429,10 +431,11 @@ function recordingBTNClick(){
   recordingStopBTN.style.display="block";
 }
 function recordingStopBTNClick(){
-
+  modalBg.style.display="block";
   stopRecording();
   startButton(event);
   recordingBTN.style.display="block";
   recordingStopBTN.style.display="none";
-  popup.style.display = "block"
+  popup.style.display = "block";
+
 }
