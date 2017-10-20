@@ -16,7 +16,7 @@
 	<audio controls autoplay loop>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/k7cF71Z8zB4?&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
-		<source src="./wav/1.wav" type="audio/wav"></source>
+		<source src="/wav/1.wav" type="audio/wav"></source>
 		<%
 			//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 			String root = "/dodam/";
