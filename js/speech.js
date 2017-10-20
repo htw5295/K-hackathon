@@ -221,16 +221,6 @@ function nounSub(){
   }
 
 
+console.log(noun);
 
-  for(var i=0; i<fairytaleContent.length;i++){
-    for(var j=0;j<noun.length;j++){
-      if(fairytaleNoun[i][j]!=-1&&nounTemp[j]!=-1){
-        console.log(noun[j]);
-        var img = document.createElement("img");
-        img.setAttribute("src","./img/"+noun[j]+".png");
-        document.getElementById("fairytale").appendChild(img);
-        nounTemp[j]=-1;
-      }
-    }
-  }
 }
