@@ -44,9 +44,9 @@
 				File file4 = new File(savePath + "/wav/1/2.wav"); //음성
 
 				if (!file3.renameTo(file4)) {
-					System.err.println("이름 변경 에러 : " + file1);
+					System.err.println("이름 변경 에러 : ");
 				}
-				
+
 
 				File file1 = new File(savePath + "/wav/1/blob");
 				File file2 = new File(savePath + "/wav/1/1.wav"); //음성
