@@ -32,9 +32,18 @@
 
 	System.out.println(obj);
 
+
+
+
 	try {
 
-		FileWriter file = new FileWriter(savePath + "/fairytale/1/" + filename + ".json"); //동화 
+	//  String command = "ls -al";  // <---- 실행할 쉘명령어
+	//  Runtime rt = Runtime.getRuntime();
+	//  Process ps = null;
+	 //
+	//  ps = rt.exec(command);
+
+		FileWriter file = new FileWriter(savePath + "/fairytale/1/" + filename + ".json"); //동화
 		file.write(obj.toString());
 		file.flush();
 		file.close();
@@ -42,6 +51,8 @@
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
+
+Runtime.getRuntime().exec("sudo chmod 755 -R /dodam/");
 
 	File file1 = new File(savePath + "/wav/1/blob");
 	File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
