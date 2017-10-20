@@ -11,7 +11,7 @@ var selectedFairytaleBtn,selectedMypageBtn,selectedShopBtn,twitterBtn,unSelected
 var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShopBtn;
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
 var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
-var mainTitleText,mainTitle,mainTitleDiv;
+var mainTitleText,mainTitle,mainTitleDiv,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
 function onload(){
   bg11Img = document.getElementById("bg11");
   menuBtn = document.getElementById("menuBtn");
@@ -64,6 +64,14 @@ function onload(){
   mainTitle = document.getElementById("mainTitle");
   mainTitleDiv = document.getElementById("mainTitleDiv");
   mainTitleTextDiv = document.getElementById("mainTitleTextDiv");
+
+  recordedFairyTalePic01 = document.getElementById("recordedFairyTalePic01");
+  recordedFairyTalePic02 = document.getElementById("recordedFairyTalePic02");
+  recordedFairyTalePic03 = document.getElementById("recordedFairyTalePic03");
+
+  recordedSelected01 = document.getElementById("recordedSelected01");
+  recordedUnSelected02 = document.getElementById("recordedUnSelected02");
+  recordedUnSelected01 = document.getElementById("recordedUnSelected01");
 
 
   bg11Width = document.body.offsetWidth;
@@ -267,6 +275,36 @@ function onload(){
   bgFairyTale06Btn.style.left = (Ratio*870*2)+"px";
   bgFairyTale06Btn.style.top= (1290*Ratio*2)+"px";
 
+recordedFairyTalePic01.width = recordedFairyTalePic01.naturalWidth*Ratio;
+recordedFairyTalePic01.height = recordedFairyTalePic01.naturalHeight*Ratio;
+recordedFairyTalePic01.style.left = (Ratio*913*2)+"px";
+recordedFairyTalePic01.style.top= (1651*Ratio*2)+"px";
+
+recordedFairyTalePic02.width = recordedFairyTalePic02.naturalWidth*Ratio;
+recordedFairyTalePic02.height = recordedFairyTalePic02.naturalHeight*Ratio;
+recordedFairyTalePic02.style.left = (Ratio*913*2)+recordedFairyTalePic01.width+"px";
+recordedFairyTalePic02.style.top= (1651*Ratio*2)+"px";
+
+recordedFairyTalePic03.width = recordedFairyTalePic03.naturalWidth*Ratio;
+recordedFairyTalePic03.height = recordedFairyTalePic03.naturalHeight*Ratio;
+recordedFairyTalePic03.style.left = (Ratio*913*2)+recordedFairyTalePic01.width*2+"px";
+recordedFairyTalePic03.style.top= (1651*Ratio*2)+"px";
+
+recordedSelected01.width = recordedSelected01.naturalWidth*Ratio;
+recordedSelected01.height = recordedSelected01.naturalHeight*Ratio;
+recordedSelected01.style.left = (Ratio*345*2)+recordedFairyTalePic01.width*2+"px";
+recordedSelected01.style.top= (1930*Ratio*2)+"px";
+
+recordedUnSelected01.width = recordedUnSelected01.naturalWidth*Ratio;
+recordedUnSelected01.height = recordedUnSelected01.naturalHeight*Ratio;
+recordedUnSelected01.style.left = (Ratio*345*2)+570*Ratio+recordedFairyTalePic01.width*2+"px";
+recordedUnSelected01.style.top= (1930*Ratio*2)+"px";
+
+recordedUnSelected02.width = recordedUnSelected02.naturalWidth*Ratio;
+recordedUnSelected02.height = recordedUnSelected02.naturalHeight*Ratio;
+recordedUnSelected02.style.left = (Ratio*345*2)+1350*Ratio+recordedFairyTalePic01.width*2+"px";
+recordedUnSelected02.style.top= (1930*Ratio*2)+"px";
+
 
   }
 
@@ -323,18 +361,12 @@ function onFairyTale1Click(){
   rDetailFairyTale04Btn.style.display = "none";
   rDetailFairyTale05Btn.style.display = "none";
   rDetailFairyTale06Btn.style.display = "none";
-  bgFairyTale01Btn.style.display = "block";
-  bgFairyTale02Btn.style.display = "none";
-  bgFairyTale03Btn.style.display = "none";
-  bgFairyTale04Btn.style.display = "none";
-  bgFairyTale05Btn.style.display = "none";
-  bgFairyTale06Btn.style.display = "none";
-  storyFairyTale01.style.display = "block";
-  storyFairyTale02.style.display = "none";
-  storyFairyTale03.style.display = "none";
-  storyFairyTale04.style.display = "none";
-  storyFairyTale05.style.display = "none";
-  storyFairyTale06.style.display = "none";
+
+
+
+
+
+
   index=1;
   fairyTale1count.style.display="block";
   fairyTale2count.style.display="none";
@@ -348,14 +380,13 @@ function onFairyTale1Click(){
   fairyTale4CountText.style.display="none";
   fairyTale5CountText.style.display="none";
   fairyTale6CountText.style.display="none";
-  fairyTaleName1Div.style.display="block";
-  fairyTaleName2Div.style.display="none";
-  fairyTaleName3Div.style.display="none";
-  fairyTaleName4Div.style.display="none";
-  fairyTaleName5Div.style.display="none";
-  fairyTaleName6Div.style.display="none";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
-  recordingBtn.setAttribute("onclick","recordingBtn1Click()");
+
+  bgFairyTale01Btn.style.display="block";
+  bgFairyTale02Btn.style.display="none";
+  bgFairyTale03Btn.style.display="none";
+  bgFairyTale04Btn.style.display="none";
+  bgFairyTale05Btn.style.display="none";
+  bgFairyTale06Btn.style.display="none";
 }
 
 function onFairyTale2Click(){
@@ -373,18 +404,7 @@ function onFairyTale2Click(){
   rDetailFairyTale04Btn.style.display = "none";
   rDetailFairyTale05Btn.style.display = "none";
   rDetailFairyTale06Btn.style.display = "none";
-  bgFairyTale01Btn.style.display = "none";
-  bgFairyTale02Btn.style.display = "block";
-  bgFairyTale03Btn.style.display = "none";
-  bgFairyTale04Btn.style.display = "none";
-  bgFairyTale05Btn.style.display = "none";
-  bgFairyTale06Btn.style.display = "none";
-  storyFairyTale01.style.display = "none";
-  storyFairyTale02.style.display = "block";
-  storyFairyTale03.style.display = "none";
-  storyFairyTale04.style.display = "none";
-  storyFairyTale05.style.display = "none";
-  storyFairyTale06.style.display = "none";
+
 
   fairyTale1count.style.display="none";
   fairyTale2count.style.display="block";
@@ -399,14 +419,13 @@ function onFairyTale2Click(){
   fairyTale5CountText.style.display="none";
   fairyTale6CountText.style.display="none";
 
-  fairyTaleName1Div.style.display="none";
-  fairyTaleName2Div.style.display="block";
-  fairyTaleName3Div.style.display="none";
-  fairyTaleName4Div.style.display="none";
-  fairyTaleName5Div.style.display="none";
-  fairyTaleName6Div.style.display="none";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount2Text.innerHTML;
-  recordingBtn.setAttribute("onclick","recordingBtn2Click()");
+  bgFairyTale01Btn.style.display="none";
+  bgFairyTale02Btn.style.display="block";
+  bgFairyTale03Btn.style.display="none";
+  bgFairyTale04Btn.style.display="none";
+  bgFairyTale05Btn.style.display="none";
+  bgFairyTale06Btn.style.display="none";
+
 }
 function onFairyTale3Click(){
 
@@ -423,18 +442,11 @@ function onFairyTale3Click(){
   rDetailFairyTale04Btn.style.display = "none";
   rDetailFairyTale05Btn.style.display = "none";
   rDetailFairyTale06Btn.style.display = "none";
-  bgFairyTale01Btn.style.display = "none";
-  bgFairyTale02Btn.style.display = "none";
-  bgFairyTale03Btn.style.display = "block";
-  bgFairyTale04Btn.style.display = "none";
-  bgFairyTale05Btn.style.display = "none";
-  bgFairyTale06Btn.style.display = "none";
-  storyFairyTale01.style.display = "none";
-  storyFairyTale02.style.display = "none";
-  storyFairyTale03.style.display = "block";
-  storyFairyTale04.style.display = "none";
-  storyFairyTale05.style.display = "none";
-  storyFairyTale06.style.display = "none";
+
+
+
+
+
 
   fairyTale1count.style.display="none";
   fairyTale2count.style.display="none";
@@ -449,14 +461,14 @@ function onFairyTale3Click(){
   fairyTale5CountText.style.display="none";
   fairyTale6CountText.style.display="none";
 
-  fairyTaleName1Div.style.display="none";
-  fairyTaleName2Div.style.display="none";
-  fairyTaleName3Div.style.display="block";
-  fairyTaleName4Div.style.display="none";
-  fairyTaleName5Div.style.display="none";
-  fairyTaleName6Div.style.display="none";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount3Text.innerHTML;
-  recordingBtn.setAttribute("onclick","recordingBtn3Click()");
+  bgFairyTale01Btn.style.display="none";
+  bgFairyTale02Btn.style.display="none";
+  bgFairyTale03Btn.style.display="block";
+  bgFairyTale04Btn.style.display="none";
+  bgFairyTale05Btn.style.display="none";
+  bgFairyTale06Btn.style.display="none";
+
+
 }
 
 function onFairyTale4Click(){
@@ -473,18 +485,6 @@ function onFairyTale4Click(){
   rDetailFairyTale04Btn.style.display = "block";
   rDetailFairyTale05Btn.style.display = "none";
   rDetailFairyTale06Btn.style.display = "none";
-  bgFairyTale01Btn.style.display = "none";
-  bgFairyTale02Btn.style.display = "none";
-  bgFairyTale03Btn.style.display = "none";
-  bgFairyTale04Btn.style.display = "block";
-  bgFairyTale05Btn.style.display = "none";
-  bgFairyTale06Btn.style.display = "none";
-  storyFairyTale01.style.display = "none";
-  storyFairyTale02.style.display = "none";
-  storyFairyTale03.style.display = "none";
-  storyFairyTale04.style.display = "block";
-  storyFairyTale05.style.display = "none";
-  storyFairyTale06.style.display = "none";
 
   fairyTale1count.style.display="none";
   fairyTale2count.style.display="none";
@@ -499,14 +499,14 @@ function onFairyTale4Click(){
   fairyTale5CountText.style.display="none";
   fairyTale6CountText.style.display="none";
 
-  fairyTaleName1Div.style.display="none";
-  fairyTaleName2Div.style.display="none";
-  fairyTaleName3Div.style.display="none";
-  fairyTaleName4Div.style.display="block";
-  fairyTaleName5Div.style.display="none";
-  fairyTaleName6Div.style.display="none";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount4Text.innerHTML;
-  recordingBtn.setAttribute("onclick","recordingBtn4Click()");
+
+    bgFairyTale01Btn.style.display="none";
+    bgFairyTale02Btn.style.display="none";
+    bgFairyTale03Btn.style.display="none";
+    bgFairyTale04Btn.style.display="block";
+    bgFairyTale05Btn.style.display="none";
+    bgFairyTale06Btn.style.display="none";
+
 }
 
 function onFairyTale5Click(){
@@ -523,18 +523,7 @@ function onFairyTale5Click(){
   rDetailFairyTale04Btn.style.display = "none";
   rDetailFairyTale05Btn.style.display = "block";
   rDetailFairyTale06Btn.style.display = "none";
-  bgFairyTale01Btn.style.display = "none";
-  bgFairyTale02Btn.style.display = "none";
-  bgFairyTale03Btn.style.display = "none";
-  bgFairyTale04Btn.style.display = "none";
-  bgFairyTale05Btn.style.display = "block";
-  bgFairyTale06Btn.style.display = "none";
-  storyFairyTale01.style.display = "none";
-  storyFairyTale02.style.display = "none";
-  storyFairyTale03.style.display = "none";
-  storyFairyTale04.style.display = "none";
-  storyFairyTale05.style.display = "block";
-  storyFairyTale06.style.display = "none";
+
 
     fairyTale1count.style.display="none";
     fairyTale2count.style.display="none";
@@ -548,14 +537,15 @@ function onFairyTale5Click(){
     fairyTale4CountText.style.display="none";
     fairyTale5CountText.style.display="block";
     fairyTale6CountText.style.display="none";
-    fairyTaleName1Div.style.display="none";
-    fairyTaleName2Div.style.display="none";
-    fairyTaleName3Div.style.display="none";
-    fairyTaleName4Div.style.display="none";
-    fairyTaleName5Div.style.display="block";
-    fairyTaleName6Div.style.display="none";
-    fairyTaleCountUnder.innerHTML = fairyTaleCount5Text.innerHTML;
-    recordingBtn.setAttribute("onclick","recordingBtn5Click()");
+
+    bgFairyTale01Btn.style.display="none";
+    bgFairyTale02Btn.style.display="none";
+    bgFairyTale03Btn.style.display="none";
+    bgFairyTale04Btn.style.display="none";
+    bgFairyTale05Btn.style.display="block";
+    bgFairyTale06Btn.style.display="none";
+
+
 }
 function onFairyTale6Click(){
   index=6;
@@ -577,12 +567,11 @@ function onFairyTale6Click(){
   bgFairyTale04Btn.style.display = "none";
   bgFairyTale05Btn.style.display = "none";
   bgFairyTale06Btn.style.display = "block";
-  storyFairyTale01.style.display = "none";
-  storyFairyTale02.style.display = "none";
-  storyFairyTale03.style.display = "none";
-  storyFairyTale04.style.display = "none";
-  storyFairyTale05.style.display = "none";
-  storyFairyTale06.style.display = "block";
+
+
+
+
+
   fairyTale1count.style.display="none";
   fairyTale2count.style.display="none";
   fairyTale3count.style.display="none";
@@ -596,12 +585,12 @@ function onFairyTale6Click(){
   fairyTale5CountText.style.display="none";
   fairyTale6CountText.style.display="block";
 
-  fairyTaleName1Div.style.display="none";
-  fairyTaleName2Div.style.display="none";
-  fairyTaleName3Div.style.display="none";
-  fairyTaleName4Div.style.display="none";
-  fairyTaleName5Div.style.display="none";
-  fairyTaleName6Div.style.display="block";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount6Text.innerHTML;
-  recordingBtn.setAttribute("onclick","recordingBtn6Click()");
+  bgFairyTale01Btn.style.display="none";
+  bgFairyTale02Btn.style.display="none";
+  bgFairyTale03Btn.style.display="none";
+  bgFairyTale04Btn.style.display="none";
+  bgFairyTale05Btn.style.display="none";
+  bgFairyTale06Btn.style.display="block";
+
+
 }
