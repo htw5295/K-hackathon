@@ -223,7 +223,7 @@ function nounSub(){
           break;
         }
       }
-      if(flag=-1){
+      if(flag==-1){
         break;
       }
     }
