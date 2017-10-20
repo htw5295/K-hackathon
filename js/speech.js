@@ -219,7 +219,7 @@ function nounSub(){
         }
       }
       if(flag=-1){
-        break;
+        break; 
       }
     }
   }
