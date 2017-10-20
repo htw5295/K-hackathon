@@ -198,6 +198,8 @@ function startButton(event) {
    fairytaleContent.push(currentPageString.substring(stringLengthTemp,currentPageString.length));
   stringLengthTemp3 = currentPageString.length;
    console.log(time); // 증가값 확인
+   recordStateText.innerHTML = "동화 녹음중  "
+   recordStateTime.innerHTML =+parseInt(time/60) +" : "+time%60;
    console.log(fairytaleContent);
   }
 }

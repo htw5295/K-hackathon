@@ -2,16 +2,15 @@
   font-family: 'nbg';
   src: url('../font/NanumBarunGothic.ttf');
 }
-#bg09{
+
+#bg07{
   margin: 0px;
   padding: 0px;
 }
-
 html{
   margin:0px;
   padding: 0px;
 }
-
 body{
   margin: 0px;
   padding: 0px;
@@ -21,20 +20,26 @@ body{
   position: absolute;
   cursor: pointer;
 }
-
-#scriptCount {
-  font-family: nbg;
-  color: #B7B7B7;
-}
-#recordState, #scriptArea {
-  font-family: nbg;
-  color: #AAAAAA;
-}
-
-#titleText, #titleChangeText {
-  font-family: nbg;
-  color: #AAAAAA;
-}
-#scriptArea{
+#rFairyTaleDiv{
   overflow-y: scroll;
+  position: absolute;
+  cursor: pointer;
+}
+.fairyTaleCount{
+	position:absolute;
+
+  color:#BDB9B9;
+}
+.fairyTaleName{
+  position:absolute;
+
+  color:#BDB9B9;
+}
+#mainTitle{
+  font-family: nbg;
+  color: #545454;
+}
+#mainTitleText{
+  font-family: nbg;
+  color: #545454;
 }
