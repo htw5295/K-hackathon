@@ -49,7 +49,7 @@
 		id="unSelectedDodamBtn" class="positionAbsolute"
 		onclick="unSelectedDodamBTNClick()">
 	<img src="./img/07/unSelectedMypageBTN.png" alt=""
-		id="unSelectedMypageBtn" class="positionAbsolute">
+		id="unSelectedMypageBtn" class="positionAbsolute"onclick="unSelectedMypageBtnClick()">
 	<img src="./img/07/unSelectedShopBTN.png" alt="" id="unSelectedShopBtn"
 		class="positionAbsolute" onclick="unSelectedShopBTNClick()">
 

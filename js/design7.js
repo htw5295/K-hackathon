@@ -1157,17 +1157,20 @@ function unSelectedFairytaleBTNClick(){
 function unSelectedShopBTNClick() {
   location.href="market.html";
 }
+function unSelectedMypageBtnClick(){
+  location.href="playPage.jsp";
+}
 function recordingBtn1Click(){
-	location.href="uploadPage1.html";
+	location.href="recordFairyTale.html";
 }
 function recordingBtn2Click(){
-	location.href="uploadPage2.html";
+	location.href="recordFairyTale.html";
 }
 function recordingBtn3Click(){
-	location.href="uploadPage3.html";
+	location.href="recordFairyTale.html";
 }
 function recordingBtn4Click(){
-	location.href="uploadPage4.html";
+	location.href="recordFairyTale.html";
 }
 function recordingBtn5Click(){
 

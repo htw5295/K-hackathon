@@ -37,7 +37,7 @@
 		<img src="./img/11/twitterBTN.png" alt="" id="twitterBtn"	class="positionAbsolute">
 		<img src="./img/11/unSelectedDiaryBTN.png" alt=""	id="unSelectedDiaryBtn" class="positionAbsolute" onclick="unSelectedDiaryBTNClick()">
 		<img src="./img/11/unSelectedDodamBTN.png" alt=""	id="unSelectedDodamBtn" class="positionAbsolute"	onclick="unSelectedDodamBTNClick()">
-		<img src="./img/11/selectedMypageBTN.png" alt=""	id="selectedMypageBtn" class="positionAbsolute">
+		<img src="./img/11/selectedMypageBTN.png" alt=""	id="selectedMypageBtn" class="positionAbsolute"onclick="unSelectedMypageBtnClick()">
 		<img src="./img/11/unSelectedShopBTN.png" alt="" id="unSelectedShopBtn"	class="positionAbsolute" onclick="unSelectedShopBTNClick()">
 	<!--
 	<img src="./img/11/searchBar.png" alt="" id="searchBar"	class="positionAbsolute">
