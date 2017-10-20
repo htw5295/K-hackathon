@@ -210,9 +210,11 @@ function nounSub(){
   console.log("nounStart");
   if(flag==0){
     console.log("flag0");
+    console.log("zzz"+fairytaleContent.length);
+    console.log(noun.length);
     for(var i=0; i<fairytaleContent.length;i++){
       for(var j=0;j<noun.length;j++){
-
+        console.log("index비교");
         if(fairytaleContent[i].indexOf(noun[j])!=-1){
           fairytaleNoun[i] = new Array();
           fairytaleNoun[i].push(noun[j]);
