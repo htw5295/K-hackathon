@@ -1,4 +1,4 @@
-#mbg03{
+#mbg13{
   margin: 0px;
   padding: 0px;
 }
@@ -14,9 +14,4 @@ body{
 .positionAbsolute{
   position: absolute;
   cursor: pointer;
-}
-
-#mBlurbg {
-  background: rgba(0,0,0,10);
-  z-index; 1;
 }

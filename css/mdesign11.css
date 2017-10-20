@@ -1,4 +1,8 @@
-#mbg03{
+@font-face {
+  font-family: 'nbg';
+  src: url('../font/NanumBarunGothic.ttf');
+}
+#mbg11{
   margin: 0px;
   padding: 0px;
 }
@@ -16,7 +20,7 @@ body{
   cursor: pointer;
 }
 
-#mBlurbg {
-  background: rgba(0,0,0,10);
-  z-index; 1;
+#mFairyTale {
+  position: absolute;
+  overflow-y: scroll;
 }

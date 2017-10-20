@@ -76,8 +76,8 @@ function resizeMenu() {
   mMenuBar.height = window.innerHeight;
   mMenuBar.width = mMenuBar.height*menuRatio;
 
-  mBlurbg.height = window.innerHeight;
-  mBlurbg.width = document.body.offsetWidth;
+  mBlurbg.style.height = window.innerHeight+"px";
+  mBlurbg.style.width = document.body.offsetWidth+"px";
 
   mMenuBarMypageBtn.width = mMenuBarMypageBtn.naturalWidth*Ratio;
   mMenuBarMypageBtn.height = mMenuBarMypageBtn.naturalHeight*Ratio;
