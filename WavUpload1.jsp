@@ -38,7 +38,7 @@
 		MultipartRequest multi = new MultipartRequest(request, wavRoot + "wav/1", maxSize, "UTF-8",
 				new DefaultFileRenamePolicy());
 
-				Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
+				Runtime.getRuntime().exec("sudo chmod 777 -R /var/lib/tomcat8/webapps/ROOT/");
 
 				File file3 = new File(wavRoot + "/wav/1/1.wav");
 				File file4 = new File(wavRoot + "/wav/1/2.wav"); //음성
