@@ -11,7 +11,7 @@ var selectedFairytaleBtn,selectedMypageBtn,selectedShopBtn,twitterBtn,unSelected
 var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShopBtn;
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
 var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
-var mainTitleText,mainTitle,mainTitleDiv;
+var mainTitleText,mainTitle,mainTitleDiv,fairyTaleCountUnder;
 function onload(){
   bg11Img = document.getElementById("bg11");
   menuBtn = document.getElementById("menuBtn");
@@ -24,6 +24,7 @@ function onload(){
   unSelectedFairytaleBtn = document.getElementById("unSelectedFairytaleBtn");
   selectedMypageBtn = document.getElementById("selectedMypageBtn");
   unSelectedShopBtn = document.getElementById("unSelectedShopBtn");
+  fairyTaleCountUnder = document.getElementById("fairyTaleCountUnder");
 
 
   rFairyTale01Btn = document.getElementById("rFairyTale01Btn");
