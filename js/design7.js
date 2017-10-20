@@ -1168,9 +1168,8 @@ function recordingBtn4Click(){
 	location.href="uploadPage4.html";
 }
 function recordingBtn5Click(){
-	
+
 }
 function recordingBtn6Click(){
-	
-}
 
+}

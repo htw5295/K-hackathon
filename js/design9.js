@@ -10,7 +10,7 @@ var bg09Img,menuBtn,facebookBtn,googleBtn,loginBtn,selectedDiaryBtn,selectedDoda
 var selectedFairytaleBtn,selectedMypageBtn,selectedShopBtn,twitterBtn,unSelectedDiaryBtn;
 var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShopBtn;
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
-var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn;
+var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
 function onload(){
   bg09Img = document.getElementById("bg09");
   menuBtn = document.getElementById("menuBtn");
@@ -27,6 +27,7 @@ function onload(){
   bigBox = document.getElementById("bigBox");
   finishedRecordingBTN = document.getElementById("finishedRecordingBTN");
   recordingBTN = document.getElementById("recordingBTN");
+  recordingStopBTN = document.getElementById("recordingStopBTN");
   reRecordingBTN=document.getElementById("reRecordingBTN");
   smallBox1 = document.getElementById("smallBox1");
   smallBox2 = document.getElementById("smallBox2");
@@ -45,6 +46,8 @@ function onload(){
   titleChange = document.getElementById("titleChange");
   titleChangeText = document.getElementById("titleChangeText");
   popupSaveBtn = document.getElementById("popupSaveBtn");
+  scriptCount = document.getElementById("scriptCount");
+  scriptArea = document.getElementById("scriptArea");
 
   bg09Width = document.body.offsetWidth;
   bg09Height = bg09Width*0.844791667;
@@ -119,6 +122,12 @@ function onload(){
   recordingBTN.style.top = (Ratio*1151*2)+"px";
   recordingBTN.style.left = (Ratio*132*2)+"px";
 
+
+  recordingStopBTN.width = recordingStopBTN.naturalWidth*Ratio;
+  recordingStopBTN.height = recordingStopBTN.naturalHeight*Ratio;
+  recordingStopBTN.style.top = (Ratio*1151*2)+"px";
+  recordingStopBTN.style.left = (Ratio*132*2)+"px";
+
   reRecordingBTN.width = reRecordingBTN.naturalWidth*Ratio;
   reRecordingBTN.height = reRecordingBTN.naturalHeight*Ratio;
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
@@ -132,70 +141,87 @@ function onload(){
   smallBox2.width = smallBox2.naturalWidth*Ratio;
   smallBox2.height = smallBox2.naturalHeight*Ratio;
   smallBox2.style.top = (Ratio*769*2)+"px";
-  smallBox2.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox2.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
   smallBox3.width = smallBox3.naturalWidth*Ratio;
   smallBox3.height = smallBox3.naturalHeight*Ratio;
-  smallBox3.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio))*2)+"px";
+  smallBox3.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox3.style.left = (Ratio*1488*2)+"px";
 
   smallBox4.width = smallBox4.naturalWidth*Ratio;
   smallBox4.height = smallBox4.naturalHeight*Ratio;
-  smallBox4.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio))*2)+"px";
-  smallBox4.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox4.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
+  smallBox4.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
   smallBox5.width = smallBox5.naturalWidth*Ratio;
   smallBox5.height = smallBox5.naturalHeight*Ratio;
-  smallBox5.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio)*2)*2)+"px";
+  smallBox5.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox5.style.left = (Ratio*1488*2)+"px";
 
   smallBox6.width = smallBox6.naturalWidth*Ratio;
   smallBox6.height = smallBox6.naturalHeight*Ratio;
-  smallBox6.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio)*2)*2)+"px";
-  smallBox6.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox6.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
+  smallBox6.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  //popup
-  bg10Width = 2260;
-  bg10Height = bg10Width*0.653982301;
-  bg10Ratio = bg10Width / 3840;
+  recordState.width = recordState.naturalWidth*Ratio*0.8;
+  recordState.height = recordState.naturalHeight*Ratio*0.8;
+  recordState.style.top = (Ratio*1286*2)+"px";
+  recordState.style.left = (Ratio*97*2)+"px";
+
+
+  scriptCount.width = scriptCount.naturalWidth*Ratio*0.8;
+  scriptCount.height = scriptCount.naturalHeight*Ratio*0.8;
+  scriptCount.style.top = (Ratio*712*2)+"px";
+  scriptCount.style.left = (Ratio*1490*2)+"px";
 
   bg10Img.width = bg10Img.naturalWidth*Ratio;
   bg10Img.height = bg10Img.naturalHeight*Ratio;
 
-  popup.width = bg10Img.width;
-  popup.height = bg10Img.height;
+  popup.width = bg10Img.width+"px";
+  popup.height = bg10Img.height+"px";
   popup.style.top = (Ratio*170*2)+"px";
   popup.style.left = (Ratio*390*2)+"px";
 
-  popupCloseBtn.width = popupCloseBtn.naturalWidth*0.8;
-  popupCloseBtn.height = popupCloseBtn.naturalHeight*0.8;
-  popupCloseBtn.style.top = (bg10Ratio*20*2)+"px";
-  popupCloseBtn.style.left = (bg10Ratio*620*2)+"px";
+  title.style.width = 900*Ratio+"px";
+  title.style.top = (Ratio*59*2)+"px";
+  title.style.left = (Ratio*363*2)+"px";
 
-  title.width = title.naturalWidth*bg10Ratio;
-  title.height = title.naturalHeight*bg10Ratio;
-  title.style.top = (bg10Ratio*59*2)+"px";
-  title.style.left = (bg10Ratio*403*2)+"px";
+  titleChange.style.width = 700*Ratio+"px";
+  titleChange.style.top = (Ratio*420*2)+"px";
+  titleChange.style.left = (Ratio*405*2)+"px";
 
-  image01.width = image01.naturalWidth*bg10Ratio*0.8;
-  image01.height = image01.naturalHeight*bg10Ratio*0.8;
-  image01.style.top = (bg10Ratio*60*2)+"px";
-  image01.style.left = (bg10Ratio*245*2)+"px";
+  image01.width = image01.naturalWidth*Ratio;
+  image01.height = image01.naturalHeight*Ratio;
+  image01.style.top = (Ratio*122*2)+"px";
+  image01.style.left = (Ratio*448*2)+"px";
 
-  popupPicChangeBtn.width = popupPicChangeBtn.naturalWidth*bg10Ratio*0.8;
-  popupPicChangeBtn.height = popupPicChangeBtn.naturalHeight*bg10Ratio*0.8;
-  popupPicChangeBtn.style.top = (bg10Ratio*240*2)+"px";
-  popupPicChangeBtn.style.left = (bg10Ratio*440*2)+"px";
+  popupCloseBtn.width = popupCloseBtn.naturalWidth*Ratio;
+  popupCloseBtn.height = popupCloseBtn.naturalHeight*Ratio;
+  popupCloseBtn.style.top = (Ratio*33*2)+"px";
+  popupCloseBtn.style.left = bg10Img.width-(Ratio*33*2)-popupCloseBtn.width+"px";
 
-  titleChange.width = titleChange.naturalWidth*bg10Ratio;
-  titleChange.height = titleChange.naturalHeight*bg10Ratio;
-  titleChange.style.top = (bg10Ratio*333*2)+"px";
-  titleChange.style.left = (bg10Ratio*709*2)+"px";
+  popupPicChangeBtn.width = popupPicChangeBtn.naturalWidth*Ratio;
+  popupPicChangeBtn.height = popupPicChangeBtn.naturalHeight*Ratio;
+  popupPicChangeBtn.style.top = (Ratio*333*2)+"px";
+  popupPicChangeBtn.style.left = (Ratio*709*2)+"px";
 
-  popupSaveBtn.width = popupSaveBtn.naturalWidth*bg10Ratio*0.8;
-  popupSaveBtn.height = popupSaveBtn.naturalHeight*bg10Ratio*0.8;
-  popupSaveBtn.style.top = (bg10Ratio*385*2)+"px";
-  popupSaveBtn.style.left = (bg10Ratio*305.5*2)+"px";
+  popupSaveBtn.width = popupSaveBtn.naturalWidth*Ratio;
+  popupSaveBtn.height = popupSaveBtn.naturalHeight*Ratio;
+  popupSaveBtn.style.top = (Ratio*650*2)+"px";
+  popupSaveBtn.style.left = (Ratio*520*2)+"px";
+
+  titleText.style.fontSize=(60*Ratio)+"px";
+  titleChange.style.fontSize=(70*Ratio)+"px";
+
+  scriptArea.style.width = 2150*Ratio+"px";
+  scriptArea.style.height = 700*Ratio+"px";
+  scriptArea.style.top = (Ratio*1250*2)+"px";
+  scriptArea.style.left = (Ratio*400*2)+"px";
+  scriptArea.style.fontSize=(50*Ratio)+"px";
+
+  recordStateText.style.fontSize = (60*Ratio)+"px";
+  recordStateTime.style.fontSize = (40*Ratio)+"px";
+
   }
 
 
@@ -273,6 +299,12 @@ function onChangeSize(){
   recordingBTN.style.top = (Ratio*1151*2)+"px";
   recordingBTN.style.left = (Ratio*132*2)+"px";
 
+
+  recordingStopBTN.width = recordingStopBTN.naturalWidth*Ratio;
+  recordingStopBTN.height = recordingStopBTN.naturalHeight*Ratio;
+  recordingStopBTN.style.top = (Ratio*1151*2)+"px";
+  recordingStopBTN.style.left = (Ratio*132*2)+"px";
+
   reRecordingBTN.width = reRecordingBTN.naturalWidth*Ratio;
   reRecordingBTN.height = reRecordingBTN.naturalHeight*Ratio;
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
@@ -286,70 +318,89 @@ function onChangeSize(){
   smallBox2.width = smallBox2.naturalWidth*Ratio;
   smallBox2.height = smallBox2.naturalHeight*Ratio;
   smallBox2.style.top = (Ratio*769*2)+"px";
-  smallBox2.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox2.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
   smallBox3.width = smallBox3.naturalWidth*Ratio;
   smallBox3.height = smallBox3.naturalHeight*Ratio;
-  smallBox3.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio))*2)+"px";
+  smallBox3.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
   smallBox3.style.left = (Ratio*1488*2)+"px";
 
   smallBox4.width = smallBox4.naturalWidth*Ratio;
   smallBox4.height = smallBox4.naturalHeight*Ratio;
-  smallBox4.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio))*2)+"px";
-  smallBox4.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox4.style.top = (Ratio*769*2)+smallBox1.height+(59*2*Ratio)+"px";
+  smallBox4.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
   smallBox5.width = smallBox5.naturalWidth*Ratio;
   smallBox5.height = smallBox5.naturalHeight*Ratio;
-  smallBox5.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio)*2)*2)+"px";
+  smallBox5.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
   smallBox5.style.left = (Ratio*1488*2)+"px";
 
   smallBox6.width = smallBox6.naturalWidth*Ratio;
   smallBox6.height = smallBox6.naturalHeight*Ratio;
-  smallBox6.style.top = (Ratio*(769+(84+smallBox1.naturalHeight*Ratio)*2)*2)+"px";
-  smallBox6.style.left = (Ratio*(1488+(84+smallBox1.naturalWidth*Ratio))*2)+"px";
+  smallBox6.style.top = (Ratio*769*2)+(smallBox1.height*2)+(59*4*Ratio)+"px";
+  smallBox6.style.left = (Ratio*1488*2)+ smallBox1.width+(59*2*Ratio)+"px";
 
-  //popup
-  bg10Width = 2260;
-  bg10Height = bg10Width*0.653982301;
-  bg10Ratio = bg10Width / 3840;
+  recordState.width = recordState.naturalWidth*Ratio*0.8;
+  recordState.height = recordState.naturalHeight*Ratio*0.8;
+  recordState.style.top = (Ratio*1286*2)+"px";
+  recordState.style.left = (Ratio*97*2)+"px";
+
+
+  scriptCount.width = scriptCount.naturalWidth*Ratio*0.8;
+  scriptCount.height = scriptCount.naturalHeight*Ratio*0.8;
+  scriptCount.style.top = (Ratio*712*2)+"px";
+  scriptCount.style.left = (Ratio*1490*2)+"px";
 
   bg10Img.width = bg10Img.naturalWidth*Ratio;
   bg10Img.height = bg10Img.naturalHeight*Ratio;
 
-  popup.width = bg10Img.width;
-  popup.height = bg10Img.height;
+  popup.width = bg10Img.width+"px";
+  popup.height = bg10Img.height+"px";
   popup.style.top = (Ratio*170*2)+"px";
   popup.style.left = (Ratio*390*2)+"px";
 
-  popupCloseBtn.width = popupCloseBtn.naturalWidth*0.8;
-  popupCloseBtn.height = popupCloseBtn.naturalHeight*0.8;
-  popupCloseBtn.style.top = (bg10Ratio*20*2)+"px";
-  popupCloseBtn.style.left = (bg10Ratio*620*2)+"px";
+  title.style.width = 900*Ratio+"px";
+  title.style.top = (Ratio*59*2)+"px";
+  title.style.left = (Ratio*363*2)+"px";
 
-  title.width = title.naturalWidth*bg10Ratio;
-  title.height = title.naturalHeight*bg10Ratio;
-  title.style.top = (bg10Ratio*59*2)+"px";
-  title.style.left = (bg10Ratio*403*2)+"px";
+  titleChange.style.width = 700*Ratio+"px";
+  titleChange.style.top = (Ratio*420*2)+"px";
+  titleChange.style.left = (Ratio*405*2)+"px";
 
-  image01.width = image01.naturalWidth*bg10Ratio*0.8;
-  image01.height = image01.naturalHeight*bg10Ratio*0.8;
-  image01.style.top = (bg10Ratio*60*2)+"px";
-  image01.style.left = (bg10Ratio*245*2)+"px";
+  image01.width = image01.naturalWidth*Ratio;
+  image01.height = image01.naturalHeight*Ratio;
+  image01.style.top = (Ratio*122*2)+"px";
+  image01.style.left = (Ratio*448*2)+"px";
 
-  popupPicChangeBtn.width = popupPicChangeBtn.naturalWidth*bg10Ratio*0.8;
-  popupPicChangeBtn.height = popupPicChangeBtn.naturalHeight*bg10Ratio*0.8;
-  popupPicChangeBtn.style.top = (bg10Ratio*240*2)+"px";
-  popupPicChangeBtn.style.left = (bg10Ratio*440*2)+"px";
+  popupCloseBtn.width = popupCloseBtn.naturalWidth*Ratio;
+  popupCloseBtn.height = popupCloseBtn.naturalHeight*Ratio;
+  popupCloseBtn.style.top = (Ratio*33*2)+"px";
+  popupCloseBtn.style.left = bg10Img.width-(Ratio*33*2)-popupCloseBtn.width+"px";
 
-  titleChange.width = titleChange.naturalWidth*bg10Ratio;
-  titleChange.height = titleChange.naturalHeight*bg10Ratio;
-  titleChange.style.top = (bg10Ratio*333*2)+"px";
-  titleChange.style.left = (bg10Ratio*709*2)+"px";
+  popupPicChangeBtn.width = popupPicChangeBtn.naturalWidth*Ratio;
+  popupPicChangeBtn.height = popupPicChangeBtn.naturalHeight*Ratio;
+  popupPicChangeBtn.style.top = (Ratio*333*2)+"px";
+  popupPicChangeBtn.style.left = (Ratio*709*2)+"px";
 
-  popupSaveBtn.width = popupSaveBtn.naturalWidth*bg10Ratio*0.8;
-  popupSaveBtn.height = popupSaveBtn.naturalHeight*bg10Ratio*0.8;
-  popupSaveBtn.style.top = (bg10Ratio*385*2)+"px";
-  popupSaveBtn.style.left = (bg10Ratio*305.5*2)+"px";
+  popupSaveBtn.width = popupSaveBtn.naturalWidth*Ratio;
+  popupSaveBtn.height = popupSaveBtn.naturalHeight*Ratio;
+  popupSaveBtn.style.top = (Ratio*650*2)+"px";
+  popupSaveBtn.style.left = (Ratio*520*2)+"px";
+
+  titleText.style.fontSize=(60*Ratio)+"px";
+  titleChange.style.fontSize=(70*Ratio)+"px";
+
+  scriptArea.style.width = 2150*Ratio+"px";
+  scriptArea.style.height = 700*Ratio+"px";
+  scriptArea.style.top = (Ratio*1250*2)+"px";
+  scriptArea.style.left = (Ratio*400*2)+"px";
+  scriptArea.style.fontSize=(50*Ratio)+"px";
+
+  recordStateText.style.fontSize = (60*Ratio)+"px";
+  recordStateTime.style.fontSize = (40*Ratio)+"px";
+
+
+
 }
 
 function unSelectedDodamBTNClick() {
@@ -366,7 +417,22 @@ function unSelectedShopBTNClick() {
 }
 function finishedRecordingBtnClick() {
   popup.style.display = "block";
+  recordingStopBTNClick();
 }
 function popupCloseBtnClick() {
     popup.style.display = "none";
+}
+function recordingBTNClick(){
+  startRecording();
+  startButton(event);
+  recordingBTN.style.display="none";
+  recordingStopBTN.style.display="block";
+}
+function recordingStopBTNClick(){
+
+  stopRecording();
+  startButton(event);
+  recordingBTN.style.display="block";
+  recordingStopBTN.style.display="none";
+  popup.style.display = "block"
 }
