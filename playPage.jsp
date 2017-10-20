@@ -104,20 +104,33 @@
 			class="positionAbsolute">
 
 
-		<img src="./img/11/recordedSelected01.png" alt="" id="recordedSelected01" class="positionAbsolute">
-		<img src="./img/11/recordedUnSelected02.png" alt="" id="recordedUnSelected02" class="positionAbsolute">
-		<img src="./img/11/recordedUnSelected01.png" alt="" id="recordedUnSelected01" class="positionAbsolute">
+			<img src="./img/11/recordedSelected01.png" alt="" id="recordedSelected01" class="positionAbsolute">
+			<img src="./img/11/recordedUnSelected02.png" alt="" id="recordedUnSelected02" class="positionAbsolute">
+			<img src="./img/11/recordedUnSelected01.png" alt="" id="recordedUnSelected01" class="positionAbsolute">
 
-			<div id="fairyTaleCountUnderDiv"class="positionAbsolute">
-					<span id="fairyTaleCountUnder"></span>
+
+			<div id="mainTitleTextDiv"class="positionAbsolute">
+				<span id="mainTitleText">Magic Castle 마법의성은 얼음으로 뒤덮인 겨울왕국에서<br>일어나는 이야기입니다. 사람이 되고싶은 눈사람
+				 캐롯이 주인공인 이야기로<br>
+			 사람이 되기 위해서 여러 동물을 찾아다니며 이야기를 듣는 과정속에서<br>
+		 자신의 존재의 의미를 깨닫고 교훈을 얻게 되는 이야기입니다.</span>
+			</div>
+			<div class="positionAbsolute" id ="fairyTaleCountUnderDiv">
+				<span id ="fairyTaleCountUnder">위치테스트
+				</span>
 			</div>
 
-		<div id="mainTitleTextDiv"class="positionAbsolute">
-			<span id="mainTitleText">Magic Castle 마법의성은 얼음으로 뒤덮인 겨울왕국에서<br>일어나는 이야기입니다. 사람이 되고싶은 눈사람
-			 캐롯이 주인공인 이야기로<br>
-		 사람이 되기 위해서 여러 동물을 찾아다니며 이야기를 듣는 과정속에서<br>
-	 자신의 존재의 의미를 깨닫고 교훈을 얻게 되는 이야기입니다.</span>
-		</div>
+			<div class="positionAbsolute" id ="playCountDiv">
+				<span id ="playCountDiv">2번
+				</span>
+			</div>
+
+			<div class="positionAbsolute" id ="playHumanDiv">
+				<span id ="playHumanDiv">모두선택
+				</span>
+			</div>
+			<img src="./img/11/recordedFairyTalePlayBTN.png" alt="" id="recordedFairyTalePlayBtn" class="positionAbsolute">
+
 		<%
 			// String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 	  		String root = "/dodam/";

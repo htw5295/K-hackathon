@@ -12,7 +12,7 @@ var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShop
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
 var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
 var mainTitleText,mainTitle,mainTitleDiv,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03,fairyTaleCountUnder;
-var fairyTaleCountUnder;
+var fairyTaleCountUnder,recordedFairyTalePlayBtn,playCountDiv,playHumanDiv;
 function onload(){
   bg11Img = document.getElementById("bg11");
   menuBtn = document.getElementById("menuBtn");
@@ -74,8 +74,11 @@ function onload(){
   recordedSelected01 = document.getElementById("recordedSelected01");
   recordedUnSelected02 = document.getElementById("recordedUnSelected02");
   recordedUnSelected01 = document.getElementById("recordedUnSelected01");
+  fairyTaleCountUnderDiv = document.getElementById("fairyTaleCountUnderDiv");
 
-
+  playCountDiv = document.getElementById("playCountDiv");
+  playHumanDiv = document.getElementById("playHumanDiv");
+  recordedFairyTalePlayBtn = document.getElementById("recordedFairyTalePlayBtn");
   bg11Width = document.body.offsetWidth;
   bg11Height = bg11Width*1.121875;
   Ratio = bg11Width / 3840;
@@ -307,7 +310,23 @@ recordedUnSelected02.height = recordedUnSelected02.naturalHeight*Ratio;
 recordedUnSelected02.style.left = (Ratio*345*2)+1350*Ratio+recordedFairyTalePic01.width*2+"px";
 recordedUnSelected02.style.top= (1930*Ratio*2)+"px";
 
+playCountDiv.style.left = (Ratio*589*2)+"px";
+playCountDiv.style.top= (1772*Ratio*2)+"px";
+playCountDiv.style.fontSize = (5*Ratio)+"px";
 
+fairyTaleCountUnderDiv.style.left = (Ratio*589*2)+"px";
+fairyTaleCountUnderDiv.style.top= (1820*Ratio*2)+"px";
+fairyTaleCountUnderDiv.style.fontSize = (5*Ratio)+"px";
+
+playHumanDiv.style.left = (Ratio*589*2)+"px";
+playHumanDiv.style.top= (1867*Ratio*2)+"px";
+playHumanDiv.style.fontSize = (5*Ratio)+"px";
+
+
+recordedFairyTalePlayBtn.width = recordedFairyTalePlayBtn.naturalWidth*Ratio;
+recordedFairyTalePlayBtn.height = recordedFairyTalePlayBtn.naturalHeight*Ratio;
+recordedFairyTalePlayBtn.style.left = (Ratio*99*2)+"px";
+recordedFairyTalePlayBtn.style.top= (1950*Ratio*2)+"px";
   }
 
 
