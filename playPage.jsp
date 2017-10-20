@@ -108,6 +108,9 @@
 		<img src="./img/11/recordedUnSelected02.png" alt="" id="recordedUnSelected02" class="positionAbsolute">
 		<img src="./img/11/recordedUnSelected01.png" alt="" id="recordedUnSelected01" class="positionAbsolute">
 
+			<div id="fairyTaleCountUnderDiv"class="positionAbsolute">
+					<span id="fairyTaleCountUnder"></span>
+			</div>
 
 		<div id="mainTitleTextDiv"class="positionAbsolute">
 			<span id="mainTitleText">Magic Castle 마법의성은 얼음으로 뒤덮인 겨울왕국에서<br>일어나는 이야기입니다. 사람이 되고싶은 눈사람

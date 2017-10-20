@@ -11,11 +11,8 @@ var selectedFairytaleBtn,selectedMypageBtn,selectedShopBtn,twitterBtn,unSelected
 var unSelectedDodamBtn,unSelectedFairytaleBtn,unSelectedMypageBtn,unSelectedShopBtn;
 var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
 var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
-<<<<<<< HEAD
-var mainTitleText,mainTitle,mainTitleDiv,fairyTaleCountUnder;
-=======
-var mainTitleText,mainTitle,mainTitleDiv,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
->>>>>>> 18f2ff768858c59942bfd2caa2aff4503297f4f6
+var mainTitleText,mainTitle,mainTitleDiv,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03,fairyTaleCountUnder;
+var fairyTaleCountUnder;
 function onload(){
   bg11Img = document.getElementById("bg11");
   menuBtn = document.getElementById("menuBtn");
@@ -392,6 +389,7 @@ function onFairyTale1Click(){
   bgFairyTale04Btn.style.display="none";
   bgFairyTale05Btn.style.display="none";
   bgFairyTale06Btn.style.display="none";
+  fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
 }
 
 function onFairyTale2Click(){
@@ -430,6 +428,8 @@ function onFairyTale2Click(){
   bgFairyTale04Btn.style.display="none";
   bgFairyTale05Btn.style.display="none";
   bgFairyTale06Btn.style.display="none";
+
+  fairyTaleCountUnder.innerHTML = fairyTaleCount2Text.innerHTML;
 
 }
 function onFairyTale3Click(){
@@ -474,6 +474,7 @@ function onFairyTale3Click(){
   bgFairyTale06Btn.style.display="none";
 
 
+    fairyTaleCountUnder.innerHTML = fairyTaleCount3Text.innerHTML;
 }
 
 function onFairyTale4Click(){
@@ -512,6 +513,7 @@ function onFairyTale4Click(){
     bgFairyTale05Btn.style.display="none";
     bgFairyTale06Btn.style.display="none";
 
+        fairyTaleCountUnder.innerHTML = fairyTaleCount4Text.innerHTML;
 }
 
 function onFairyTale5Click(){
@@ -549,6 +551,7 @@ function onFairyTale5Click(){
     bgFairyTale04Btn.style.display="none";
     bgFairyTale05Btn.style.display="block";
     bgFairyTale06Btn.style.display="none";
+    fairyTaleCountUnder.innerHTML = fairyTaleCount5Text.innerHTML;
 
 
 }
@@ -596,6 +599,7 @@ function onFairyTale6Click(){
   bgFairyTale04Btn.style.display="none";
   bgFairyTale05Btn.style.display="none";
   bgFairyTale06Btn.style.display="block";
+  fairyTaleCountUnder.innerHTML = fairyTaleCount6Text.innerHTML;
 
 
 }
