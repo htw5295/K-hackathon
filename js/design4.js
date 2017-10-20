@@ -199,7 +199,7 @@ function onChangeSize(){
   unSelectedShopBtn.style.top = (Ratio*525*2)+"px";
   unSelectedShopBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2*3)+selectedDiaryBtn.width+unSelectedDodamBtn.width+unSelectedFairytaleBtn.width+"px";
 
-//var editBtn,selectedMenu1BTN,unSelectedMenu1BTN,selectedMenu2BTN,unSelectedMenu2BTN;
+  //var editBtn,selectedMenu1BTN,unSelectedMenu1BTN,selectedMenu2BTN,unSelectedMenu2BTN;
   editBtn.width = editBtn.naturalWidth*Ratio;
   editBtn.height = editBtn.naturalHeight*Ratio;
   editBtn.style.top = (Ratio*665*2)+"px";
