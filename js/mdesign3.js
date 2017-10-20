@@ -124,6 +124,6 @@ function mMenuBarFairyTaleBtnClick() {
 function mMenuBarMarketBtnClick() {
   location.href="mmarket.html";
 }
-function mMenuCloseBtnClock() {
+function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
