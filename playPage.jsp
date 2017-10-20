@@ -129,7 +129,7 @@
 				<span id ="playHumanDiv">모두선택
 				</span>
 			</div>
-			<img src="./img/11/recordedFairyTalePlayBTN.png" alt="" id="recordedFairyTalePlayBtn" class="positionAbsolute">
+			<img src="./img/11/recordedFairyTalePlayBTN.png" alt="" id="recordedFairyTalePlayBtn" class="positionAbsolute"onclick="recordedFairyTalePlayBtnClick()">
 
 		<%
 			// String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
@@ -153,7 +153,7 @@
 						}else{
 							document.getElementById("fairyTaleCount1Text").innerHTML = <%=count%>+"개의 녹음파일";
 						}
-				fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML; 
+				fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
 				</script>
 		<%
 
