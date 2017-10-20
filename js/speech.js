@@ -61,8 +61,9 @@ var langs =
                      ['yue-Hant-HK', '粵語 (香港)']],
  ['日本語',           ['ja-JP']],
  ['Lingua latīna',   ['la']]];
-var noun = ['토끼','거북이','호랑이','지렁이','사자','기린','곰','돼지','뱀'];
+var noun = ['캐롯','레드'];
  var nounTemp= new Array();
+ var flag=0;
 
 var currentPageString="";
 for (var i = 0; i < langs.length; i++) {
@@ -205,12 +206,20 @@ function startButton(event) {
 }
 
 function nounSub(){
-  for(var i=0; i<fairytaleContent.length;i++){
-    fairytaleNoun[i] = new Array();
-    for(var j=0;j<noun.length;j++){
-      fairytaleNoun[i].push(fairytaleContent[i].indexOf(noun[j]));
+
+  if(flag==0){
+    for(var i=0; i<fairytaleContent.length;i++){
+      for(var j=0;j<noun.length;j++){
+
+        if(fairytaleContent[i].indexOf(noun[j])!=-1){
+          fairytaleNoun[i] = new Array();
+          fairytaleNoun[i].push(noun[j]));
+          flag=-1;
+        }
+      }
     }
   }
+
 
 
   for(var i=0; i<fairytaleContent.length;i++){
