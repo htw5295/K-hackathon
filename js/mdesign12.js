@@ -2,7 +2,7 @@ var mbg12Width;
 var mbg12Height;
 var Ratio;
 
-var mbg12Img,mMenuBtn,mMypageBtn,mSerchBarBtn,mRecordingBtn;
+var mbg12Img,mMenuBtn,mMypageBtn,mSearchBarBtn,mRecordingBtn;
 var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
 var mReadyStory01,mReadyStory02,mReadyStory03,mReadyStory04;
@@ -12,7 +12,9 @@ function onload(){
   mbg12Img = document.getElementById("mbg12");
   mMenuBtn = document.getElementById("mMenuBtn");
   mMypageBtn = document.getElementById("mMypageBtn");
-  mSerchBarBtn = document.getElementById("mSerchBarBtn");
+  mSearchBarBtn = document.getElementById("mSearchBarBtn");
+  search = document.getElementById("search");
+  searchText = document.getElementById("searchText");
   mRecordingBtn = document.getElementById("mRecordingBtn");
 
   mFairyTale01Btn = document.getElementById("mFairyTale01Btn");
@@ -72,9 +74,18 @@ function resize() {
   mMypageBtn.style.top=(Ratio*15*2)+"px";
   mMypageBtn.style.right=(Ratio*15*2)+"px";
 
-  mSerchBarBtn.width=mSerchBarBtn.naturalWidth*Ratio;
-  mSerchBarBtn.height=mSerchBarBtn.naturalHeight*Ratio;
-  mSerchBarBtn.style.top=(Ratio*130*2)+"px";
+  search.style.width=mSearchBarBtn.naturalWidth*Ratio+"px";
+  search.style.height=mSearchBarBtn.naturalHeight*Ratio+"px";
+  search.style.top=(Ratio*125*2)+"px";
+  search.style.left=(Ratio*15*2)+"px";
+
+  mSearchBarBtn.width=mSearchBarBtn.naturalWidth*Ratio;
+  mSearchBarBtn.height=mSearchBarBtn.naturalHeight*Ratio;
+
+  searchText.style.width=260*Ratio*2+"px";
+  searchText.style.height=20*Ratio*2+"px";
+  searchText.style.top=(Ratio*15*2)+"px";
+  searchText.style.left=(Ratio*60*2)+"px";
 
   mRecordingBtn.width=mRecordingBtn.naturalWidth*Ratio;
   mRecordingBtn.height=mRecordingBtn.naturalHeight*Ratio;

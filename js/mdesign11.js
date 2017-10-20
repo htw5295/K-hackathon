@@ -2,7 +2,7 @@ var mbg11Width;
 var mbg11Height;
 var Ratio;
 
-var mbg11Img,mMenuBtn,mFairyTalePlayBtn,mSerchBarBtn;
+var mbg11Img,mMenuBtn,mFairyTalePlayBtn,mSearchBarBtn,search,searchText;
 var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
 var mStory01,mStory02,mStory03,mStory04;
@@ -13,7 +13,9 @@ function onload(){
   mbg11Img = document.getElementById("mbg11");
   mMenuBtn = document.getElementById("mMenuBtn");
   mFairyTalePlayBtn = document.getElementById("mFairyTalePlayBtn");
-  mSerchBarBtn = document.getElementById("mSerchBarBtn");
+  mSearchBarBtn = document.getElementById("mSearchBarBtn");
+  search = document.getElementById("search");
+  searchText = document.getElementById("searchText");
 
   mFairyTale01Btn = document.getElementById("mFairyTale01Btn");
   mFairyTale02Btn = document.getElementById("mFairyTale02Btn");
@@ -69,9 +71,18 @@ function resize() {
   mMenuBtn.style.top=(Ratio*15*2)+"px";
   mMenuBtn.style.left=(Ratio*15*2)+"px";
 
-  mSerchBarBtn.width=mSerchBarBtn.naturalWidth*Ratio;
-  mSerchBarBtn.height=mSerchBarBtn.naturalHeight*Ratio;
-  mSerchBarBtn.style.top=(Ratio*125*2)+"px";
+  search.style.width=mSearchBarBtn.naturalWidth*Ratio+"px";
+  search.style.height=mSearchBarBtn.naturalHeight*Ratio+"px";
+  search.style.top=(Ratio*125*2)+"px";
+  search.style.left=(Ratio*15*2)+"px";
+
+  mSearchBarBtn.width=mSearchBarBtn.naturalWidth*Ratio;
+  mSearchBarBtn.height=mSearchBarBtn.naturalHeight*Ratio;
+
+  searchText.style.width=260*Ratio*2+"px";
+  searchText.style.height=20*Ratio*2+"px";
+  searchText.style.top=(Ratio*15*2)+"px";
+  searchText.style.left=(Ratio*60*2)+"px";
 
   mFairyTalePlayBtn.width=mFairyTalePlayBtn.naturalWidth*Ratio;
   mFairyTalePlayBtn.height=mFairyTalePlayBtn.naturalHeight*Ratio;
@@ -80,22 +91,26 @@ function resize() {
 
   mFairyTale.style.width=document.body.offsetWidth+"px";
   mFairyTale.style.height=mFairyTaleBig01Btn.naturalHeight*Ratio+"px";
-  mFairyTale.style.top=(Ratio*391*2)+"px";
+  mFairyTale.style.top=(Ratio*367*2)+"px";
 
   mFairyTale01Btn.width=mFairyTale01Btn.naturalWidth*Ratio;
   mFairyTale01Btn.height=mFairyTale01Btn.naturalHeight*Ratio;
+  mFairyTale01Btn.style.top=(Ratio*24*2)+"px";
   mFairyTale01Btn.style.left=(Ratio*15*2)+"px";
 
   mFairyTale02Btn.width=mFairyTale02Btn.naturalWidth*Ratio;
   mFairyTale02Btn.height=mFairyTale02Btn.naturalHeight*Ratio;
+  mFairyTale02Btn.style.top=(Ratio*24*2)+"px";
   mFairyTale02Btn.style.left=(Ratio*(15+(100))*2)+"px";
 
   mFairyTale03Btn.width=mFairyTale03Btn.naturalWidth*Ratio;
   mFairyTale03Btn.height=mFairyTale03Btn.naturalHeight*Ratio;
+  mFairyTale03Btn.style.top=(Ratio*24*2)+"px";
   mFairyTale03Btn.style.left=(Ratio*(15+(100*2))*2)+"px";
 
   mFairyTale04Btn.width=mFairyTale04Btn.naturalWidth*Ratio;
   mFairyTale04Btn.height=mFairyTale04Btn.naturalHeight*Ratio;
+  mFairyTale04Btn.style.top=(Ratio*24*2)+"px";
   mFairyTale04Btn.style.left=(Ratio*(15+(100*3))*2)+"px";
 
   mFairyTaleBig01Btn.width=mFairyTaleBig01Btn.naturalWidth*Ratio;
