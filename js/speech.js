@@ -216,8 +216,9 @@ function nounSub(){
       for(var j=0;j<noun.length;j++){
         console.log("index비교");
         if(fairytaleContent[i].indexOf(noun[j])!=-1){
-          fairytaleNoun[i] = new Array();
-          fairytaleNoun[i].push(noun[j]);
+          fairytaleContent = noun[j];
+          // fairytaleNoun[i] = new Array();
+          // fairytaleNoun[i].push(noun[j]);
           flag=-1;
           break;
         }
