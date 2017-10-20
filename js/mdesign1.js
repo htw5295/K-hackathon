@@ -37,10 +37,13 @@ function resize() {
 
   mLetsStartBtn.width = mLetsStartBtn.naturalWidth*Ratio;
   mLetsStartBtn.height = mLetsStartBtn.naturalHeight*Ratio;
-  mLetsStartBtn.style.bottom=(Ratio*35*2)+"px";
-  mLetsStartBtn.style.left=(Ratio*88*2)+"px";
+  mLetsStartBtn.style.top=(Ratio*535*2)+"px";
+  mLetsStartBtn.style.left=(Ratio*86*2)+"px";
 }
 
+function mSignInBtnClick() {
+  location.href="mlogin.html"
+}
 function mLetsStartBtnClick(){
-  location.href="mlogin.html";
+  location.href="mmain.html";
 }
