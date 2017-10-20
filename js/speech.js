@@ -213,7 +213,7 @@ function nounSub(){
 
         if(fairytaleContent[i].indexOf(noun[j])!=-1){
           fairytaleNoun[i] = new Array();
-          fairytaleNoun[i].push(noun[j]));
+          fairytaleNoun[i].push(noun[j]);
           flag=-1;
         }
       }
