@@ -6,7 +6,7 @@ var mbg09Img,mMenuBtn,mMypageBtn;
 var mBox,mFinishedRecordingBtn,mRecordingStartBtn,mRecordingStopBtn,mReRecordingBtn;
 var scriptCount,number,recordState,recordStateText,recordStateTime,scriptArea;
 var popup,mbg10,mPopupCloseBtn,title,titleText,mImage01,mPopupPicChangeBtn,titleChange,titleChangeText,mPopupSaveBtn;
-var menuRatio,mBlurbg,mMenuSlide,mMenuBar,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
+var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg09Img = document.getElementById("mbg09");
   mMenuBtn = document.getElementById("mMenuBtn");
@@ -36,7 +36,6 @@ function onload(){
   titleChangeText = document.getElementById("titleChangeText");
   mPopupSaveBtn = document.getElementById("mPopupSaveBtn");
 
-  mBlurbg = document.getElementById("mBlurbg");
   mMenuSlide = document.getElementById("mMenuSlide");
   mMenuBar = document.getElementById("mMenuBar");
   mMenuBarDiaryBtn = document.getElementById("mMenuBarDiaryBtn");
@@ -44,6 +43,7 @@ function onload(){
   mMenuBarMarketBtn = document.getElementById("mMenuBarMarketBtn");
   mMenuBarMypageBtn = document.getElementById("mMenuBarMypageBtn");
   mMenuBarSettingBtn = document.getElementById("mMenuBarSettingBtn");
+  mMenuCloseBtn = document.getElementById("mMenuCloseBtn");
 
   resize();
   resizeMenu();
@@ -151,15 +151,11 @@ function resize() {
 }
 
 function resizeMenu() {
-  menuRatio = 0.430045872;
+  mMenuSlide.width = document.body.offsetWidth;
   mMenuSlide.height = window.innerHeight;
-  mMenuSlide.width = mMenuSlide.height*menuRatio;
 
+  mMenuBar.width = document.body.offsetWidth;
   mMenuBar.height = window.innerHeight;
-  mMenuBar.width = mMenuBar.height*menuRatio;
-
-  mBlurbg.height = window.innerHeight;
-  mBlurbg.width = document.body.offsetWidth;
 
   mMenuBarMypageBtn.width = mMenuBarMypageBtn.naturalWidth*Ratio;
   mMenuBarMypageBtn.height = mMenuBarMypageBtn.naturalHeight*Ratio;
@@ -185,11 +181,15 @@ function resizeMenu() {
   mMenuBarSettingBtn.height = mMenuBarSettingBtn.naturalHeight*Ratio;
   mMenuBarSettingBtn.style.top = (Ratio*(157+(27*8))*2)+"px";
   mMenuBarSettingBtn.style.left = (Ratio*21*2)+"px";
+
+  mMenuCloseBtn.width = mMenuCloseBtn.naturalWidth*Ratio;
+  mMenuCloseBtn.Height = mMenuCloseBtn.naturalHeight*Ratio;
+  mMenuCloseBtn.style.top = (Ratio*24*2)+"px";
+  mMenuCloseBtn.style.left = (Ratio*335*2)+"px";
 }
 
 function mMenuBtnClick() {
   mMenuSlide.style.display="block";
-  mBlurbg.style.display="block";
 }
 function mMypageBtnClick(){
   location.href="mmypage.html";
@@ -202,6 +202,9 @@ function mMenuBarFairyTaleBtnClick() {
 }
 function mMenuBarMarketBtnClick() {
   location.href="mmarket.html";
+}
+function mMenuCloseBtnClick() {
+  mMenuSlide.style.display="none";
 }
 function mFinishedRecordingBtnClick() {
   popup.style.display="block";
