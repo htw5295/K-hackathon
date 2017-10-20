@@ -31,13 +31,13 @@ function onload(){
   bg02Img.height=bg02Height;
   homeBtn.width=homeBtn.naturalWidth*Ratio;
   homeBtn.height=homeBtn.naturalHeight*Ratio;
-  homeBtn.style.top=(Ratio*36)+"px";
-  homeBtn.style.left=(Ratio*36)+"px";
+  homeBtn.style.top=(Ratio*36*3)+"px";
+  homeBtn.style.left=(Ratio*36*3)+"px";
 
   contackUsBtn.width=contackUsBtn.naturalWidth*Ratio;
   contackUsBtn.height=contackUsBtn.naturalHeight*Ratio;
-  contackUsBtn.style.top=(Ratio*36)+"px";
-  contackUsBtn.style.left=bg02Img.width - (Ratio*36)-contackUsBtn.width+"px";
+  contackUsBtn.style.top=(Ratio*36*3)+"px";
+  contackUsBtn.style.left=bg02Img.width - (Ratio*36*3)-contackUsBtn.width+"px";
 
   selectedSignInBtn.width = selectedSignInBtn.naturalWidth*Ratio;
   selectedSignInBtn.height = selectedSignInBtn.naturalHeight*Ratio;
@@ -106,13 +106,13 @@ function onChangeSize(){
   bg02Img.height=bg02Height;
   homeBtn.width=homeBtn.naturalWidth*Ratio;
   homeBtn.height=homeBtn.naturalHeight*Ratio;
-  homeBtn.style.top=(Ratio*36)+"px";
-  homeBtn.style.left=(Ratio*36)+"px";
+  homeBtn.style.top=(Ratio*36*3)+"px";
+  homeBtn.style.left=(Ratio*36*3)+"px";
 
   contackUsBtn.width=contackUsBtn.naturalWidth*Ratio;
   contackUsBtn.height=contackUsBtn.naturalHeight*Ratio;
-  contackUsBtn.style.top=(Ratio*36)+"px";
-  contackUsBtn.style.left=bg02Img.width - (Ratio*36)-contackUsBtn.width+"px";
+  contackUsBtn.style.top=(Ratio*36*3)+"px";
+  contackUsBtn.style.left=bg02Img.width - (Ratio*36*3)-contackUsBtn.width+"px";
 
   selectedSignInBtn.width = selectedSignInBtn.naturalWidth*Ratio;
   selectedSignInBtn.height = selectedSignInBtn.naturalHeight*Ratio;
@@ -168,7 +168,6 @@ function onChangeSize(){
   pwdBox.style.height = 50*Ratio+"px";
   pwdBox.style.top =(Ratio*729*2)+"px";
   pwdBox.style.left = (Ratio*809*2)+"px";
-  //#emailBox,#pwdBox
   emailBox.style.fontSize=(40*Ratio)+"px";
   pwdBox.style.fontSize=(40*Ratio)+"px";
 
@@ -181,6 +180,10 @@ function signInBtnClick() {
   unselectedSignUpBtn.style.display="block";
   signInBtn.style.display="block";
   signUpBtn.style.display="none";
+
+  googleBtn.style.display="block";
+  twitterBtn.style.display="block";
+  facebookBtn.style.display="block";
 }
 function signUpBtnClick() {
   selectedSignInBtn.style.display="none";
@@ -189,6 +192,10 @@ function signUpBtnClick() {
   unselectedSignUpBtn.style.display="none";
   signInBtn.style.display="none";
   signUpBtn.style.display="block";
+
+  googleBtn.style.display="none";
+  twitterBtn.style.display="none";
+  facebookBtn.style.display="none";
 }
 function signInBTNClick(){
   location.href="main.html";

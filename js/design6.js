@@ -56,53 +56,53 @@ function onload(){
 
   menuBtn.width=menuBtn.naturalWidth*Ratio;
   menuBtn.height=menuBtn.naturalHeight*Ratio;
-  menuBtn.style.top=(Ratio*36)+"px";
-  menuBtn.style.left=(Ratio*36)+"px";
+  menuBtn.style.top=(Ratio*36*3)+"px";
+  menuBtn.style.left=(Ratio*36*3)+"px";
 
   googleBtn.width=googleBtn.naturalWidth*Ratio;
   googleBtn.height=googleBtn.naturalHeight*Ratio;
-  googleBtn.style.top=(Ratio*36)+"px";
-  googleBtn.style.left=(Ratio*1563*2)+"px";
+  googleBtn.style.top=(Ratio*36*2.7)+"px";
+  googleBtn.style.left=(Ratio*1563*2)-(10*2*Ratio)+"px";
 
   twitterBtn.width=twitterBtn.naturalWidth*Ratio;
   twitterBtn.height=twitterBtn.naturalHeight*Ratio;
-  twitterBtn.style.top=(Ratio*36)+"px";
-  twitterBtn.style.left=(Ratio*1563*2)+googleBtn.width+(Ratio*58*2)+"px";
+  twitterBtn.style.top=(Ratio*36*2.7)+"px";
+  twitterBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+(Ratio*58*2)+"px";
 
   facebookBtn.width=facebookBtn.naturalWidth*Ratio;
   facebookBtn.height=facebookBtn.naturalHeight*Ratio;
-  facebookBtn.style.top=(Ratio*36)+"px";
-  facebookBtn.style.left=(Ratio*1563*2)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
+  facebookBtn.style.top=(Ratio*36*2.7)+"px";
+  facebookBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
 
   loginBtn.width=loginBtn.naturalWidth*Ratio;
   loginBtn.height=loginBtn.naturalHeight*Ratio;
-  loginBtn.style.top=(Ratio*36)+"px";
-  loginBtn.style.left=bg06.width-(Ratio*36)-loginBtn.width+"px";
+  loginBtn.style.top=(Ratio*36*3)+"px";
+  loginBtn.style.left=bg06.width-(Ratio*36*3)-loginBtn.width+"px";
 
   unSelectedDodamBtn.width = unSelectedDodamBtn.naturalWidth*Ratio;
   unSelectedDodamBtn.height = unSelectedDodamBtn.naturalHeight*Ratio;
   unSelectedDodamBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDodamBtn.style.left = (Ratio*99*2)+"px";
+  unSelectedDodamBtn.style.left = (Ratio*99*2)+(200*Ratio)+"px";
 
   unSelectedDiaryBtn.width = unSelectedDiaryBtn.naturalWidth*Ratio;
   unSelectedDiaryBtn.height = unSelectedDiaryBtn.naturalHeight*Ratio;
   unSelectedDiaryBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
+  unSelectedDiaryBtn.style.left = (Ratio*99*2)+(Ratio*69*2)+(200*Ratio)+unSelectedDodamBtn.width+"px";
 
   unSelectedFairytaleBtn.width = unSelectedFairytaleBtn.naturalWidth*Ratio;
   unSelectedFairytaleBtn.height = unSelectedFairytaleBtn.naturalHeight*Ratio;
   unSelectedFairytaleBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedFairytaleBtn.style.left = (Ratio*99*2)+(Ratio*69*2*2)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
+  unSelectedFairytaleBtn.style.left = (Ratio*99*2)+(Ratio*69*2*2)+(200*Ratio)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+"px";
 
   unSelectedMypageBtn.width = unSelectedMypageBtn.naturalWidth*Ratio;
   unSelectedMypageBtn.height = unSelectedMypageBtn.naturalHeight*Ratio;
   unSelectedMypageBtn.style.top = (Ratio*525*2)+"px";
-  unSelectedMypageBtn.style.left = (Ratio*1715*2)+"px";
+  unSelectedMypageBtn.style.left = (Ratio*1715*2)-(200*Ratio)+"px";
 
   selectedShopBtn.width = selectedShopBtn.naturalWidth*Ratio;
   selectedShopBtn.height = selectedShopBtn.naturalHeight*Ratio;
   selectedShopBtn.style.top = (Ratio*525*2)+"px";
-  selectedShopBtn.style.left = (Ratio*99*2)+(Ratio*69*2*3)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+unSelectedFairytaleBtn.width+"px";
+  selectedShopBtn.style.left = (Ratio*99*2)+(Ratio*69*2*3)+(200*Ratio)+unSelectedDiaryBtn.width+unSelectedDodamBtn.width+unSelectedFairytaleBtn.width+"px";
 
 //var selectedCircleBtn,UnSelectedCircleBtn,buyDirectlyBtn,bookInfo1,bookInfo2,bookInfo3,tFairyTale01Btn,tFairyTale02Btn,tFairyTale04Btn,tFairyTale03Btn,things01Btn;
 //var things02Btn,things03Btn,things04Btn;
