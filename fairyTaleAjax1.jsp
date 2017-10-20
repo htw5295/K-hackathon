@@ -52,7 +52,14 @@
 		e.printStackTrace();
 	}
 
+Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
 
+	File file1 = new File(savePath + "/wav/1/blob");
+	File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
+
+	if (!file1.renameTo(file2)) {
+		System.err.println("이름 변경 에러 : " + file1);
+	}
 
 	JSONObject obj2 = new JSONObject();
 	obj2.put("name", "mkyong.com");
