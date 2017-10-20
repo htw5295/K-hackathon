@@ -88,28 +88,28 @@ function onload(){
 
   menuBtn.width=menuBtn.naturalWidth*Ratio;
   menuBtn.height=menuBtn.naturalHeight*Ratio;
-  menuBtn.style.top=(Ratio*36)+"px";
-  menuBtn.style.left=(Ratio*36)+"px";
+  menuBtn.style.top=(Ratio*36*3)+"px";
+  menuBtn.style.left=(Ratio*36*3)+"px";
 
   googleBtn.width=googleBtn.naturalWidth*Ratio;
   googleBtn.height=googleBtn.naturalHeight*Ratio;
-  googleBtn.style.top=(Ratio*36)+"px";
-  googleBtn.style.left=(Ratio*1563*2)+"px";
+  googleBtn.style.top=(Ratio*36*2.7)+"px";
+  googleBtn.style.left=(Ratio*1563*2)-(10*2*Ratio)+"px";
 
   twitterBtn.width=twitterBtn.naturalWidth*Ratio;
   twitterBtn.height=twitterBtn.naturalHeight*Ratio;
-  twitterBtn.style.top=(Ratio*36)+"px";
-  twitterBtn.style.left=(Ratio*1563*2)+googleBtn.width+(Ratio*58*2)+"px";
+  twitterBtn.style.top=(Ratio*36*2.7)+"px";
+  twitterBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+(Ratio*58*2)+"px";
 
   facebookBtn.width=facebookBtn.naturalWidth*Ratio;
   facebookBtn.height=facebookBtn.naturalHeight*Ratio;
-  facebookBtn.style.top=(Ratio*36)+"px";
-  facebookBtn.style.left=(Ratio*1563*2)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
+  facebookBtn.style.top=(Ratio*36*2.7)+"px";
+  facebookBtn.style.left=(Ratio*1563*2)-(20*2*Ratio)+googleBtn.width+twitterBtn.width+(Ratio*58*2*2)+"px";
 
   loginBtn.width=loginBtn.naturalWidth*Ratio;
   loginBtn.height=loginBtn.naturalHeight*Ratio;
-  loginBtn.style.top=(Ratio*36)+"px";
-  loginBtn.style.left=bg11.width-(Ratio*36)-loginBtn.width+"px";
+  loginBtn.style.top=(Ratio*36*3)+"px";
+  loginBtn.style.left=bg11.width-(Ratio*36*3)-loginBtn.width+"px";
 
   unSelectedDodamBtn.width = unSelectedDodamBtn.naturalWidth*Ratio;
   unSelectedDodamBtn.height = unSelectedDodamBtn.naturalHeight*Ratio;

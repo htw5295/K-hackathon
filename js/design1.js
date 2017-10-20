@@ -21,13 +21,13 @@ function onload(){
   bg01Img.height=bg01Height;
   aboutUsBtn.width=aboutUsBtn.naturalWidth*Ratio;
   aboutUsBtn.height=aboutUsBtn.naturalHeight*Ratio;
-  aboutUsBtn.style.top=(Ratio*36)+"px";
-  aboutUsBtn.style.left=(Ratio*36)+"px";
+  aboutUsBtn.style.top=(Ratio*36*3)+"px";
+  aboutUsBtn.style.left=(Ratio*36*3)+"px";
 
   contackUsBtn.width=contackUsBtn.naturalWidth*Ratio;
   contackUsBtn.height=contackUsBtn.naturalHeight*Ratio;
-  contackUsBtn.style.top=(Ratio*36)+"px";
-  contackUsBtn.style.left=bg01Img.width - (Ratio*36)-contackUsBtn.width+"px";
+  contackUsBtn.style.top=(Ratio*36*3)+"px";
+  contackUsBtn.style.left=bg01Img.width - (Ratio*36*3)-contackUsBtn.width+"px";
 
   letsStartBtn.width = letsStartBtn.naturalWidth*Ratio;
   letsStartBtn.height = letsStartBtn.naturalHeight*Ratio;
@@ -44,13 +44,13 @@ function onChangeSize(){
   bg01Img.height=bg01Height;
   aboutUsBtn.width=aboutUsBtn.naturalWidth*Ratio;
   aboutUsBtn.height=aboutUsBtn.naturalHeight*Ratio;
-  aboutUsBtn.style.top=(Ratio*36)+"px";
-  aboutUsBtn.style.left=(Ratio*36)+"px";
+  aboutUsBtn.style.top=(Ratio*36*3)+"px";
+  aboutUsBtn.style.left=(Ratio*36*3)+"px";
 
   contackUsBtn.width=contackUsBtn.naturalWidth*Ratio;
   contackUsBtn.height=contackUsBtn.naturalHeight*Ratio;
-  contackUsBtn.style.top=(Ratio*36)+"px";
-  contackUsBtn.style.left=bg01Img.width - (Ratio*36)-contackUsBtn.width+"px";
+  contackUsBtn.style.top=(Ratio*36*3)+"px";
+  contackUsBtn.style.left=bg01Img.width - (Ratio*36*3)-contackUsBtn.width+"px";
 
   letsStartBtn.width = letsStartBtn.naturalWidth*Ratio;
   letsStartBtn.height = letsStartBtn.naturalHeight*Ratio;
