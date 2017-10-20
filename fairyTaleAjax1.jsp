@@ -33,12 +33,7 @@
 	System.out.println(obj);
 
 
-	File file3 = new File(savePath + "/fairytale/1/1.json");
-	File file4 = new File(savePath + "/fairytale/1/2.json"); //음성
 
-	if (!file3.renameTo(file4)) {
-		System.err.println("이름 변경 에러 : " + file1);
-	}
 
 	try {
 
@@ -48,9 +43,7 @@
 	 //
 	//  ps = rt.exec(command);
 
-
-
-		FileWriter file = new FileWriter(savePath + "/fairytale/1/1.json"); //동화
+		FileWriter file = new FileWriter(savePath + "/fairytale/1/" + filename + ".json"); //동화
 		file.write(obj.toString());
 		file.flush();
 		file.close();
@@ -71,17 +64,9 @@
 	JSONObject obj2 = new JSONObject();
 	obj2.put("name", "mkyong.com");
 
-
-		File file1 = new File(savePath + "/info/1/1.json");
-		File file2 = new File(savePath + "/info/1/2.json"); //음성
-
-		if (!file1.renameTo(file2)) {
-			System.err.println("이름 변경 에러 : " + file1);
-		}
-
 	try {
 
-		FileWriter file = new FileWriter(savePath + "/info/1/1.json"); //파일정보
+		FileWriter file = new FileWriter(savePath + "/info/1/" + filename + ".json"); //파일정보
 		file.write(obj2.toJSONString());
 		file.flush();
 		file.close();
