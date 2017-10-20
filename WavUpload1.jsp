@@ -34,16 +34,21 @@
 
 	try {
 
-		Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
-
-			File file1 = new File(savePath + "/wav/1/blob");
-			File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
-
-			if (!file1.renameTo(file2)) {
-				System.err.println("이름 변경 에러 : " + file1);
-			}
 		MultipartRequest multi = new MultipartRequest(request, savePath + "wav/1", maxSize, "UTF-8",
 				new DefaultFileRenamePolicy());
+
+
+
+
+			Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
+
+				File file1 = new File(savePath + "/wav/1/blob");
+				File file2 = new File(savePath + "/wav/1/" + filename + ".wav"); //음성
+
+				if (!file1.renameTo(file2)) {
+					System.err.println("이름 변경 에러 : " + file1);
+				}
+
 		/**
 		// 전송받은 parameter의 한글깨짐 방지
 		String title = multi.getParameter("title");
