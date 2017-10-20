@@ -215,7 +215,11 @@ function nounSub(){
           fairytaleNoun[i] = new Array();
           fairytaleNoun[i].push(noun[j]);
           flag=-1;
+          break;
         }
+      }
+      if(flag=-1){
+        break;
       }
     }
   }
