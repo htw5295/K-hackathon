@@ -41,9 +41,16 @@
 	//  Runtime rt = Runtime.getRuntime();
 	//  Process ps = null;
 	 //
-	//  ps = rt.exec(command);
+	//  ps = rt.exec(command);				Runtime.getRuntime().exec("sudo chmod 777 -R /dodam/");
 
-		FileWriter file = new FileWriter(savePath + "/fairytale/1/" + filename + ".json"); //동화
+		File file3 = new File(savePath + "/fairytale/1/1.json");
+		File file4 = new File(savePath + "/fairytale/1/2.json"); //음성
+
+		if (!file3.renameTo(file4)) {
+			System.err.println("이름 변경 에러 : ");
+		}
+
+		FileWriter file = new FileWriter(savePath + "/fairytale/1/1.json"); //동화
 		file.write(obj.toString());
 		file.flush();
 		file.close();
