@@ -3,7 +3,7 @@ var mbg03Height;
 var Ratio;
 
 var mbg03Img,mMenuBtn,mMypageBtn,mMoreDetailBtn,mMoveBtn1,mMoveBtn2,mMoveBtn3;
-var menuRatio,mBlurbg,mMenuSlide,mMenuBar,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
+var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg03Img = document.getElementById("mbg03");
   mMenuBtn = document.getElementById("mMenuBtn");
@@ -13,7 +13,6 @@ function onload(){
   mMoveBtn2 = document.getElementById("mMoveBtn2");
   mMoveBtn3 = document.getElementById("mMoveBtn3");
   //menubar
-  mBlurbg = document.getElementById("mBlurbg");
   mMenuSlide = document.getElementById("mMenuSlide");
   mMenuBar = document.getElementById("mMenuBar");
   mMenuBarDiaryBtn = document.getElementById("mMenuBarDiaryBtn");
@@ -21,6 +20,7 @@ function onload(){
   mMenuBarMarketBtn = document.getElementById("mMenuBarMarketBtn");
   mMenuBarMypageBtn = document.getElementById("mMenuBarMypageBtn");
   mMenuBarSettingBtn = document.getElementById("mMenuBarSettingBtn");
+  mMenuCloseBtn = document.getElementById("mMenuCloseBtn");
 
   resize();
   resizeMenu();
@@ -69,15 +69,11 @@ function resize() {
   mMoveBtn3.style.right = (Ratio*15*2)+"px";
 }
 function resizeMenu() {
-  menuRatio = 0.430045872;
+  mMenuSlide.width = document.body.offsetWidth;
   mMenuSlide.height = window.innerHeight;
-  mMenuSlide.width = mMenuSlide.height*menuRatio;
 
+  mMenuBar.width = document.body.offsetWidth;
   mMenuBar.height = window.innerHeight;
-  mMenuBar.width = mMenuBar.height*menuRatio;
-
-  mBlurbg.style.height = window.innerHeight+"px";
-  mBlurbg.style.width = document.body.offsetWidth+"px";
 
   mMenuBarMypageBtn.width = mMenuBarMypageBtn.naturalWidth*Ratio;
   mMenuBarMypageBtn.height = mMenuBarMypageBtn.naturalHeight*Ratio;
@@ -103,19 +99,20 @@ function resizeMenu() {
   mMenuBarSettingBtn.height = mMenuBarSettingBtn.naturalHeight*Ratio;
   mMenuBarSettingBtn.style.top = (Ratio*(157+(27*8))*2)+"px";
   mMenuBarSettingBtn.style.left = (Ratio*21*2)+"px";
+
+  mMenuCloseBtn.width = mMenuCloseBtn.naturalWidth*Ratio;
+  mMenuCloseBtn.Height = mMenuCloseBtn.naturalHeight*Ratio;
+  mMenuCloseBtn.style.top = (Ratio*24*2)+"px";
+  mMenuCloseBtn.style.left = (Ratio*335*2)+"px";
 }
 
 function mMenuBtnClick() {
   mMenuSlide.style.display="block";
-  mBlurbg.style.display="block";
 }
 function mMypageBtnClick(){
   location.href="mmypage.html";
 }
-function mMenuBarSettingBtnClick() {
-
-}
-function mMoreDetailBtnClick(){
+function mMoreDetailBtnClick() {
   location.href="mmoreDetail.html";
 }
 function mMenuBarDiaryBtnClick() {
@@ -126,4 +123,7 @@ function mMenuBarFairyTaleBtnClick() {
 }
 function mMenuBarMarketBtnClick() {
   location.href="mmarket.html";
+}
+function mMenuCloseBtnClock() {
+  mMenuSlide.style.display="none";
 }

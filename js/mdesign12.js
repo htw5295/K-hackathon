@@ -1,19 +1,19 @@
-var mbg11Width;
-var mbg11Height;
+var mbg12Width;
+var mbg12Height;
 var Ratio;
 
-var mbg11Img,mMenuBtn,mFairyTalePlayBtn,mSerchBarBtn;
+var mbg12Img,mMenuBtn,mMypageBtn,mSerchBarBtn,mRecordingBtn;
 var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
-var mStory01,mStory02,mStory03,mStory04;
-var recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
-var mFairyTale,mStory;
+var mReadyStory01,mReadyStory02,mReadyStory03,mReadyStory04;
+var mStoryCard01,mStoryCard02,mStoryCard03,mStoryCard04;
 var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
-  mbg11Img = document.getElementById("mbg11");
+  mbg12Img = document.getElementById("mbg12");
   mMenuBtn = document.getElementById("mMenuBtn");
-  mFairyTalePlayBtn = document.getElementById("mFairyTalePlayBtn");
+  mMypageBtn = document.getElementById("mMypageBtn");
   mSerchBarBtn = document.getElementById("mSerchBarBtn");
+  mRecordingBtn = document.getElementById("mRecordingBtn");
 
   mFairyTale01Btn = document.getElementById("mFairyTale01Btn");
   mFairyTale02Btn = document.getElementById("mFairyTale02Btn");
@@ -25,17 +25,15 @@ function onload(){
   mFairyTaleBig03Btn = document.getElementById("mFairyTaleBig03Btn");
   mFairyTaleBig04Btn = document.getElementById("mFairyTaleBig04Btn");
 
-  mStory01 = document.getElementById("mStory01");
-  mStory02 = document.getElementById("mStory02");
-  mStory03 = document.getElementById("mStory03");
-  mStory04 = document.getElementById("mStory04");
+  mReadyStory01 = document.getElementById("mReadyStory01");
+  mReadyStory02 = document.getElementById("mReadyStory02");
+  mReadyStory03 = document.getElementById("mReadyStory03");
+  mReadyStory04 = document.getElementById("mReadyStory04");
 
-  recordedFairyTalePic01 = document.getElementById("recordedFairyTalePic01");
-  recordedFairyTalePic02 = document.getElementById("recordedFairyTalePic02");
-  recordedFairyTalePic03 = document.getElementById("recordedFairyTalePic03");
-
-  mFairyTale = document.getElementById("mFairyTale");
-  mStory = document.getElementById("mStory");
+  mStoryCard01 = document.getElementById("mStoryCard01");
+  mStoryCard02 = document.getElementById("mStoryCard02");
+  mStoryCard03 = document.getElementById("mStoryCard03");
+  mStoryCard04 = document.getElementById("mStoryCard04");
 
   mMenuSlide = document.getElementById("mMenuSlide");
   mMenuBar = document.getElementById("mMenuBar");
@@ -56,30 +54,35 @@ function onChangeSize(){
 }
 
 function resize() {
-  mbg11Width = document.body.offsetWidth;
-  mbg11Height = mbg11Width*3.09333333;
-  Ratio = mbg11Width / 750;
+  mbg12Width = document.body.offsetWidth;
+  mbg12Height = mbg12Width*3.12;
+  Ratio = mbg12Width / 750;
 
-  mbg11Img.width=mbg11Width;
-  mbg11Img.height=mbg11Height;
+  mbg12Img.width=mbg12Width;
+  mbg12Img.height=mbg12Height;
 
   mMenuBtn.width=mMenuBtn.naturalWidth*Ratio;
   mMenuBtn.height=mMenuBtn.naturalHeight*Ratio;
   mMenuBtn.style.top=(Ratio*15*2)+"px";
   mMenuBtn.style.left=(Ratio*15*2)+"px";
 
+  mMypageBtn.width=mMypageBtn.naturalWidth*Ratio;
+  mMypageBtn.height=mMypageBtn.naturalHeight*Ratio;
+  mMypageBtn.style.top=(Ratio*15*2)+"px";
+  mMypageBtn.style.right=(Ratio*15*2)+"px";
+
   mSerchBarBtn.width=mSerchBarBtn.naturalWidth*Ratio;
   mSerchBarBtn.height=mSerchBarBtn.naturalHeight*Ratio;
   mSerchBarBtn.style.top=(Ratio*130*2)+"px";
 
-  mFairyTalePlayBtn.width=mFairyTalePlayBtn.naturalWidth*Ratio;
-  mFairyTalePlayBtn.height=mFairyTalePlayBtn.naturalHeight*Ratio;
-  mFairyTalePlayBtn.style.top=(Ratio*1108*2)+"px";
-  mFairyTalePlayBtn.style.left=(Ratio*15*2)+"px";
+  mRecordingBtn.width=mRecordingBtn.naturalWidth*Ratio;
+  mRecordingBtn.height=mRecordingBtn.naturalHeight*Ratio;
+  mRecordingBtn.style.top=(Ratio*1118*2)+"px";
+  mRecordingBtn.style.left=(Ratio*15*2)+"px";
 
   mFairyTale.style.width=document.body.offsetWidth+"px";
   mFairyTale.style.height=mFairyTaleBig01Btn.naturalHeight*Ratio+"px";
-  mFairyTale.style.top=(Ratio*391*2)+"px";
+  mFairyTale.style.top=(Ratio*367*2)+"px";
 
   mFairyTale01Btn.width=mFairyTale01Btn.naturalWidth*Ratio;
   mFairyTale01Btn.height=mFairyTale01Btn.naturalHeight*Ratio;
@@ -113,40 +116,45 @@ function resize() {
   mFairyTaleBig04Btn.height=mFairyTaleBig04Btn.naturalHeight*Ratio;
   mFairyTaleBig04Btn.style.left=(Ratio*(15+(97*3))*2)+"px";
 
-  mStory.style.whidth=document.body.offsetWidth+"px";
-  mStory.style.height=mStory01.naturalHeight*Ratio+"px";
-  mStory.style.top=(Ratio*530*2)+"px";
+  mReadyStory01.width=mReadyStory01.naturalWidth*Ratio;
+  mReadyStory01.height=mReadyStory01.naturalHeight*Ratio;
+  mReadyStory01.style.top=(Ratio*530*2)+"px";
+  mReadyStory01.style.left=(Ratio*15*2)+"px";
 
-  mStory01.width=mStory01.naturalWidth*Ratio;
-  mStory01.height=mStory01.naturalHeight*Ratio;
-  mStory01.style.left=(Ratio*15*2)+"px";
+  mReadyStory02.width=mReadyStory02.naturalWidth*Ratio;
+  mReadyStory02.height=mReadyStory02.naturalHeight*Ratio;
+  mReadyStory02.style.top=(Ratio*530*2)+"px";
+  mReadyStory02.style.left=(Ratio*15*2)+"px";
 
-  mStory02.width=mStory02.naturalWidth*Ratio;
-  mStory02.height=mStory02.naturalHeight*Ratio;
-  mStory02.style.left=(Ratio*15*2)+"px";
+  mReadyStory03.width=mReadyStory03.naturalWidth*Ratio;
+  mReadyStory03.height=mReadyStory03.naturalHeight*Ratio;
+  mReadyStory03.style.top=(Ratio*530*2)+"px";
+  mReadyStory03.style.left=(Ratio*15*2)+"px";
 
-  mStory03.width=mStory03.naturalWidth*Ratio;
-  mStory03.height=mStory03.naturalHeight*Ratio;
-  mStory03.style.left=(Ratio*15*2)+"px";
+  mReadyStory04.width=mReadyStory04.naturalWidth*Ratio;
+  mReadyStory04.height=mReadyStory04.naturalHeight*Ratio;
+  mReadyStory04.style.top=(Ratio*530*2)+"px";
+  mReadyStory04.style.left=(Ratio*15*2)+"px";
 
-  mStory04.width=mStory04.naturalWidth*Ratio;
-  mStory04.height=mStory04.naturalHeight*Ratio;
-  mStory04.style.left=(Ratio*15*2)+"px";
+  mStoryCard01.width=mStoryCard01.naturalWidth*Ratio;
+  mStoryCard01.height=mStoryCard01.naturalHeight*Ratio;
+  mStoryCard01.style.top=(Ratio*806*2)+"px";
+  mStoryCard01.style.left=(Ratio*88*2)+"px";
 
-  recordedFairyTalePic01.width=recordedFairyTalePic01.naturalWidth*Ratio;
-  recordedFairyTalePic01.height=recordedFairyTalePic01.naturalHeight*Ratio;
-  recordedFairyTalePic01.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic01.style.left=(Ratio*15*2)+"px";
+  mStoryCard02.width=mStoryCard02.naturalWidth*Ratio;
+  mStoryCard02.height=mStoryCard02.naturalHeight*Ratio;
+  mStoryCard02.style.top=(Ratio*806*2)+"px";
+  mStoryCard02.style.left=(Ratio*88*2)+"px";
 
-  recordedFairyTalePic02.width=recordedFairyTalePic02.naturalWidth*Ratio;
-  recordedFairyTalePic02.height=recordedFairyTalePic02.naturalHeight*Ratio;
-  recordedFairyTalePic02.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic02.style.left=(Ratio*(15+(102))*2)+"px";
+  mStoryCard03.width=mStoryCard03.naturalWidth*Ratio;
+  mStoryCard03.height=mStoryCard03.naturalHeight*Ratio;
+  mStoryCard03.style.top=(Ratio*806*2)+"px";
+  mStoryCard03.style.left=(Ratio*88*2)+"px";
 
-  recordedFairyTalePic03.width=recordedFairyTalePic03.naturalWidth*Ratio;
-  recordedFairyTalePic03.height=recordedFairyTalePic03.naturalHeight*Ratio;
-  recordedFairyTalePic03.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic03.style.left=(Ratio*(15+(102*2))*2)+"px";
+  mStoryCard04.width=mStoryCard04.naturalWidth*Ratio;
+  mStoryCard04.height=mStoryCard04.naturalHeight*Ratio;
+  mStoryCard04.style.top=(Ratio*806*2)+"px";
+  mStoryCard04.style.left=(Ratio*88*2)+"px";
 }
 
 function resizeMenu() {
@@ -155,7 +163,7 @@ function resizeMenu() {
 
   mMenuBar.width = document.body.offsetWidth;
   mMenuBar.height = window.innerHeight;
-
+  
   mMenuBarMypageBtn.width = mMenuBarMypageBtn.naturalWidth*Ratio;
   mMenuBarMypageBtn.height = mMenuBarMypageBtn.naturalHeight*Ratio;
   mMenuBarMypageBtn.style.top = (Ratio*157*2)+"px";
@@ -205,9 +213,6 @@ function mMenuBarMarketBtnClick() {
 function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
-function mFairyTalePlayBtnClick() {
-  location.href="mfairyTaleList.html";
-}
 function mFairyTale01BtnClick() {
   mFairyTale01Btn.style.display="none";
   mFairyTale02Btn.style.display="block";
@@ -217,10 +222,14 @@ function mFairyTale01BtnClick() {
   mFairyTaleBig02Btn.style.display="none";
   mFairyTaleBig03Btn.style.display="none";
   mFairyTaleBig04Btn.style.display="none";
-  mStory01.style.display="block";
-  mStory02.style.display="none";
-  mStory03.style.display="none";
-  mStory04.style.display="none";
+  mReadyStory01.style.display="block";
+  mReadyStory02.style.display="none";
+  mReadyStory03.style.display="none";
+  mReadyStory04.style.display="none";
+  mStoryCard01.style.display="block";
+  mStoryCard02.style.display="none";
+  mStoryCard03.style.display="none";
+  mStoryCard04.style.display="none";
 }
 function mFairyTale02BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -231,10 +240,14 @@ function mFairyTale02BtnClick() {
   mFairyTaleBig02Btn.style.display="block";
   mFairyTaleBig03Btn.style.display="none";
   mFairyTaleBig04Btn.style.display="none";
-  mStory01.style.display="none";
-  mStory02.style.display="block";
-  mStory03.style.display="none";
-  mStory04.style.display="none";
+  mReadyStory01.style.display="none";
+  mReadyStory02.style.display="block";
+  mReadyStory03.style.display="none";
+  mReadyStory04.style.display="none";
+  mStoryCard01.style.display="none";
+  mStoryCard02.style.display="block";
+  mStoryCard03.style.display="none";
+  mStoryCard04.style.display="none";
 }
 function mFairyTale03BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -245,10 +258,14 @@ function mFairyTale03BtnClick() {
   mFairyTaleBig02Btn.style.display="none";
   mFairyTaleBig03Btn.style.display="block";
   mFairyTaleBig04Btn.style.display="none";
-  mStory01.style.display="none";
-  mStory02.style.display="none";
-  mStory03.style.display="block";
-  mStory04.style.display="none";
+  mReadyStory01.style.display="none";
+  mReadyStory02.style.display="none";
+  mReadyStory03.style.display="block";
+  mReadyStory04.style.display="none";
+  mStoryCard01.style.display="none";
+  mStoryCard02.style.display="none";
+  mStoryCard03.style.display="block";
+  mStoryCard04.style.display="none";
 }
 function mFairyTale04BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -259,8 +276,12 @@ function mFairyTale04BtnClick() {
   mFairyTaleBig02Btn.style.display="none";
   mFairyTaleBig03Btn.style.display="none";
   mFairyTaleBig04Btn.style.display="block";
-  mStory01.style.display="none";
-  mStory02.style.display="none";
-  mStory03.style.display="none";
-  mStory04.style.display="block";
+  mReadyStory01.style.display="none";
+  mReadyStory02.style.display="none";
+  mReadyStory03.style.display="none";
+  mReadyStory04.style.display="block";
+  mStoryCard01.style.display="none";
+  mStoryCard02.style.display="none";
+  mStoryCard03.style.display="none";
+  mStoryCard04.style.display="block";
 }
