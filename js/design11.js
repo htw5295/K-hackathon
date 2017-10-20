@@ -978,3 +978,11 @@ function onFairyTale6Click(){
 
 
 }
+function recordedFairyTalePlayBtnClick() {
+  var popUrl = "magicCastle_1.jsp";	//팝업창에 출력될 페이지 URL
+
+  	var popOption = "width=500, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
+
+  		window.open(popUrl,"",popOption);
+
+}
