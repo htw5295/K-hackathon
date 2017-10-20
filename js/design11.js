@@ -565,52 +565,85 @@ function onChangeSize(){
   bgFairyTale06Btn.style.left = (Ratio*870*2)+(Ratio*200)+"px";
   bgFairyTale06Btn.style.top= (1290*Ratio*2)+(Ratio*150)+"px";
 
-  recordedFairyTalePic01.width = recordedFairyTalePic01.naturalWidth*Ratio;
-  recordedFairyTalePic01.height = recordedFairyTalePic01.naturalHeight*Ratio;
-  recordedFairyTalePic01.style.left = (Ratio*913*2)+(Ratio*200)+"px";
-  recordedFairyTalePic01.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
+recordedFairyTalePic01.width = recordedFairyTalePic01.naturalWidth*Ratio;
+recordedFairyTalePic01.height = recordedFairyTalePic01.naturalHeight*Ratio;
+recordedFairyTalePic01.style.left = (Ratio*913*2)+(Ratio*200)+"px";
+recordedFairyTalePic01.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
 
-  recordedFairyTalePic02.width = recordedFairyTalePic02.naturalWidth*Ratio;
-  recordedFairyTalePic02.height = recordedFairyTalePic02.naturalHeight*Ratio;
-  recordedFairyTalePic02.style.left = (Ratio*913*2)+(Ratio*200)+recordedFairyTalePic01.width+"px";
-  recordedFairyTalePic02.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
+recordedFairyTalePic02.width = recordedFairyTalePic02.naturalWidth*Ratio;
+recordedFairyTalePic02.height = recordedFairyTalePic02.naturalHeight*Ratio;
+recordedFairyTalePic02.style.left = (Ratio*913*2)+(Ratio*200)+recordedFairyTalePic01.width+"px";
+recordedFairyTalePic02.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
 
-  recordedFairyTalePic03.width = recordedFairyTalePic03.naturalWidth*Ratio;
-  recordedFairyTalePic03.height = recordedFairyTalePic03.naturalHeight*Ratio;
-  recordedFairyTalePic03.style.left = (Ratio*913*2)+(Ratio*200)+recordedFairyTalePic01.width*2+"px";
-  recordedFairyTalePic03.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
+recordedFairyTalePic03.width = recordedFairyTalePic03.naturalWidth*Ratio;
+recordedFairyTalePic03.height = recordedFairyTalePic03.naturalHeight*Ratio;
+recordedFairyTalePic03.style.left = (Ratio*913*2)+(Ratio*200)+recordedFairyTalePic01.width*2+"px";
+recordedFairyTalePic03.style.top= (1651*Ratio*2)+(Ratio*100)+"px";
 
-  recordedSelected01.width = recordedSelected01.naturalWidth*Ratio;
-  recordedSelected01.height = recordedSelected01.naturalHeight*Ratio;
-  recordedSelected01.style.left = (Ratio*345*2)+(Ratio*200)+recordedFairyTalePic01.width*2+"px";
-  recordedSelected01.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
+recordedSelected01.width = recordedSelected01.naturalWidth*Ratio;
+recordedSelected01.height = recordedSelected01.naturalHeight*Ratio;
+recordedSelected01.style.left = (Ratio*345*2)+(Ratio*200)+recordedFairyTalePic01.width*2+"px";
+recordedSelected01.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
 
-  recordedUnSelected01.width = recordedUnSelected01.naturalWidth*Ratio;
-  recordedUnSelected01.height = recordedUnSelected01.naturalHeight*Ratio;
-  recordedUnSelected01.style.left = (Ratio*345*2)+(Ratio*200)+570*Ratio+recordedFairyTalePic01.width*2+"px";
-  recordedUnSelected01.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
+recordedUnSelected01.width = recordedUnSelected01.naturalWidth*Ratio;
+recordedUnSelected01.height = recordedUnSelected01.naturalHeight*Ratio;
+recordedUnSelected01.style.left = (Ratio*345*2)+(Ratio*200)+570*Ratio+recordedFairyTalePic01.width*2+"px";
+recordedUnSelected01.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
 
-  recordedUnSelected02.width = recordedUnSelected02.naturalWidth*Ratio;
-  recordedUnSelected02.height = recordedUnSelected02.naturalHeight*Ratio;
-  recordedUnSelected02.style.left = (Ratio*345*2)+(Ratio*200)+1350*Ratio+recordedFairyTalePic01.width*2+"px";
-  recordedUnSelected02.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
+recordedUnSelected02.width = recordedUnSelected02.naturalWidth*Ratio;
+recordedUnSelected02.height = recordedUnSelected02.naturalHeight*Ratio;
+recordedUnSelected02.style.left = (Ratio*345*2)+(Ratio*200)+1350*Ratio+recordedFairyTalePic01.width*2+"px";
+recordedUnSelected02.style.top= (1930*Ratio*2)+(Ratio*100)+"px";
 
-  playCountDiv.style.left = (Ratio*589*2)+"px";
-  playCountDiv.style.top= (1772*Ratio*2)+"px";
-  playCountDiv.style.fontSize = (20*Ratio)+"pt";
+playCountDiv.style.left = (Ratio*589*2)+"px";
+playCountDiv.style.top= (1772*Ratio*2)+"px";
+playCountDiv.style.fontSize = (20*Ratio)+"pt";
 
-  fairyTaleCountUnderDiv.style.left = (Ratio*589*2)+"px";
-  fairyTaleCountUnderDiv.style.top= (1820*Ratio*2)+"px";
-  fairyTaleCountUnderDiv.style.fontSize = (20*Ratio)+"pt";
+fairyTaleCountUnderDiv.style.left = (Ratio*589*2)+"px";
+fairyTaleCountUnderDiv.style.top= (1820*Ratio*2)+"px";
+fairyTaleCountUnderDiv.style.fontSize = (20*Ratio)+"pt";
 
-  playHumanDiv.style.left = (Ratio*589*2)+"px";
-  playHumanDiv.style.top= (1867*Ratio*2)+"px";
-  playHumanDiv.style.fontSize = (20*Ratio)+"pt";
+playHumanDiv.style.left = (Ratio*589*2)+"px";
+playHumanDiv.style.top= (1867*Ratio*2)+"px";
+playHumanDiv.style.fontSize = (20*Ratio)+"pt";
 
-  recordedFairyTalePlayBtn.width = recordedFairyTalePlayBtn.naturalWidth*Ratio;
-  recordedFairyTalePlayBtn.height = recordedFairyTalePlayBtn.naturalHeight*Ratio;
-  recordedFairyTalePlayBtn.style.left = (Ratio*99*2)+(Ratio*200)+"px";
-  recordedFairyTalePlayBtn.style.top= (1950*Ratio*2)+"px";
+
+recordedFairyTalePlayBtn.width = recordedFairyTalePlayBtn.naturalWidth*Ratio;
+recordedFairyTalePlayBtn.height = recordedFairyTalePlayBtn.naturalHeight*Ratio;
+recordedFairyTalePlayBtn.style.left = (Ratio*99*2)+(Ratio*150)+"px";
+recordedFairyTalePlayBtn.style.top= (1950*Ratio*2)+"px";
+
+fairyTaleStory01.width = fairyTaleStory01.naturalWidth*Ratio;
+fairyTaleStory01.height = fairyTaleStory01.naturalHeight*Ratio;
+fairyTaleStory01.style.left = (Ratio*200*2)+"px";
+fairyTaleStory01.style.top= (1519*Ratio*2)+"px";
+
+fairyTaleStory02.width = fairyTaleStory02.naturalWidth*Ratio;
+fairyTaleStory02.height = fairyTaleStory02.naturalHeight*Ratio;
+fairyTaleStory02.style.left = (Ratio*200*2)+"px";
+fairyTaleStory02.style.top= (1519*Ratio*2)+"px";
+
+fairyTaleStory03.width = fairyTaleStory03.naturalWidth*Ratio;
+fairyTaleStory03.height = fairyTaleStory03.naturalHeight*Ratio;
+fairyTaleStory03.style.left = (Ratio*200*2)+"px";
+fairyTaleStory03.style.top= (1519*Ratio*2)+"px";
+
+fairyTaleStory04.width = fairyTaleStory04.naturalWidth*Ratio;
+fairyTaleStory04.height = fairyTaleStory04.naturalHeight*Ratio;
+fairyTaleStory04.style.left = (Ratio*200*2)+"px";
+fairyTaleStory04.style.top= (1519*Ratio*2)+"px";
+
+fairyTaleStory05.width = fairyTaleStory05.naturalWidth*Ratio;
+fairyTaleStory05.height = fairyTaleStory05.naturalHeight*Ratio;
+fairyTaleStory05.style.left = (Ratio*200*2)+"px";
+fairyTaleStory05.style.top= (1519*Ratio*2)+"px";
+
+
+fairyTaleStory06.width = fairyTaleStory06.naturalWidth*Ratio;
+fairyTaleStory06.height = fairyTaleStory06.naturalHeight*Ratio;
+fairyTaleStory06.style.left = (Ratio*200*2)+"px";
+fairyTaleStory06.style.top= (1519*Ratio*2)+"px";
+
 
 }
 
