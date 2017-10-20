@@ -24,3 +24,10 @@ body{
   position: absolute;
   overflow-y: scroll;
 }
+#searchText {
+  font-family: nbg;
+  font-size: 25px;
+  border:0px;
+  background-color: inherit;
+  color: #717171;
+}
