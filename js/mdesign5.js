@@ -7,7 +7,7 @@ function fullscreen() {
 }
 var mbg05Img,mMenuBtn,mMypageBtn;
 var mBuyBtn,mcFairyTale01Btn,mcFairyTale02Btn,mcFairyTale03Btn,mtFairyTale01Btn,mtFairyTale02Btn,mtFairyTale03Btn,mcDiv,mtDiv,mcEmpty,mtEmpty;
-var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
+var mLogo,mContactUsBtn,mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg05Img = document.getElementById("mbg05");
   mMenuBtn = document.getElementById("mMenuBtn");
@@ -34,6 +34,8 @@ function onload(){
   mMenuBarMypageBtn = document.getElementById("mMenuBarMypageBtn");
   mMenuBarSettingBtn = document.getElementById("mMenuBarSettingBtn");
   mMenuCloseBtn = document.getElementById("mMenuCloseBtn");
+  mLogo = document.getElementById("mLogo");
+  mContactUsBtn = document.getElementById("mContactUsBtn");
 
   resize();
   resizeMenu();
@@ -149,6 +151,16 @@ function resizeMenu() {
   mMenuCloseBtn.Height = mMenuCloseBtn.naturalHeight*Ratio;
   mMenuCloseBtn.style.top = (Ratio*24*2)+"px";
   mMenuCloseBtn.style.left = (Ratio*335*2)+"px";
+
+  mLogo.width = mLogo.naturalWidth*Ratio;
+  mLogo.Height = mLogo.naturalHeight*Ratio;
+  mLogo.style.top = (Ratio*24*2)+"px";
+  mLogo.style.left = (Ratio*21*2)+"px";
+
+  mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
+  mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
+  mContactUsBtn.style.top = (Ratio*633*2)+"px";
+  mContactUsBtn.style.left = (Ratio*21*2)+"px";
 }
 
 function mMenuBtnClick() {
