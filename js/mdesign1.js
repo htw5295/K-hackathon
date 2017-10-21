@@ -12,6 +12,7 @@ function onload(){
   mLetsStartBtn = document.getElementById("mLetsStartBtn");
 
   resize();
+  document.documentElement.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

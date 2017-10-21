@@ -9,6 +9,7 @@ function onload(){
   mPayNowBtn = document.getElementById("mPayNowBtn");
 
   resize();
+  document.documentElement.webkitRequestFullscreen();
 }
 
 function onChangeSize(){
