@@ -98,19 +98,23 @@ function resize() {
 
   mFairyTale01Btn.width=mFairyTale01Btn.naturalWidth*Ratio;
   mFairyTale01Btn.height=mFairyTale01Btn.naturalHeight*Ratio;
+  mFairyTale01Btn.style.top=(Ratio*24*2)+"px";
   mFairyTale01Btn.style.left=(Ratio*15*2)+"px";
 
   mFairyTale02Btn.width=mFairyTale02Btn.naturalWidth*Ratio;
   mFairyTale02Btn.height=mFairyTale02Btn.naturalHeight*Ratio;
-  mFairyTale02Btn.style.left=(Ratio*(15+(100))*2)+"px";
+  mFairyTale02Btn.style.top=(Ratio*24*2)+"px";
+  mFairyTale02Btn.style.left=(Ratio*(15+(93))*2)+"px";
 
   mFairyTale03Btn.width=mFairyTale03Btn.naturalWidth*Ratio;
   mFairyTale03Btn.height=mFairyTale03Btn.naturalHeight*Ratio;
-  mFairyTale03Btn.style.left=(Ratio*(15+(100*2))*2)+"px";
+  mFairyTale03Btn.style.top=(Ratio*24*2)+"px";
+  mFairyTale03Btn.style.left=(Ratio*(15+(93*2))*2)+"px";
 
   mFairyTale04Btn.width=mFairyTale04Btn.naturalWidth*Ratio;
   mFairyTale04Btn.height=mFairyTale04Btn.naturalHeight*Ratio;
-  mFairyTale04Btn.style.left=(Ratio*(15+(100*3))*2)+"px";
+  mFairyTale04Btn.style.top=(Ratio*24*2)+"px";
+  mFairyTale04Btn.style.left=(Ratio*(15+(93*3))*2)+"px";
 
   mFairyTaleBig01Btn.width=mFairyTaleBig01Btn.naturalWidth*Ratio;
   mFairyTaleBig01Btn.height=mFairyTaleBig01Btn.naturalHeight*Ratio;
@@ -118,15 +122,15 @@ function resize() {
 
   mFairyTaleBig02Btn.width=mFairyTaleBig02Btn.naturalWidth*Ratio;
   mFairyTaleBig02Btn.height=mFairyTaleBig02Btn.naturalHeight*Ratio;
-  mFairyTaleBig02Btn.style.left=(Ratio*(15+(87))*2)+"px";
+  mFairyTaleBig02Btn.style.left=(Ratio*(15+(80))*2)+"px";
 
   mFairyTaleBig03Btn.width=mFairyTaleBig03Btn.naturalWidth*Ratio;
   mFairyTaleBig03Btn.height=mFairyTaleBig03Btn.naturalHeight*Ratio;
-  mFairyTaleBig03Btn.style.left=(Ratio*(15+(96*2))*2)+"px";
+  mFairyTaleBig03Btn.style.left=(Ratio*(15+(90*2))*2)+"px";
 
   mFairyTaleBig04Btn.width=mFairyTaleBig04Btn.naturalWidth*Ratio;
   mFairyTaleBig04Btn.height=mFairyTaleBig04Btn.naturalHeight*Ratio;
-  mFairyTaleBig04Btn.style.left=(Ratio*(15+(97*3))*2)+"px";
+  mFairyTaleBig04Btn.style.left=(Ratio*(15+(90*3))*2)+"px";
 
   mReadyStory01.width=mReadyStory01.naturalWidth*Ratio;
   mReadyStory01.height=mReadyStory01.naturalHeight*Ratio;
