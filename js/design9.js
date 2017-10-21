@@ -139,7 +139,7 @@ function onload(){
   reRecordingBTN.width = reRecordingBTN.naturalWidth*Ratio;
   reRecordingBTN.height = reRecordingBTN.naturalHeight*Ratio;
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
-  reRecordingBTN.style.left = (Ratio*1293*2)+"px";
+  reRecordingBTN.style.left = (Ratio*1327*2)+"px";
 
   smallBox1.width = smallBox.naturalWidth*Ratio;
   smallBox1.height = smallBox.naturalHeight*Ratio;
@@ -196,12 +196,12 @@ function onload(){
 
   titleChange.style.width = 700*Ratio+"px";
   titleChange.style.top = (Ratio*420*2)+"px";
-  titleChange.style.left = (Ratio*405*2)+"px";
+  titleChange.style.left = (Ratio*455*2)+"px";
 
   image01.width = image01.naturalWidth*Ratio;
   image01.height = image01.naturalHeight*Ratio;
   image01.style.top = (Ratio*122*2)+"px";
-  image01.style.left = (Ratio*448*2)+"px";
+  image01.style.left = (Ratio*420*2)+"px";
 
   popupCloseBtn.width = popupCloseBtn.naturalWidth*Ratio;
   popupCloseBtn.height = popupCloseBtn.naturalHeight*Ratio;
@@ -219,7 +219,7 @@ function onload(){
   popupSaveBtn.style.left = (Ratio*520*2)+"px";
 
   titleText.style.fontSize=(60*Ratio)+"px";
-  titleChange.style.fontSize=(70*Ratio)+"px";
+  titleChange.style.fontSize=(50*Ratio)+"px";
 
   scriptArea.style.width = 2150*Ratio+"px";
   scriptArea.style.height = 700*Ratio+"px";
@@ -321,7 +321,7 @@ function onChangeSize(){
   reRecordingBTN.width = reRecordingBTN.naturalWidth*Ratio;
   reRecordingBTN.height = reRecordingBTN.naturalHeight*Ratio;
   reRecordingBTN.style.top = (Ratio*1179*2)+"px";
-  reRecordingBTN.style.left = (Ratio*1293*2)+"px";
+  reRecordingBTN.style.left = (Ratio*1240*2)+"px";
 
   smallBox1.width = smallBox.naturalWidth*Ratio;
   smallBox1.height = smallBox.naturalHeight*Ratio;

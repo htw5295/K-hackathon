@@ -101,7 +101,7 @@
 			class="positionAbsolute">
 
 		<img src="./img/11/recordedFairyTalePic03.png" alt="" id="recordedFairyTalePic03"
-			class="positionAbsolute">
+			class="positionAbsolute" onclick="recordedFairyTalePic03()">
 
 
 			<img src="./img/11/recordedSelected01.png" alt="" id="recordedSelected01" class="positionAbsolute">

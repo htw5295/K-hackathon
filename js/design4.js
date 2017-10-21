@@ -22,8 +22,7 @@ function onload(){
   unSelectedShopBtn = document.getElementById("unSelectedShopBtn");
 
   editBtn = document.getElementById("editBtn");
-  selectedMenu1Btn = document.getElementById("selectedMenu1Btn");
-  unSelectedMenu1Btn = document.getElementById("unSelectedMenu1Btn");
+
   selectedMenu2Btn=document.getElementById("selectedMenu2Btn");
   unSelectedMenu2Btn=document.getElementById("unSelectedMenu2Btn");
   post1Btn = document.getElementById("post1Btn");
@@ -95,25 +94,7 @@ function onload(){
   editBtn.style.top = (Ratio*665*2)+"px";
   editBtn.style.left = (Ratio*1774*2)-(200*Ratio)+"px";
 
-  selectedMenu1Btn.width = selectedMenu1Btn.naturalWidth*Ratio;
-  selectedMenu1Btn.height = selectedMenu1Btn.naturalHeight*Ratio;
-  selectedMenu1Btn.style.top = (Ratio*1322*2)+"px";
-  selectedMenu1Btn.style.left = (Ratio*1695*2)-(200*Ratio)+"px";
 
-  unSelectedMenu1Btn.width = unSelectedMenu1Btn.naturalWidth*Ratio;
-  unSelectedMenu1Btn.height = unSelectedMenu1Btn.naturalHeight*Ratio;
-  unSelectedMenu1Btn.style.top = (Ratio*1322*2)+"px";
-  unSelectedMenu1Btn.style.left = (Ratio*1695*2)-(200*Ratio)+"px";
-
-  selectedMenu2Btn.width = selectedMenu2Btn.naturalWidth*Ratio;
-  selectedMenu2Btn.height = selectedMenu2Btn.naturalHeight*Ratio;
-  selectedMenu2Btn.style.top = (Ratio*1322*2)+"px";
-  selectedMenu2Btn.style.left = (Ratio*1787*2)-(200*Ratio)+"px";
-
-  unSelectedMenu2Btn.width = unSelectedMenu2Btn.naturalWidth*Ratio;
-  unSelectedMenu2Btn.height = unSelectedMenu2Btn.naturalHeight*Ratio;
-  unSelectedMenu2Btn.style.top = (Ratio*1322*2)+"px";
-  unSelectedMenu2Btn.style.left = (Ratio*1787*2)-(200*Ratio)+"px";
 
   post1Btn.width = post1Btn.naturalWidth*Ratio;
   post1Btn.height = post1Btn.naturalHeight*Ratio;
@@ -135,9 +116,10 @@ function onload(){
   post5Btn.height = post5Btn.naturalHeight*Ratio;
   post5Btn.style.left = (Ratio*95*2)+post1Btn.width+post2Btn.width+post3Btn.width+post4Btn.width+(Ratio*78*2*4)+"px";
 
-  postDiv.style.width = bg04Width-(400*Ratio)+"px";
+  postDiv.style.width = bg04Width-(200*Ratio)+"px";
   postDiv.style.height= (post1Btn.naturalHeight+100)*Ratio+"px";
-  postDiv.style.top=(Ratio*1468*2)+(200*Ratio)+"px";
+  postDiv.style.top=(Ratio*1468*2)+"px";
+  postDiv.style.left=(200*Ratio)+"px";
   }
 
 
@@ -205,25 +187,9 @@ function onChangeSize(){
   editBtn.style.top = (Ratio*665*2)+"px";
   editBtn.style.left = (Ratio*1774*2)-(200*Ratio)+"px";
 
-  selectedMenu1Btn.width = selectedMenu1Btn.naturalWidth*Ratio;
-  selectedMenu1Btn.height = selectedMenu1Btn.naturalHeight*Ratio;
-  selectedMenu1Btn.style.top = (Ratio*1322*2)+"px";
-  selectedMenu1Btn.style.left = (Ratio*1695*2)-(200*Ratio)+"px";
 
-  unSelectedMenu1Btn.width = unSelectedMenu1Btn.naturalWidth*Ratio;
-  unSelectedMenu1Btn.height = unSelectedMenu1Btn.naturalHeight*Ratio;
-  unSelectedMenu1Btn.style.top = (Ratio*1322*2)+"px";
-  unSelectedMenu1Btn.style.left = (Ratio*1695*2)-(200*Ratio)+"px";
 
-  selectedMenu2Btn.width = selectedMenu2Btn.naturalWidth*Ratio;
-  selectedMenu2Btn.height = selectedMenu2Btn.naturalHeight*Ratio;
-  selectedMenu2Btn.style.top = (Ratio*1322*2)+"px";
-  selectedMenu2Btn.style.left = (Ratio*1787*2)-(200*Ratio)+"px";
-
-  unSelectedMenu2Btn.width = unSelectedMenu2Btn.naturalWidth*Ratio;
-  unSelectedMenu2Btn.height = unSelectedMenu2Btn.naturalHeight*Ratio;
-  unSelectedMenu2Btn.style.top = (Ratio*1322*2)+"px";
-  unSelectedMenu2Btn.style.left = (Ratio*1787*2)-(200*Ratio)+"px";
+  
 
   post1Btn.width = post1Btn.naturalWidth*Ratio;
   post1Btn.height = post1Btn.naturalHeight*Ratio;
@@ -245,9 +211,10 @@ function onChangeSize(){
   post5Btn.height = post5Btn.naturalHeight*Ratio;
   post5Btn.style.left = (Ratio*95*2)+post1Btn.width+post2Btn.width+post3Btn.width+post4Btn.width+(Ratio*78*2*4)+"px";
 
-  postDiv.style.width = bg04Width-(400*Ratio)+"px";
+  postDiv.style.width = bg04Width-(200*Ratio)+"px";
   postDiv.style.height= (post1Btn.naturalHeight+100)*Ratio+"px";
-  postDiv.style.top=(Ratio*1468*2)+(200*Ratio)+"px";
+  postDiv.style.top=(Ratio*1468*2)+"px";
+  postDiv.style.left=(200*Ratio)+"px";
 }
 function unSelectedDodamBTNClick() {
   location.href="main.html"

@@ -986,3 +986,6 @@ function recordedFairyTalePlayBtnClick() {
   		window.open(popUrl,"",popOption);
 
 }
+function recordedFairyTalePic03Click(){
+      location.href="make.jsp";
+}

@@ -45,3 +45,6 @@ body{
   top:0px;
   left:0px;
 }
+#scriptArea{
+    line-height:175%;
+}
