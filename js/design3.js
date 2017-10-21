@@ -166,3 +166,6 @@ function unSelectedMypageBtnClick(){
 function loginBtnClick(){
   location.href="login.html";
 }
+function moreDetailBtnClick() {
+location.href="market.html";
+}
