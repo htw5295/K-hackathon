@@ -25,6 +25,7 @@ function onload(){
   mPwdBox = document.getElementById("mPwdBox");
 
   resize();
+  document.documentElement.webkitRequestFullscreen();
 }
 
 function onChangeSize(){
