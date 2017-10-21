@@ -172,3 +172,6 @@ function mMenuCloseBtnClick() {
 function mWriteBtnClick() {
   location.href="mdiaryWrite.html";
 }
+function mMoreDetailBtnClick() {
+  location.href="mmoreDetail.html"
+}
