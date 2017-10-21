@@ -3,6 +3,10 @@ var mbg02Height;
 var mbg02Img;
 var mBackBtn;
 var Ratio;
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg02Img.setAttribute("onClick", "");
+}
 var signCheck = 0;
 var mSelectedSignInBtn,mUnSelectedSignInBtn,mSelectedSignUpBtn,mUnSelectedSignUpBtn;
 var mGoogleBtn,mTwitterBtn,mFacebookBtn;
@@ -25,7 +29,6 @@ function onload(){
   mPwdBox = document.getElementById("mPwdBox");
 
   resize();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

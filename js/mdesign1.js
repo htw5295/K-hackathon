@@ -4,7 +4,10 @@ var mbg01Img;
 var mAboutUsBtn;
 var Ratio;
 var mLetsStartBtn;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg01Img.setAttribute("onClick", "");
+}
 function onload(){
   mbg01Img = document.getElementById("mbg01");
   mAboutUsBtn = document.getElementById("mAboutUsBtn");
@@ -12,7 +15,6 @@ function onload(){
   mLetsStartBtn = document.getElementById("mLetsStartBtn");
 
   resize();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

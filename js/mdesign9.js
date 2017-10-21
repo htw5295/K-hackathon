@@ -1,7 +1,10 @@
 var mbg09Width;
 var mbg09Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg09Img.setAttribute("onClick", "");
+}
 var mbg09Img,mMenuBtn,mMypageBtn;
 var mBox,mFinishedRecordingBtn,mRecordingStartBtn,mRecordingStopBtn,mReRecordingBtn;
 var scriptCount,number,recordState,recordStateText,recordStateTime,scriptArea;
@@ -48,7 +51,6 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){
