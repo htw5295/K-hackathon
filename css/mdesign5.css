@@ -13,7 +13,6 @@ body{
 
 .positionAbsolute{
   position: absolute;
-  cursor: pointer;
 }
 
 #mcDiv, #mtDiv {

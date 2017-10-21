@@ -17,7 +17,6 @@ body{
 
 .positionAbsolute{
   position: absolute;
-  cursor: pointer;
 }
 
 #number {
