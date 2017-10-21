@@ -238,7 +238,7 @@ function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
 function mRecordingBtnClick() {
-  locaition.href="mrecordFariyTale.html";
+  location.href="mrecordFariyTale.html";
 }
 function mFairyTale01BtnClick() {
   mFairyTale01Btn.style.display="none";

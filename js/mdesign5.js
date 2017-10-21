@@ -3,7 +3,7 @@ var mbg05Height;
 var Ratio;
 
 var mbg05Img,mMenuBtn,mMypageBtn;
-var mBuyBtn,mcFairyTale01Btn,mcFairyTale02Btn,mcFairyTale03Btn,mtFairyTale01Btn,mtFairyTale02Btn,mtFairyTale03Btn,mcDiv,mtDiv;
+var mBuyBtn,mcFairyTale01Btn,mcFairyTale02Btn,mcFairyTale03Btn,mtFairyTale01Btn,mtFairyTale02Btn,mtFairyTale03Btn,mcDiv,mtDiv,mcEmpty,mtEmpty;
 var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg05Img = document.getElementById("mbg05");
@@ -19,6 +19,8 @@ function onload(){
   mtFairyTale03Btn = document.getElementById("mtFairyTale03Btn");
   mcDiv = document.getElementById("mcDiv");
   mtDiv = document.getElementById("mtDiv");
+  mcEmpty = document.getElementById("mcEmpty");
+  mtEmpty = document.getElementById("mtEmpty");
 
   mMenuSlide = document.getElementById("mMenuSlide");
   mMenuBar = document.getElementById("mMenuBar");
@@ -93,6 +95,14 @@ function resize() {
   mtDiv.style.width = mbg05Width+"px";
   mtDiv.style.height = mtFairyTale01Btn.naturalHeight*Ratio+"px";
   mtDiv.style.top = (Ratio*805*2)+"px";
+
+  mcEmpty.style.width = 1+"px";
+  mcEmpty.style.height = mcFairyTale01Btn.naturalHeight*Ratio+"px";
+  mcEmpty.style.left = (Ratio*(10+(145*3))*2)+"px";
+
+  mtEmpty.style.width = 1+"px";
+  mtEmpty.style.height = mtFairyTale01Btn.naturalHeight*Ratio+"px";
+  mtEmpty.style.left = (Ratio*(10+(145*3))*2)+"px";
 }
 
 function resizeMenu() {
@@ -160,5 +170,5 @@ function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
 function mBuyBtnClick() {
-  location.href = "mPay.html";
+  location.href = "mpay.html";
 }
