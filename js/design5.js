@@ -266,3 +266,6 @@ function unSelectedShopBTNClick() {
 function unSelectedMypageBtnClick(){
   location.href="playPage.jsp";
 }
+function loginBtnClick(){
+  location.href="login.html";
+}
