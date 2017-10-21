@@ -118,13 +118,13 @@ function resizeMenu() {
 
   mLogo.width = mLogo.naturalWidth*Ratio;
   mLogo.Height = mLogo.naturalHeight*Ratio;
-  mLogo.style.top = (Ratio*200*2)+"px";
-  mLogo.style.left = (Ratio*21*2)+"px";
+  mLogo.style.top = (Ratio*24*2)+"px";
+  mLogo.style.left = (Ratio*335*2)+"px";
 
   mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
   mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
-  mContactUsBtn.style.top = (Ratio*400*2)+"px";
-  mContactUsBtn.style.left = (Ratio*21*2)+"px";
+  mContactUsBtn.style.top = (Ratio*24*2)+"px";
+  mContactUsBtn.style.left = (Ratio*335*2)+"px";
 }
 
 function mMenuBtnClick() {
