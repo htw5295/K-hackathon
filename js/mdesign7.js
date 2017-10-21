@@ -103,7 +103,7 @@ function mMenuBarDiaryBtnClick() {
   location.href="mdiary.html";
 }
 function mMenuBarFairyTaleBtnClick() {
-  location.href="mrecordFairyTale.html";
+  location.href="mfairyTaleList.html";
 }
 function mMenuBarMarketBtnClick() {
   location.href="mmarket.html";

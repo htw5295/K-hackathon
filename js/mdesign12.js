@@ -229,13 +229,16 @@ function mMenuBarDiaryBtnClick() {
   location.href="mdiary.html";
 }
 function mMenuBarFairyTaleBtnClick() {
-  location.href="mrecordFairyTale.html";
+  location.href="mfairyTaleList.html";
 }
 function mMenuBarMarketBtnClick() {
   location.href="mmarket.html";
 }
 function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
+}
+function mRecordingBtnClick() {
+  locaition.href="mrecordFariyTale.html";
 }
 function mFairyTale01BtnClick() {
   mFairyTale01Btn.style.display="none";
