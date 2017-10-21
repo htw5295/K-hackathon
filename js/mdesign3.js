@@ -133,3 +133,6 @@ function mMenuBarMarketBtnClick() {
 function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
+function mMoreDetailBtnClick() {
+  location.href="mmoreDetail.html"
+}
