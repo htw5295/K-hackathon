@@ -37,7 +37,7 @@
 	<img src="./img/07/googleBTN.png" alt="" id="googleBtn"
 		class="positionAbsolute">
 	<img src="./img/07/loginBTN.png" alt="" id="loginBtn"
-		class="positionAbsolute">
+		class="positionAbsolute" onclick="loginBtnClick()">
 	<img src="./img/07/selectedFairytaleBTN.png" alt=""
 		id="selectedFairytaleBtn" class="positionAbsolute">
 	<img src="./img/07/twitterBTN.png" alt="" id="twitterBtn"

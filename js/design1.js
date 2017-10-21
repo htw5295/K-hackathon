@@ -58,5 +58,9 @@ function onChangeSize(){
   letsStartBtn.style.left = (bg01Img.width/2)-(letsStartBtn.width/2)+"px";
 }
 function letsStartBtnClick(){
+  location.href="main.html";
+}
+
+function loginBtnClick(){
   location.href="login.html";
 }

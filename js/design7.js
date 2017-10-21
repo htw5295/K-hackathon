@@ -1178,3 +1178,6 @@ function recordingBtn5Click(){
 function recordingBtn6Click(){
 
 }
+function loginBtnClick(){
+  location.href="login.html";
+}

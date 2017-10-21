@@ -454,3 +454,7 @@ function recordingStopBTNClick(){
   popup.style.display = "block";
 
 }
+
+function loginBtnClick(){
+  location.href="login.html";
+}

@@ -32,7 +32,7 @@
 		<img src="./img/11/menuBTN.png" alt="" id="menuBtn" class="positionAbsolute">
 		<img src="./img/11/facebookBTN.png" alt="" id="facebookBtn"	class="positionAbsolute">
 		<img src="./img/11/googleBTN.png" alt="" id="googleBtn"	class="positionAbsolute">
-		<img src="./img/11/loginBTN.png" alt="" id="loginBtn"	class="positionAbsolute">
+		<img src="./img/11/loginBTN.png" alt="" id="loginBtn"	class="positionAbsolute" onclick="loginBtnClick()">
 		<img src="./img/11/unSelectedFairytaleBTN.png" alt=""	id="unSelectedFairytaleBtn" class="positionAbsolute">
 		<img src="./img/11/twitterBTN.png" alt="" id="twitterBtn"	class="positionAbsolute">
 		<img src="./img/11/unSelectedDiaryBTN.png" alt=""	id="unSelectedDiaryBtn" class="positionAbsolute" onclick="unSelectedDiaryBTNClick()">
