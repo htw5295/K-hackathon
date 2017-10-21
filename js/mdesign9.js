@@ -48,7 +48,7 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.documentElement.webkitRequestFullscreen();
+  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

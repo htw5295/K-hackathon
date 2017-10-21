@@ -12,7 +12,7 @@ function onload(){
   mLetsStartBtn = document.getElementById("mLetsStartBtn");
 
   resize();
-  document.documentElement.webkitRequestFullscreen();
+  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){
