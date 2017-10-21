@@ -1,7 +1,10 @@
 var mbg06Width;
 var mbg06Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg06Img.setAttribute("onClick", "");
+}
 var mbg06Img,mMenuBtn,mMypageBtn;
 var mWriteBtn,mPost01Btn,mPost02Btn,mPost03Btn,mPost04Btn,mPost05Btn,mPost06Btn,div1,div2,div1Empty,div2Empty;
 var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
@@ -34,7 +37,6 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

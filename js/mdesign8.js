@@ -1,7 +1,10 @@
 var mbg08Width;
 var mbg08Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg08Img.setAttribute("onClick", "");
+}
 var mbg08Img,mMenuBtn,mMypageBtn;
 var writeText,mUpdateBtn;
 var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
@@ -25,7 +28,6 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

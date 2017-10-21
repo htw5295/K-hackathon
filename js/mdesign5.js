@@ -1,7 +1,10 @@
 var mbg05Width;
 var mbg05Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg05Img.setAttribute("onClick", "");
+}
 var mbg05Img,mMenuBtn,mMypageBtn;
 var mBuyBtn,mcFairyTale01Btn,mcFairyTale02Btn,mcFairyTale03Btn,mtFairyTale01Btn,mtFairyTale02Btn,mtFairyTale03Btn,mcDiv,mtDiv,mcEmpty,mtEmpty;
 var mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
@@ -34,7 +37,6 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

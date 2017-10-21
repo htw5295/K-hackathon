@@ -1,7 +1,10 @@
 var mbg11Width;
 var mbg11Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg11Img.setAttribute("onClick", "");
+}
 var mbg11Img,mMenuBtn,mFairyTalePlayBtn,mSearchBarBtn,search,searchText;
 var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
@@ -51,7 +54,6 @@ function onload(){
 
   resize();
   resizeMenu();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){

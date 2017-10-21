@@ -1,7 +1,10 @@
 var mbg13Width;
 var mbg13Height;
 var Ratio;
-
+function fullscreen() {
+    document.documentElement.webkitRequestFullscreen();
+    mbg13Img.setAttribute("onClick", "");
+}
 var mbg13Img,mBackBtn,mPayNowBtn;
 function onload(){
   mbg13Img = document.getElementById("mbg13");
@@ -9,7 +12,6 @@ function onload(){
   mPayNowBtn = document.getElementById("mPayNowBtn");
 
   resize();
-  document.body.webkitRequestFullscreen();
 }
 
 function onChangeSize(){
