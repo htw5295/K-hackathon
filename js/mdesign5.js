@@ -160,5 +160,5 @@ function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
 function mBuyBtnClick() {
-  location.href = "mPay.html";
+  location.href = "mpay.html";
 }
