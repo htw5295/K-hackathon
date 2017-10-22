@@ -55,6 +55,7 @@ function resize() {
   mMypageBtn.style.top=(Ratio*15*2)+"px";
   mMypageBtn.style.right=(Ratio*15*2)+"px";
 
+  writeText.style.width=(Ratio*299*2)+"px";
   writeText.style.top=(Ratio*585*2)+"px";
   writeText.style.left=(Ratio*38*2)+"px";
 
@@ -113,7 +114,7 @@ function resizeMenu() {
 
   mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
   mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
-  mContactUsBtn.style.bottom = (Ratio*24*2)+"px";
+  mContactUsBtn.style.top = (Ratio*550*2)+"px";
   mContactUsBtn.style.left = (Ratio*21*2)+"px";
 }
 

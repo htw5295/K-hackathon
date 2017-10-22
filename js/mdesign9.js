@@ -116,6 +116,11 @@ function resize() {
 
   recordStateTime.style.top=(Ratio*17*2)+"px";
 
+  scriptArea.style.width=(Ratio*345*2)+"px";
+  scriptArea.style.height=(Ratio*260*2)+"px";
+  scriptArea.style.top=(Ratio*531*2)+"px";
+  scriptArea.style.left=(Ratio*15*2)+"px";
+
   //popup
   mbg10.width=mbg10.naturalWidth*Ratio;
   mbg10.height=mbg10.naturalHeight*Ratio;
@@ -205,7 +210,7 @@ function resizeMenu() {
 
   mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
   mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
-  mContactUsBtn.style.bottom = (Ratio*24*2)+"px";
+  mContactUsBtn.style.top = (Ratio*550*2)+"px";
   mContactUsBtn.style.left = (Ratio*21*2)+"px";
 }
 

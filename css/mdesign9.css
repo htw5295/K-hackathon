@@ -21,11 +21,15 @@ body{
 
 #number {
   font-family: nbg;
-  font-size: 22px;
+  font-size: 20px;
   color: #B7B7B7;
 }
 #recordStateText, #recordStateTime {
   font-family: nbg;
-  font-size: 22px;
+  font-size: 20px;
   color: #AAAAAA;
+}
+
+#scriptArea {
+  overflow-x: scroll;
 }

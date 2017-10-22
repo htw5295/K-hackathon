@@ -5,12 +5,13 @@ function fullscreen() {
     document.documentElement.webkitRequestFullscreen();
     mbg07Img.setAttribute("onClick", "");
 }
-var mbg07Img,mMenuBtn,mMypageBtn;
+var mbg07Img,mMenuBtn,mMypageBtn,mPostBig;
 var mLogo,mContactUsBtn,mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg07Img = document.getElementById("mbg07");
   mMenuBtn = document.getElementById("mMenuBtn");
   mMypageBtn = document.getElementById("mMypageBtn");
+  mPostBig = document.getElementById("mPostBig");
 
   mMenuSlide = document.getElementById("mMenuSlide");
   mMenuBar = document.getElementById("mMenuBar");
@@ -50,6 +51,11 @@ function resize() {
   mMypageBtn.height=mMypageBtn.naturalHeight*Ratio;
   mMypageBtn.style.top=(Ratio*15*2)+"px";
   mMypageBtn.style.right=(Ratio*15*2)+"px";
+
+  mPostBig.width=mPostBig.naturalWidth*Ratio;
+  mPostBig.height=mPostBig.naturalHeight*Ratio;
+  mPostBig.style.top=(Ratio*130*2)+"px";
+  mPostBig.style.left=(Ratio*30*2)+"px";
 }
 
 function resizeMenu() {
@@ -101,7 +107,7 @@ function resizeMenu() {
 
   mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
   mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
-  mContactUsBtn.style.bottom = (Ratio*24*2)+"px";
+  mContactUsBtn.style.top = (Ratio*550*2)+"px";
   mContactUsBtn.style.left = (Ratio*21*2)+"px";
 }
 
