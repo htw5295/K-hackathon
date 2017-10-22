@@ -253,7 +253,7 @@ function mMenuCloseBtnClick() {
   mMenuSlide.style.display="none";
 }
 function mRecordingBtnClick() {
-  location.href="mrecordFariyTale.html";
+  location.href="mrecordFairyTale.html";
 }
 function mFairyTale01BtnClick() {
   mFairyTale01Btn.style.display="none";

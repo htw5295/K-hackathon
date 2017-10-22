@@ -32,4 +32,7 @@ body{
 
 #scriptArea {
   overflow-x: scroll;
+  font-family: nbg;
+  font-size: 22px;
+  color: #717171;
 }
