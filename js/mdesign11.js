@@ -9,7 +9,7 @@ var mbg11Img,mMenuBtn,mFairyTalePlayBtn,mSearchBarBtn,search,searchText;
 var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
 var mStory01,mStory02,mStory03,mStory04;
-var recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
+var select,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
 var mFairyTale,mStory;
 var mLogo,mContactUsBtn,mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
@@ -35,6 +35,7 @@ function onload(){
   mStory03 = document.getElementById("mStory03");
   mStory04 = document.getElementById("mStory04");
 
+  select = document.getElementById("select");
   recordedFairyTalePic01 = document.getElementById("recordedFairyTalePic01");
   recordedFairyTalePic02 = document.getElementById("recordedFairyTalePic02");
   recordedFairyTalePic03 = document.getElementById("recordedFairyTalePic03");
@@ -154,20 +155,21 @@ function resize() {
   mStory04.height=mStory04.naturalHeight*Ratio;
   mStory04.style.left=(Ratio*15*2)+"px";
 
+  select.style.width=document.body.offsetWidth+"px";
+  select.style.height=recordedFairyTalePic01.naturalHeight*Ratio+"px";
+  select.style.top=(Ratio*991*2)+"px";
+
   recordedFairyTalePic01.width=recordedFairyTalePic01.naturalWidth*Ratio;
   recordedFairyTalePic01.height=recordedFairyTalePic01.naturalHeight*Ratio;
-  recordedFairyTalePic01.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic01.style.left=(Ratio*15*2)+"px";
+  recordedFairyTalePic01.style.left=(Ratio*2)+"px";
 
   recordedFairyTalePic02.width=recordedFairyTalePic02.naturalWidth*Ratio;
   recordedFairyTalePic02.height=recordedFairyTalePic02.naturalHeight*Ratio;
-  recordedFairyTalePic02.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic02.style.left=(Ratio*(15+(102))*2)+"px";
+  recordedFairyTalePic02.style.left=(Ratio*102*2)+"px";
 
   recordedFairyTalePic03.width=recordedFairyTalePic03.naturalWidth*Ratio;
   recordedFairyTalePic03.height=recordedFairyTalePic03.naturalHeight*Ratio;
-  recordedFairyTalePic03.style.top=(Ratio*991*2)+"px";
-  recordedFairyTalePic03.style.left=(Ratio*(15+(102*2))*2)+"px";
+  recordedFairyTalePic03.style.left=(Ratio*102*2*2)+"px";
 }
 
 function resizeMenu() {
