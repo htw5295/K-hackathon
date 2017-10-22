@@ -408,7 +408,7 @@ function onload(){
   search.width = search.naturalWidth*Ratio;
   search.height = search.naturalHeight*Ratio;
   search.style.left = ((1310+searchBar.width/2-search.width/4)*Ratio*2)-(200*Ratio)+"px";
-  search.style.top= ((687+searchBar.height/2-search.width/8)*Ratio*2)+"px";
+  search.style.top= ((692+searchBar.height/2-search.width/8)*Ratio*2)+"px";
 
   fairyTale1count.style.width = 300*Ratio+"px";
   fairyTale2count.style.width = 300*Ratio+"px";
@@ -806,7 +806,7 @@ function onChangeSize(){
     search.width = search.naturalWidth*Ratio;
     search.height = search.naturalHeight*Ratio;
     search.style.left = ((1310+searchBar.width/2-search.width/4)*Ratio*2)-(200*Ratio)+"px";
-    search.style.top= ((687+searchBar.height/2-search.width/8)*Ratio*2)+"px";
+    search.style.top= ((692+searchBar.height/2-search.width/8)*Ratio*2)+"px";
 
     fairyTale1count.style.width = 300*Ratio+"px";
     fairyTale2count.style.width = 300*Ratio+"px";

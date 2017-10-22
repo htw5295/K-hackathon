@@ -139,7 +139,7 @@ UnSelectedCircleBtn3.style.left = (Ratio*1626*2)+"px";
 buyDirectlyBtn.width = buyDirectlyBtn.naturalWidth*Ratio;
 buyDirectlyBtn.height = buyDirectlyBtn.naturalHeight*Ratio;
 buyDirectlyBtn.style.top = (Ratio*1009*2)+"px";
-buyDirectlyBtn.style.left = (Ratio*99*2)+(Ratio*200)+"px";
+buyDirectlyBtn.style.left = (Ratio*170)+(Ratio*200)+"px";
 
 bookInfo1.width = bookInfo1.naturalWidth*Ratio;
 bookInfo1.height = bookInfo1.naturalHeight*Ratio;
@@ -458,4 +458,7 @@ function unSelectedMypageBtnClick(){
 }
 function loginBtnClick(){
   location.href="login.html";
+}
+function payClick() {
+  location.href="pay.html";
 }
