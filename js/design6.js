@@ -109,32 +109,32 @@ function onload(){
 selectedCircleBtn1.width = selectedCircleBtn1.naturalWidth*Ratio;
 selectedCircleBtn1.height = selectedCircleBtn1.naturalHeight*Ratio;
 selectedCircleBtn1.style.top = (Ratio*1153*2)+"px";
-selectedCircleBtn1.style.left = (Ratio*1526*2)+"px";
+selectedCircleBtn1.style.left = (Ratio*200)+(Ratio*1526*2)+"px";
 
 UnSelectedCircleBtn1.width = UnSelectedCircleBtn1.naturalWidth*Ratio;
 UnSelectedCircleBtn1.height = UnSelectedCircleBtn1.naturalHeight*Ratio;
 UnSelectedCircleBtn1.style.top = (Ratio*1153*2)+"px";
-UnSelectedCircleBtn1.style.left = (Ratio*1526*2)+"px";
+UnSelectedCircleBtn1.style.left = (Ratio*200)+(Ratio*1526*2)+"px";
 
 selectedCircleBtn2.width = selectedCircleBtn2.naturalWidth*Ratio;
 selectedCircleBtn2.height = selectedCircleBtn2.naturalHeight*Ratio;
 selectedCircleBtn2.style.top = (Ratio*1153*2)+"px";
-selectedCircleBtn2.style.left = (Ratio*(1526+36)*2)+selectedCircleBtn1.width+"px";
+selectedCircleBtn2.style.left = (Ratio*200)+(Ratio*(1526+36)*2)+selectedCircleBtn1.width+"px";
 
 UnSelectedCircleBtn2.width = UnSelectedCircleBtn2.naturalWidth*Ratio;
 UnSelectedCircleBtn2.height = UnSelectedCircleBtn2.naturalHeight*Ratio;
 UnSelectedCircleBtn2.style.top = (Ratio*1153*2)+"px";
-UnSelectedCircleBtn2.style.left = (Ratio*(1526+36)*2)+selectedCircleBtn1.width+"px";
+UnSelectedCircleBtn2.style.left = (Ratio*200)+(Ratio*(1526+36)*2)+selectedCircleBtn1.width+"px";
 
 selectedCircleBtn3.width = selectedCircleBtn3.naturalWidth*Ratio;
 selectedCircleBtn3.height = selectedCircleBtn3.naturalHeight*Ratio;
 selectedCircleBtn3.style.top = (Ratio*1153*2)+"px";
-selectedCircleBtn3.style.left = (Ratio*1626*2)+"px";
+selectedCircleBtn3.style.left = (Ratio*200)+(Ratio*1626*2)+"px";
 
 UnSelectedCircleBtn3.width = UnSelectedCircleBtn3.naturalWidth*Ratio;
 UnSelectedCircleBtn3.height = UnSelectedCircleBtn3.naturalHeight*Ratio;
 UnSelectedCircleBtn3.style.top = (Ratio*1153*2)+"px";
-UnSelectedCircleBtn3.style.left = (Ratio*1626*2)+"px";
+UnSelectedCircleBtn3.style.left = (Ratio*200)+(Ratio*1626*2)+"px";
 
 buyDirectlyBtn.width = buyDirectlyBtn.naturalWidth*Ratio;
 buyDirectlyBtn.height = buyDirectlyBtn.naturalHeight*Ratio;
@@ -144,17 +144,17 @@ buyDirectlyBtn.style.left = (Ratio*170)+(Ratio*200)+"px";
 bookInfo1.width = bookInfo1.naturalWidth*Ratio;
 bookInfo1.height = bookInfo1.naturalHeight*Ratio;
 bookInfo1.style.top = (Ratio*766*2)+"px";
-bookInfo1.style.left = (Ratio*795*2)+"px";
+bookInfo1.style.left = (Ratio*200)+(Ratio*795*2)+"px";
 
 bookInfo2.width = bookInfo2.naturalWidth*Ratio;
 bookInfo2.height = bookInfo2.naturalHeight*Ratio;
 bookInfo2.style.top = (Ratio*(766*2-10))+"px";
-bookInfo2.style.left = (Ratio*795*2)+"px";
+bookInfo2.style.left = (Ratio*200)+(Ratio*795*2)+"px";
 
 bookInfo3.width = bookInfo3.naturalWidth*Ratio;
 bookInfo3.height = bookInfo3.naturalHeight*Ratio;
 bookInfo3.style.top = (Ratio*766*2)+"px";
-bookInfo3.style.left = (Ratio*795*2)+"px";
+bookInfo3.style.left = (Ratio*200)+(Ratio*795*2)+"px";
 
 
 

@@ -91,6 +91,16 @@ function onload(){
 //var post1Pic1,post1Pic2,post1Pic3,sendMessageToBTN,selectedLikeBTN,unSelectedLikeBTN,nextPicLeftBTN,nextPicRightBTN;
 
 
+    inputT1.style.width = 1300*Ratio+"px";
+    inputT1.style.top = (Ratio*725*2)+"px";
+    inputT1.style.left = (Ratio*1000*2)+(200*Ratio)+"px";
+    inputT1.style.fontSize= Ratio*50+"px";
+
+    inputT2.style.width = 1300*Ratio+"px";
+    // inputT2.style.height = 1000*Ratio+"px";
+    inputT2.style.top = (Ratio*835*2)+"px";
+    inputT2.style.left = (Ratio*1000*2)+(200*Ratio)+"px";
+    inputT2.style.fontSize= Ratio*50+"px";
 
   }
 
@@ -137,6 +147,19 @@ function onChangeSize(){
   selectedDiaryBtn.height = selectedDiaryBtn.naturalHeight*Ratio;
   selectedDiaryBtn.style.top = (Ratio*525*2)+"px";
   selectedDiaryBtn.style.left = (Ratio*99*2)+(200*Ratio)+(Ratio*69*2)+unSelectedDodamBtn.width+"px";
+
+  inputT1.style.width = 1300*Ratio+"px";
+  inputT1.height = inputT1.naturalHeight*Ratio;
+  inputT1.style.top = (Ratio*725*2)+"px";
+  inputT1.style.left = (Ratio*1000*2)+(200*Ratio)+"px";
+  inputT1.style.fontSize= Ratio*50+"px";
+
+  inputT2.style.width = 1300*Ratio+"px";
+  // inputT2.style.height = 1000*Ratio+"px";
+  inputT2.style.top = (Ratio*835*2)+"px";
+  inputT2.style.left = (Ratio*1000*2)+(200*Ratio)+"px";
+  inputT2.style.fontSize= Ratio*50+"px";
+
 
   unSelectedFairytaleBtn.width = unSelectedFairytaleBtn.naturalWidth*Ratio;
   unSelectedFairytaleBtn.height = unSelectedFairytaleBtn.naturalHeight*Ratio;
