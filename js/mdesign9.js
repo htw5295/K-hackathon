@@ -205,7 +205,7 @@ function resizeMenu() {
 
   mContactUsBtn.width = mContactUsBtn.naturalWidth*Ratio;
   mContactUsBtn.Height = mContactUsBtn.naturalHeight*Ratio;
-  mContactUsBtn.style.bottom = (Ratio*24*2)+"px";
+  mContactUsBtn.style.top = (Ratio*550*2)+"px";
   mContactUsBtn.style.left = (Ratio*21*2)+"px";
 }
 
