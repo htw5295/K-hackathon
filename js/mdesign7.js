@@ -55,7 +55,7 @@ function resize() {
   mPostBig.width=mPostBig.naturalWidth*Ratio;
   mPostBig.height=mPostBig.naturalHeight*Ratio;
   mPostBig.style.top=(Ratio*130*2)+"px";
-  mPostBig.style.right=(Ratio*30*2)+"px";
+  mPostBig.style.left=(Ratio*30*2)+"px";
 }
 
 function resizeMenu() {
