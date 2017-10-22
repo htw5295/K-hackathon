@@ -31,3 +31,7 @@ body{
   background-color: inherit;
   color: #717171;
 }
+
+#select {
+  overflow-y: scroll;
+}
