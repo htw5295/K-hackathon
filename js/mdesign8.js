@@ -55,6 +55,7 @@ function resize() {
   mMypageBtn.style.top=(Ratio*15*2)+"px";
   mMypageBtn.style.right=(Ratio*15*2)+"px";
 
+  writeText.style.width=(Ratio*299*2)+"px";
   writeText.style.top=(Ratio*585*2)+"px";
   writeText.style.left=(Ratio*38*2)+"px";
 
