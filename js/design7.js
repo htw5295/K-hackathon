@@ -805,8 +805,8 @@ function onChangeSize(){
 
     search.width = search.naturalWidth*Ratio;
     search.height = search.naturalHeight*Ratio;
-    search.style.left = ((1310+searchBar.width/2-search.width/4)*Ratio*2)-(200*Ratio)+"px";
-    search.style.top= ((692+searchBar.height/2-search.width/8)*Ratio*2)+"px";
+    search.style.left = ((1310)*Ratio*2)-(200*Ratio)+(searchBar.naturalWidth*Ratio/2)-(search.naturalWidth*Ratio/2)+"px";
+    search.style.top= ((687)*Ratio*2)+ searchBar.naturalHeight*Ratio/2-search.naturalHeight*Ratio/2+"px";
 
     fairyTale1count.style.width = 300*Ratio+"px";
     fairyTale2count.style.width = 300*Ratio+"px";
