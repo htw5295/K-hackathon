@@ -25,7 +25,7 @@
 	<meta charset="utf-8">
 	<title>Dodam Doam</title>
 	<link rel="stylesheet" href="./css/design11.css">
-	<script type="text/javascript" src="./js/design11.js"></script>
+
 	</head>
 	<body onload="onload()" onresize="onChangeSize()">
 		<img src="./img/11/bg11.png" alt="" id="bg11">
@@ -266,4 +266,5 @@
 	<%
 		%>
 	</body>
+	<script type="text/javascript" src="./js/design11.js"></script>
 	</html>
