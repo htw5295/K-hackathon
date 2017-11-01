@@ -26,7 +26,7 @@
 			String root = "/dodam/";
 			String savePath = root;
 
-			File inFile = new File(savePath + "fairytale", "87763.json");
+			File inFile = new File(savePath + "fairytale", "1.json");
 
 			BufferedReader br = null;
 			try {
