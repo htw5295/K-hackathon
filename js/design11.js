@@ -989,23 +989,28 @@ function recordedFairyTalePlayBtnClick() {
 
   if(index==1){
    popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
+   var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
+     window.open(popUrl,"",popOption);
   }else if(index==2){
     popUrl = "2-1.jsp";
+    var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
+      window.open(popUrl,"",popOption);
   }else if(index==3){
     popUrl = "3-1.jsp";
+    var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
+      window.open(popUrl,"",popOption);
   }else if(index==4){
     alert("저장된 녹음이 없습니다.");
-    return;
+
   }else if(index==5){
     alert("저장된 녹음이 없습니다.");
-    return;
+
   }else if(index==6){
     alert("저장된 녹음이 없습니다.");
-    return;
+
   }
 
-  	var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
-  		window.open(popUrl,"",popOption);
+
 
 }
 function recordedFairyTalePic03Click(){
