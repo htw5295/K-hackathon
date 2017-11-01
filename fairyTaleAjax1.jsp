@@ -73,7 +73,14 @@
 
 	try {
 
-		FileWriter file = new FileWriter(savePath + "/info/1/" + filename + ".json"); //파일정보
+		File file5 = new File(savePath + "/info/1/1.json");
+		File file6 = new File(savePath + "/info/1/2.json"); //음성
+
+		if (!file5.renameTo(file6)) {
+			System.err.println("이름 변경 에러 : ");
+		}
+
+		FileWriter file = new FileWriter(savePath + "/info/1/1.json"); //파일정보
 		file.write(obj2.toJSONString());
 		file.flush();
 		file.close();

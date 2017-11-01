@@ -92,7 +92,7 @@
 			class="positionAbsolute" style="display: none">
 
 		<div id="mainTitleDiv"class="positionAbsolute">
-				<span id="mainTitle">Magic Castle<br>마법의성</span>
+				<span id="mainTitle"><br>토끼와 거북이</span>
 		</div>
 
 		<img src="./img/11/recordedFairyTalePic01.png" alt="" id="recordedFairyTalePic01" class="positionAbsolute">
