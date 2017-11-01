@@ -30,13 +30,14 @@
 			File inFile = new File(savePath + "fairytale", "1.json");
 			String line="TT";
 			BufferedReader br = null;
+
 			try {
 				br = new BufferedReader(new FileReader(inFile));
-				line = br.readLine();
 
-				// while ((line = br.readLine()) != null) {
-				// 	System.out.println(line);
-				// }
+
+				while ((line = br.readLine()) != null) {
+					line = br.readLine();
+				}
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
@@ -50,7 +51,7 @@
 			}
 		%>
 		<script type="text/javascript">
-			var animel = <%=line%>
+			var animel = "<%=line%>";
 			console.log(animel);
 		</script>
 
