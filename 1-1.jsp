@@ -21,6 +21,9 @@
 
 
 <!--<audio controls autoplay loop>-->
+<script type="text/javascript">
+	var animel;
+</script>
 		<%
 			//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 			String root = "/dodam/";
@@ -31,10 +34,11 @@
 			BufferedReader br = null;
 			try {
 				br = new BufferedReader(new FileReader(inFile));
-				String line;
-				while ((line = br.readLine()) != null) {
-					System.out.println(line);
-				}
+				String line = br.readLine();
+
+				// while ((line = br.readLine()) != null) {
+				// 	System.out.println(line);
+				// }
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
@@ -47,7 +51,11 @@
 					}
 			}
 		%>
-
+		<script type="text/javascript">
+			animel = <%=line%>
+			console.log(animel);
+		</script>
+<%=%>
 
 
 </body>
