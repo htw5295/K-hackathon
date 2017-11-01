@@ -21,20 +21,18 @@
 
 
 <!--<audio controls autoplay loop>-->
-<script type="text/javascript">
-	var animel;
-</script>
+
 		<%
 			//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 			String root = "/dodam/";
 			String savePath = root;
 
 			File inFile = new File(savePath + "fairytale", "1.json");
-
+			String line;
 			BufferedReader br = null;
 			try {
 				br = new BufferedReader(new FileReader(inFile));
-				String line = br.readLine();
+				line = br.readLine();
 
 				// while ((line = br.readLine()) != null) {
 				// 	System.out.println(line);
@@ -52,7 +50,7 @@
 			}
 		%>
 		<script type="text/javascript">
-			animel = <%=line%>
+			var animel = <%=line%>
 			console.log(animel);
 		</script>
 <%=%>
