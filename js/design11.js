@@ -647,11 +647,13 @@ fairyTaleStory06.style.top= (1519*Ratio*2)+"px";
 
 
 }
-
+function makeClick() {
+  location.href="make.jsp"
+}
 function unSelectedDodamBTNClick() {
   location.href="main.html"
 }
-function unSelectedDiaryBtnClick(){
+function unSelectedDiaryBTNClick(){
   location.href="diary.html";
 }
 function selectedFairytaleBtnClick(){

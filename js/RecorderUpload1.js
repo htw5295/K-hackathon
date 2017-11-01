@@ -40,7 +40,7 @@
     				recorder.stop;
     				//recorder.stop();
     				recorder.exportWAV(function(s) {
-                            
+
                                  	 var formData = new FormData();
                                      formData.append("file",s);
 
@@ -54,7 +54,7 @@
 
 
 
-                                     var jsonEncode = JSON.stringify(fairytaleContent);
+                                     var jsonEncode = JSON.stringify(noun);
 
                               //       var formData = new FormData();
                      //                formData.append("file",jsonEncode);
