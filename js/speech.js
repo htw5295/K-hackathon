@@ -61,7 +61,7 @@ var langs =
                      ['yue-Hant-HK', '粵語 (香港)']],
  ['日本語',           ['ja-JP']],
  ['Lingua latīna',   ['la']]];
-var noun = ['케로','레드'];
+var noun = ['토끼','사자'];
  var nounTemp= new Array();
  var flag=0;
 
