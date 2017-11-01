@@ -53,7 +53,7 @@
 			var animel = "<%=line%>";
 			var flag=0;
 			for(var i=0;i<animel.length;i++){
-				if(animel[i].indexOf("사자")!=-1){
+				if(animel=="사자"){
 
 					flag=1;
 				}

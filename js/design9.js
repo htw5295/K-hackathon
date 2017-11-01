@@ -441,6 +441,7 @@ function selectedFairytaleBTNClick(){
 function popupCloseBtnClick() {
     popup.style.display = "none";
       modalBg.style.display="none";
+      location.href="playPage.jsp"
 }
 function recordingBTNClick(){
   startRecording();

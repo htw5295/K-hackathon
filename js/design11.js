@@ -1016,3 +1016,6 @@ function recordedFairyTalePlayBtnClick() {
 function recordedFairyTalePic03Click(){
       location.href="make.jsp";
 }
+function makePage(){
+        location.href="make.jsp";
+}
