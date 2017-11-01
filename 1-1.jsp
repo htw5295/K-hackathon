@@ -27,14 +27,12 @@
 			String root = "/dodam/";
 			String savePath = root;
 
-			File inFile = new File(savePath + "fairytale", "1.json");
+			File inFile = new File(savePath + "fairytale/1/", "1.json");
 			String line="TT";
 			BufferedReader br = null;
 
 			try {
 				br = new BufferedReader(new FileReader(inFile));
-
-
 				while ((line = br.readLine()) != null) {
 					line = br.readLine();
 				}
