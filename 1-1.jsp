@@ -53,7 +53,7 @@
 			var animel = <%=line%>
 			console.log(animel);
 		</script>
-<%=%>
+
 
 
 </body>
