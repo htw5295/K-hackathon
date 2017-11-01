@@ -13,6 +13,7 @@ var bigBox,finishedRecordingBTN,recordingBTN,reRecordingBTN,smallBox;
 var bg10Img,popup,popupCloseBtn,title,titleText,image01,popupPicChangeBtn,titleChange,titleChangeText,popupSaveBtn,scriptCount,scriptArea,recordingStopBTN;
 var mainTitleText,mainTitle,mainTitleDiv,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03,fairyTaleCountUnder;
 var fairyTaleCountUnder,recordedFairyTalePlayBtn,playCountDiv,playHumanDiv,fairyTaleStory01,fairyTaleStory02,fairyTaleStory03,fairyTaleStory04,fairyTaleStory05,fairyTaleStory06;
+var index=1;
 function onload(){
   bg11Img = document.getElementById("bg11");
   menuBtn = document.getElementById("menuBtn");
@@ -730,6 +731,7 @@ function onFairyTale1Click(){
   bgFairyTale05Btn.style.display="none";
   bgFairyTale06Btn.style.display="none";
   fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
+  mainTitle.innerHTML="토끼와 거북이";
 }
 
 function onFairyTale2Click(){
@@ -777,6 +779,7 @@ function onFairyTale2Click(){
   fairyTaleStory04.style.display = "none";
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "none";
+    mainTitle.innerHTML="Magic Castle<br>마법의성";
 }
 function onFairyTale3Click(){
 
@@ -828,6 +831,7 @@ function onFairyTale3Click(){
     fairyTaleStory04.style.display = "none";
     fairyTaleStory05.style.display = "none";
     fairyTaleStory06.style.display = "none";
+        mainTitle.innerHTML="두더지의 여행";
 }
 
 function onFairyTale4Click(){
@@ -874,6 +878,7 @@ function onFairyTale4Click(){
     fairyTaleStory05.style.display = "none";
     fairyTaleStory06.style.display = "none";
         fairyTaleCountUnder.innerHTML = fairyTaleCount4Text.innerHTML;
+            mainTitle.innerHTML="바다 여행";
 }
 
 function onFairyTale5Click(){
@@ -920,7 +925,7 @@ function onFairyTale5Click(){
         fairyTaleStory04.style.display = "none";
         fairyTaleStory05.style.display = "block";
         fairyTaleStory06.style.display = "none";
-
+mainTitle.innerHTML="장난감 파티";
 
 }
 function onFairyTale6Click(){
@@ -975,14 +980,27 @@ function onFairyTale6Click(){
   fairyTaleStory04.style.display = "none";
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "block";
-
+mainTitle.innerHTML="바다 여행";
 
 }
 function recordedFairyTalePlayBtnClick() {
-  var popUrl = "magicCastle_1.jsp";	//팝업창에 출력될 페이지 URL
+  var popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
+
+  if(index==1){
+   popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
+  }else if(index==2){
+    popUrl = "2-1.jsp";
+  }else if(index==3){
+    popUrl = "3-1.jsp";
+  }else if(index==4){
+    alert("저장된 녹음이 없습니다.");
+  }else if(index==5){
+    alert("저장된 녹음이 없습니다.");
+  }else if(index==6){
+    alert("저장된 녹음이 없습니다.");
+  }
 
   	var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
-
   		window.open(popUrl,"",popOption);
 
 }
