@@ -702,7 +702,6 @@ function onFairyTale1Click(){
   fairyTaleStory04.style.display = "none";
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "none";
-  recordedFairyTalePic01.src = "./img/11/rFairyTale01BTN.png";
 
 
 
@@ -779,7 +778,6 @@ function onFairyTale2Click(){
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "none";
     mainTitle.innerHTML="Magic Castle<br>마법의성";
-      recordedFairyTalePic01.src = "./img/11/rFairyTale02BTN.png";
 }
 function onFairyTale3Click(){
 
@@ -832,7 +830,6 @@ function onFairyTale3Click(){
     fairyTaleStory05.style.display = "none";
     fairyTaleStory06.style.display = "none";
         mainTitle.innerHTML="<br>두더지의 여행";
-          recordedFairyTalePic01.src = "./img/11/rFairyTale03BTN.png";
 }
 
 function onFairyTale4Click(){
@@ -880,7 +877,6 @@ function onFairyTale4Click(){
     fairyTaleStory06.style.display = "none";
         fairyTaleCountUnder.innerHTML = fairyTaleCount4Text.innerHTML;
             mainTitle.innerHTML="<br>바다 여행";
-              recordedFairyTalePic01.src = "./img/11/rFairyTale04BTN.png";
 }
 
 function onFairyTale5Click(){
@@ -928,7 +924,6 @@ function onFairyTale5Click(){
         fairyTaleStory05.style.display = "block";
         fairyTaleStory06.style.display = "none";
   mainTitle.innerHTML="<br>장난감 파티";
-    recordedFairyTalePic01.src = "./img/11/rFairyTale05BTN.png";
 
 }
 function onFairyTale6Click(){
@@ -984,11 +979,9 @@ function onFairyTale6Click(){
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "block";
 mainTitle.innerHTML="<br>도형의 비밀";
-  recordedFairyTalePic01.src = "./img/11/rFairyTale06BTN.png";
 
 }
-  mainTitle.innerHTML="<br>토끼와 거북이";
-  recordedFairyTalePic01.src = "./img/11/rFairyTale01BTN.png";
+
 function recordedFairyTalePlayBtnClick() {
   var popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
 

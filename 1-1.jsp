@@ -14,9 +14,13 @@
 </head>
 <body>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DSoWS81e1Qw" frameborder="0" allowfullscreen></iframe>
-	<audio>
+	<audio controls="controls">
+    <source src="../wav/1/1.wav" type="audio/wav" />
+</audio>
+
+
+
 <!--<audio controls autoplay loop>-->
-		<source src="../wav/1/1.wav" type="audio/wav"></source>
 		<%
 			//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 			String root = "/dodam/";
@@ -43,7 +47,7 @@
 					}
 			}
 		%>
-	</audio>
+
 
 
 </body>
