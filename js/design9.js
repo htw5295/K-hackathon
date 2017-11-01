@@ -435,6 +435,9 @@ function finishedRecordingBtnClick() {
   popup.style.display = "block";
   recordingStopBTNClick();
 }
+function selectedFairytaleBTNClick(){
+  location.href="make.jsp"
+}
 function popupCloseBtnClick() {
     popup.style.display = "none";
       modalBg.style.display="none";

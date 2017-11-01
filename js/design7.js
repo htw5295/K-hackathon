@@ -1164,10 +1164,10 @@ function recordingBtn1Click(){
 	location.href="recordFairyTale1.html";
 }
 function recordingBtn2Click(){
-	location.href="recordFairyTale.html";
+	location.href="recordFairyTale2.html";
 }
 function recordingBtn3Click(){
-	location.href="recordFairyTale.html";
+	location.href="recordFairyTale3.html";
 }
 function recordingBtn4Click(){
 	alert("준비중 입니다.");
