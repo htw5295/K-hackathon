@@ -28,7 +28,7 @@
 			String savePath = root;
 
 			File inFile = new File(savePath + "fairytale", "1.json");
-			String line;
+			String line="TT";
 			BufferedReader br = null;
 			try {
 				br = new BufferedReader(new FileReader(inFile));
