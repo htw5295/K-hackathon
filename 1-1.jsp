@@ -50,7 +50,7 @@
 			}
 		%>
 		<script type="text/javascript">
-			var animel = <%=line%>;
+			var animel = "<%=line%>";
 			var flag=0;
 			for(var i=0;i<animel.length;i++){
 				if(animel[i].indexOf("사자")!=-1){
@@ -61,7 +61,7 @@
 			if(flag==1){
 				console.log("사자페이지주소로 변경");
 			}else{
-				console.log("토끼페이지");
+				console.log("토끼페이지로 이동");
 			}
 
 
