@@ -33,9 +33,10 @@
 
 			try {
 				br = new BufferedReader(new FileReader(inFile));
-				while ((line = br.readLine()) != null) {
-					line = br.readLine();
-				}
+				line = br.readLine();
+				// while ((line = br.readLine()) != null) {
+				// 	line = br.readLine();
+				// }
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
