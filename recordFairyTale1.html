@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dodam Dodam</title>
+    <link rel="stylesheet" href="./css/design9.css">
+    <script type="text/javascript" src="./js/design9.js"></script>
+
+    <link rel="stylesheet" href="./css/speech.css">
+    <script type="text/javascript" src="./js/RecorderBlob.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body onload="onload()" onresize="onChangeSize()">
+    <img src="./img/09/bg09.png" alt="" id="bg09">
+    <img src="./img/09/menuBTN.png" alt="" id="menuBtn" class="positionAbsolute">
+    <img src="./img/09/facebookBTN.png" alt="" id="facebookBtn" class="positionAbsolute">
+    <img src="./img/09/googleBTN.png" alt="" id="googleBtn" class="positionAbsolute">
+    <img src="./img/09/loginBTN.png" alt="" id="loginBtn" class="positionAbsolute" onclick="loginBtnClick()">
+    <img src="./img/09/unSelectedDiaryBTN.png" alt="" id="unSelectedDiaryBtn" class="positionAbsolute" onClick="unSelectDiaryBTNClick()">
+    <img src="./img/09/twitterBTN.png" alt="" id="twitterBtn" class="positionAbsolute">
+    <img src="./img/09/unSelectedDodamBTN.png" alt="" id="unSelectedDodamBtn" class="positionAbsolute" onclick="unSelectedDodamBTNClick()">
+    <img src="./img/09/selectedFairytaleBTN.png" alt="" id="selectedFairytaleBtn" class="positionAbsolute">
+    <img src="./img/09/unSelectedMypageBTN.png" alt="" id="unSelectedMypageBtn" class="positionAbsolute"onclick="unSelectedMypageBtnClick()">
+    <img src="./img/09/unSelectedShopBTN.png" alt="" id="unSelectedShopBtn" class="positionAbsolute" onclick="unSelectedShopBTNClick()">
+
+    <img src="./img/09/bigBox.png" alt="" id="bigBox" class="positionAbsolute">
+    <img src="./img/09/finishedRecordingBTN.png" alt="" id="finishedRecordingBTN" class="positionAbsolute" onClick="finishedRecordingBtnClick()">
+    <img src="./img/09/recordingStartBTN.png" alt="" id="recordingBTN" class="positionAbsolute" onClick="recordingBTNClick()">
+    <img src="./img/09/recordingStopBTN.png" alt="" id="recordingStopBTN" class="positionAbsolute" onClick="recordingStopBTNClick()" style="display:none">
+    <img src="./img/09/reRecordingBTN.png" alt="" id="reRecordingBTN" class="positionAbsolute">
+
+    <img src="./img/09/smallBox.png" alt="" id="smallBox" class="positionAbsolute" style="display:none">
+    <img src="./img/09/in1.png" alt="" id="smallBox1" class="positionAbsolute">
+    <img src="./img/09/in2.png" alt="" id="smallBox2" class="positionAbsolute">
+    <img src="./img/09/in3.png" alt="" id="smallBox3" class="positionAbsolute">
+    <img src="./img/09/in4.png" alt="" id="smallBox4" class="positionAbsolute">
+    <img src="./img/09/in5.png" alt="" id="smallBox5" class="positionAbsolute">
+    <img src="./img/09/in6.png" alt="" id="smallBox6" class="positionAbsolute">
+    <img src="./img/09/in1b.png" alt="" id="bigBoxImg" class="positionAbsolute">
+
+
+    <div id="scriptCount" class="positionAbsolute">
+      <span id="number">1 / 6</span>
+    </div>
+    <div id="recordState" class="positionAbsolute">
+			<span id="recordStateText">동화 녹음 하기</span>
+      <span id="recordStateTime"></span>
+		</div>
+    <div id="scriptArea" class="positionAbsolute" >
+      <strong>토끼와 거북이</strong><br>
+      오늘은 여느 때 처럼 태양은 뜨고 마을에도 아침이 밝았어요. “ 야! 느림보 아직도 자는거야? ”<br>
+토끼는 오늘도 거북이를 놀리며 하루를 시작하네요. 이 마을에서 알아주는 개구쟁이 토끼는<br>
+늘 주변 친구들을 놀리고 괴롭히느라 바쁘답니다.<br>
+“ 아.. 아니야.. 진작 일어나서 운동도 했는걸? ”<br>
+<br>
+<br>
+<br>
+      “ 토끼야 ”<br>
+거북이를 놀리는 토끼를 나무할아버지가 불렀어요. 토끼는 빠른 걸음으로 할아버지 곁으로 갔어요.<br>
+“ 왜요? ”<br>
+“ 거북이와 달리기 시합을 한번 해보는게 어떻니? ”<br>
+<br>
+<br>
+<br>
+
+      “ 결과가 뻔한 달리기 시합을 왜 해야하죠? ”<br>
+토끼는 매우 의아해했어요.<br>
+당황하는 토끼에게 할아버지의 대답은 어땠을까요?<br>
+“ 너도 달리기시합을 통해 배우게 되는게 있을 것이란다 ”<br>
+<br>
+<br>
+
+      토끼는 나무할아버지의 이야기를 듣고 한달음에 거북이에게 달려갔어요. 그때, 거북이는 공원에서 산책시간을 즐기고있었어요.<br>
+“ 거북아! 나랑 달리기시합을 하는게 어때? ”<br>
+토끼의 제안에 거북이도 역시 당황스러웠어요.<br>
+결과가 뻔한 시합을 제안하는 토끼의 생각이 궁금해진 거북이는 토끼에게 물었어요.<br>
+“ 왜? 어차피 니가 이길경기를 왜 해야하는거야? ”<br>
+<br>
+<br>
+
+      “ 나무할아버지가 너랑 달리기시합을 해보라고 하셨어, 그걸 통해 내가 뭘 배울수있다고 하시던데? ”<br>
+토끼의 제안에 거북이는 당황스러웠지만 제안을 받아 들였어요. 거북이는 생각했어요.<br>
+‘ 이길 수는 없겠지만 최선을 다해서 느리다는게 게으른건 아닌걸 보여주겠어! ’<br>
+<br>
+<br>
+
+      다음날 해가 뜨자마자<br>
+토끼는 들뜬 얼굴로 거북이집의 문을 사정없이 두드렸어요.<br>
+“ 야! 빨리일어나 얼른 널 이기고 쉬고싶단말이야! ”<br>
+하지만 집안에서는 아무런 인기척이 없었어요.<br>
+거북이가 도망간걸까요?<br>
+아니요!<br>
+거북이는 벌써 30분전에 일어나 스트레칭을 하러 공원을 갔거든요!<br>
+<br>
+<br>
+
+
+      “ 생각보다 늦었네, 어서 시합준비를 하자! ”<br>
+거북이의 너스레에 토끼는 얼굴이 울그락 불그락해졌어요. 거북이는 토끼에게 준비운동을 제안했지만,<br>
+토끼는 콧웃음을 치며 거절했어요.<br>
+“ 너 정도는 10분뒤에 출발해도 이길 수 있어 ”<br>
+<br>
+
+<br>
+      달리기 시합이 시작되고 예상대로 토끼는 빠른 속도로 마을 달리기 시작했어요. 한참을 달리던 토끼는 뒤를 돌아봤어요.<br>
+숲속의 모든 동물친구들과 나무, 꽃 친구들은 거북이만을 응원하고 있었어요.<br>
+“ 뭐야, 느린 거북이를 왜 응원해주는거야! ”<br>
+기분이 나빠진 토끼는 더 빠른 속도로 달리고 달려 결국 결승선을 통과했어요! “ 아, 시시해… ”<br>
+결승선을 통과한 토끼의 곁에는 아무도 없었어요. 그 순간,<br>
+토끼는 알게 됬어요.<br>
+<br>
+<br>
+
+
+      매일매일 친구들을 놀리기만 하던 토끼의 곁에는 아무도 진심을 다해 응원해주는 친구도<br>
+승리의 기쁨을 나눌 친구도 없다는걸요.<br>
+<br>
+‘ 아… 그동안 나의 태도로인해 주변 친구들이 모두 날 떠났구나… ’<br>
+<br>
+나무할아버지는 토끼에게 알게 해주고 싶으셨나봐요.<br>
+<br>
+승리와 패배<br>
+잘남과 못남<br>
+느림과 빠름<br>
+<br>
+그 어떤 것도 사람의 진심과 착함 마음을 이길 수 없다는 사실을요.<br>
+    </div>
+<div class="positionAbsolute" id="modalBg" style="display:none;position: fixed;">
+
+</div>
+    <div id="popup" class="positionAbsolute" style="display:none;position: fixed;">
+      <img src="./img/10/bg10.png" alt="" id="bg10" class="positionAbsolute">
+      <img src="./img/10/popupCloseBTN.png" alt="" id="popupCloseBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+      <div id="title" class="positionAbsolute">
+        <span id="titleText">'Magic Castle 마법의성' 녹음완료</span>
+      </div>
+      <img src="./img/10/image01.png" alt="" id="image01" class="positionAbsolute">
+      <img src="./img/10/popupPicChangeBTN.png" alt="" id="popupPicChangeBtn" class="positionAbsolute">
+      <div id="titleChange" class="positionAbsolute">
+        <span id="titleChangeText">Magic Castle 마법의성</span>
+      </div>
+      <img src="./img/10/popupSaveBTN.png" alt="" id="popupSaveBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+    </div>
+
+    <!--녹음기능-->
+    <div class="" style="display:none" >
+      <h1 class="center" id="headline"></h1>
+      <div class="right" style="display: none">
+        <button id="start_button" onclick="startButton(event)">
+          <img id="start_img" src="mic.gif" alt="Start">
+        </button>
+      </div>
+      <div id="results">
+        <span id="final_span" class="final"></span> <span id="interim_span"
+          class="interim"></span>
+        <p>
+      </div>
+      <div class="center">
+        <div id="div_language">
+          <select id="select_language" onchange="updateCountry()"
+            style="display: none"></select> &nbsp;&nbsp; <select
+            id="select_dialect"></select>
+        </div>
+      </div>
+      <script type="text/javascript" src="./js/Recorder.js">
+
+      </script>
+      <fieldset>
+        <legend>RECORD AUDIO</legend>
+        <input onclick="startRecording();startButton(event)" type="button"
+          value="녹음 시작" /> <input onclick="stopRecording();startButton(event)"
+          type="button" value="녹음 종료" />
+      </fieldset>
+      <div id="fairytale"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/speech.js"></script>
+  <script type="text/javascript" src="./js/RecorderUpload1.js"></script>
+
+</html>

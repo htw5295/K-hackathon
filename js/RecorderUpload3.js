@@ -4,9 +4,9 @@
     			};
 
     			var onSuccess = function(s) {
-    				
+
     				var context;
-    				
+
     				try {
     					  window.AudioContext = window.AudioContext || window.webkitAudioContext;
     					  context = new AudioContext();
@@ -20,7 +20,7 @@
 
     				// audio loopback
     				// mediaStreamSource.connect(context.destination);
-    			}	
+    			}
 
     			window.URL = window.URL || window.webkitURL;
     			navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
@@ -40,41 +40,38 @@
     				recorder.stop;
     				//recorder.stop();
     				recorder.exportWAV(function(s) {
-                               console.log(s);
-                                 	audio.src = window.URL.createObjectURL(s);
-                                 	
+
                                  	 var formData = new FormData();
                                      formData.append("file",s);
 
                                      var request = new XMLHttpRequest();
-                                     
-                                     
+
+
 
                                      request.open("POST", "WavUpload3.jsp");
                                      request.send(formData);
-                                     
-                                     
-                                     
-                                     
+
+
+
+
                                      var jsonEncode = JSON.stringify(fairytaleContent);
-                          
+
                               //       var formData = new FormData();
                      //                formData.append("file",jsonEncode);
-                                     
+
                                      $.ajax({
                                          type : 'POST',
                                          url : "fairyTaleAjax3.jsp",
                                          data :{ x:jsonEncode},
                                          contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-                                        
-                                         
+
+
                                      });
 
-                                     
-                                     
-                                     
-                                     
+
+
+
+
     				});
-    			
+
     			}
-    	

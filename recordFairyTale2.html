@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dodam Dodam</title>
+    <link rel="stylesheet" href="./css/design9.css">
+    <script type="text/javascript" src="./js/design9.js"></script>
+
+    <link rel="stylesheet" href="./css/speech.css">
+    <script type="text/javascript" src="./js/RecorderBlob.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body onload="onload()" onresize="onChangeSize()">
+    <img src="./img/09/bg09.png" alt="" id="bg09">
+    <img src="./img/09/menuBTN.png" alt="" id="menuBtn" class="positionAbsolute">
+    <img src="./img/09/facebookBTN.png" alt="" id="facebookBtn" class="positionAbsolute">
+    <img src="./img/09/googleBTN.png" alt="" id="googleBtn" class="positionAbsolute">
+    <img src="./img/09/loginBTN.png" alt="" id="loginBtn" class="positionAbsolute" onclick="loginBtnClick()">
+    <img src="./img/09/unSelectedDiaryBTN.png" alt="" id="unSelectedDiaryBtn" class="positionAbsolute" onClick="unSelectDiaryBTNClick()">
+    <img src="./img/09/twitterBTN.png" alt="" id="twitterBtn" class="positionAbsolute">
+    <img src="./img/09/unSelectedDodamBTN.png" alt="" id="unSelectedDodamBtn" class="positionAbsolute" onclick="unSelectedDodamBTNClick()">
+    <img src="./img/09/selectedFairytaleBTN.png" alt="" id="selectedFairytaleBtn" class="positionAbsolute">
+    <img src="./img/09/unSelectedMypageBTN.png" alt="" id="unSelectedMypageBtn" class="positionAbsolute"onclick="unSelectedMypageBtnClick()">
+    <img src="./img/09/unSelectedShopBTN.png" alt="" id="unSelectedShopBtn" class="positionAbsolute" onclick="unSelectedShopBTNClick()">
+
+    <img src="./img/09/bigBox.png" alt="" id="bigBox" class="positionAbsolute">
+    <img src="./img/09/finishedRecordingBTN.png" alt="" id="finishedRecordingBTN" class="positionAbsolute" onClick="finishedRecordingBtnClick()">
+    <img src="./img/09/recordingStartBTN.png" alt="" id="recordingBTN" class="positionAbsolute" onClick="recordingBTNClick()">
+    <img src="./img/09/recordingStopBTN.png" alt="" id="recordingStopBTN" class="positionAbsolute" onClick="recordingStopBTNClick()" style="display:none">
+    <img src="./img/09/reRecordingBTN.png" alt="" id="reRecordingBTN" class="positionAbsolute">
+
+    <img src="./img/09/smallBox.png" alt="" id="smallBox" class="positionAbsolute" style="display:none">
+    <img src="./img/09/in1.png" alt="" id="smallBox1" class="positionAbsolute">
+    <img src="./img/09/in2.png" alt="" id="smallBox2" class="positionAbsolute">
+    <img src="./img/09/in3.png" alt="" id="smallBox3" class="positionAbsolute">
+    <img src="./img/09/in4.png" alt="" id="smallBox4" class="positionAbsolute">
+    <img src="./img/09/in5.png" alt="" id="smallBox5" class="positionAbsolute">
+    <img src="./img/09/in6.png" alt="" id="smallBox6" class="positionAbsolute">
+    <img src="./img/09/in1b.png" alt="" id="bigBoxImg" class="positionAbsolute">
+
+
+    <div id="scriptCount" class="positionAbsolute">
+      <span id="number">1 / 6</span>
+    </div>
+    <div id="recordState" class="positionAbsolute">
+			<span id="recordStateText">동화 녹음 하기</span>
+      <span id="recordStateTime"></span>
+		</div>
+    <div id="scriptArea" class="positionAbsolute" >
+      <strong>마법의 성</strong><br>
+<br>
+
+      마법의 성이있는 이 마을은 일년내내 눈이 쌓여있어요.<br>
+      이 마을에는 많은 동물 친구들이 사이좋게 살고 있어요.<br>
+      날씨는 춥지만 마음은 모두 따뜻한 친구들이예요.<br>
+<br>
+      "휴…"<br>
+      "아휴…."<br>
+<br>
+      깊은 한숨소리가 들리네요.<br>
+      이 한 숨소리의 주인공은 (캐롯,레드)이예요.<br>
+<br>
+
+
+
+
+      "왜 난 사람이 될 수 없는거지?"<br>
+<br>
+      요즘들어 한숨이 늘은 (캐롯,레드)의 고민은 사람이 되고싶은 열망이예요.<br>
+<br>
+      사람들만이 마법의 성 안에서 살수 있는 것이 이 마을의 규칙이거든요. (캐롯,레드)은 너무너무 마법의 성안에서 살고싶었어요.<br>
+<br>
+      "엄마, 왜 우리는 마법의성에서 살수 없는거야? 왜 사람들만 저 예쁜 얼음의 성에서 살수 있는거야?"<br>
+      눈물이 그렁그렁 맺힌 눈으로 (캐롯,레드)이 엄마에게 물었어요.<br>
+<br>
+      "아기야, 우리가 사는 이 곳에는 규칙이있어. 그것들 중 하나가 사람들은 마법의 성, 우리들은 마을에서 사는 것이 그것이지…"<br>
+<br>
+      "휴…."캐롯,레드)의 한숨을 더 깊어졌어요.<br>
+
+
+<br>
+
+<br>
+
+      "안되겠어, 마법의 성 안으로 들어가고야 말겠어!"(캐롯,레드)은 속으로 생각하고, 집을 나섰어요.<br>
+<br>
+      마법을 성으로 발걸음을 재촉하는 (캐롯,레드)에게 토리가 물었어요.<br>
+<br>
+      "이봐! (캐롯,레드)! 어디를 그렇게 빨리가는거야?"<br>
+<br>
+      "나 마법의 성에 가고있어! 인간이 될 수 없다면, 저 안이라도 꼭 들어가서 살고싶어!"<br>
+<br>
+      "그만둬! 그거 규칙을 어기는 일이라구!"<br>
+<br>
+      "하지만 너무 궁금한걸?"<br>
+<br>
+      "하지만 니가 없는 마을은 너무 심심할꺼야, 규칙이 그렇다는건 다 의미가 있는거겠지! 니가 떠나면 너희 엄마는 얼마나 외로우시겠어!?"<br>
+<br>
+      "휴….."<br>
+<br>
+<br>
+
+
+
+
+
+      "나에게 좋은 생각이있어! 젤리클할아버지를 찾아가보자. 분명 좋은 말씀을 해주실꺼야!"<br>
+<br>
+      "흠…좋아!"캐롯,레드)과 토리는 늘 인자한 표정을 짖고있는 젤리클할아버지를 찾아갔어요.<br>
+<br>
+      "할아버지! 할아버지!"<br>
+<br>
+      "오냐~ 여기까지 무슨일로 그렇게 달려오는거니?"<br>
+      ﾠ할아버지는 인자한 얼굴로 친구들을 맞이해줬어요.<br>
+<br>
+<br>
+
+
+
+      캐롯,레드)이 마법의 성으로 들어가서 살고싶다고, 집을떠나려해서 다른방법을 듣기위해 할아버지를 찾아왔어요!"<br>
+<br>
+      "규칙을 어기는 건 좋지않은 일이야… 다른 방법을 생각해보자구나…"캐롯,레드)과 토리는 동그란 눈을 깜박이며 젤리클할아버지 말씀에 귀기울였어요.<br>
+<br>
+      "마법의성이 궁금한거라면 왕에게 편지를 써보는게 어떻니?á<br>
+      일년에 한번이라도 모두가 함께할 수 있는 파티를 연다면 너의 궁금증도 사라지고,á<br>
+      모두가 규칙을 지킬 수 있는 방법같은데, (캐롯,레드)은 어떻게 생각하니?"<br>
+<br>
+      잠시 고민하던 (캐롯,레드)의 얼굴에 미소가 번졌어요.<br>
+
+<br>
+<br>
+
+
+
+      "너무 좋아요! 지금 당장 편지를 보내야겠어요!"<br>
+<br>
+      이후 (캐롯,레드)의 편지는 마법의성에 살고있는 제이슨왕에게 전달되었고,á<br>
+      왕은 깊은 고민끝에 매년 크리스마스에 사람들과 동물들이 함께 즐길 수 있는 파티를 열기로 했어요.<br>
+      캐롯,레드)의 편지 한 통으로 사람들과 동물들 모두 항상 즐거운 크리스마스를 보내게 되었다고하네요.<br>
+    </div>
+<div class="positionAbsolute" id="modalBg" style="display:none;position: fixed;">
+
+</div>
+    <div id="popup" class="positionAbsolute" style="display:none;position: fixed;">
+      <img src="./img/10/bg10.png" alt="" id="bg10" class="positionAbsolute">
+      <img src="./img/10/popupCloseBTN.png" alt="" id="popupCloseBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+      <div id="title" class="positionAbsolute">
+        <span id="titleText">'Magic Castle 마법의성' 녹음완료</span>
+      </div>
+      <img src="./img/10/image01.png" alt="" id="image01" class="positionAbsolute">
+      <img src="./img/10/popupPicChangeBTN.png" alt="" id="popupPicChangeBtn" class="positionAbsolute">
+      <div id="titleChange" class="positionAbsolute">
+        <span id="titleChangeText">Magic Castle 마법의성</span>
+      </div>
+      <img src="./img/10/popupSaveBTN.png" alt="" id="popupSaveBtn" class="positionAbsolute" onClick="popupCloseBtnClick()">
+    </div>
+
+    <!--녹음기능-->
+    <div class="" style="display:none" >
+      <h1 class="center" id="headline"></h1>
+      <div class="right" style="display: none">
+        <button id="start_button" onclick="startButton(event)">
+          <img id="start_img" src="mic.gif" alt="Start">
+        </button>
+      </div>
+      <div id="results">
+        <span id="final_span" class="final"></span> <span id="interim_span"
+          class="interim"></span>
+        <p>
+      </div>
+      <div class="center">
+        <div id="div_language">
+          <select id="select_language" onchange="updateCountry()"
+            style="display: none"></select> &nbsp;&nbsp; <select
+            id="select_dialect"></select>
+        </div>
+      </div>
+      <script type="text/javascript" src="./js/Recorder.js">
+
+      </script>
+      <fieldset>
+        <legend>RECORD AUDIO</legend>
+        <input onclick="startRecording();startButton(event)" type="button"
+          value="녹음 시작" /> <input onclick="stopRecording();startButton(event)"
+          type="button" value="녹음 종료" />
+      </fieldset>
+      <div id="fairytale"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/speech.js"></script>
+  <script type="text/javascript" src="./js/RecorderUpload2.js"></script>
+
+</html>

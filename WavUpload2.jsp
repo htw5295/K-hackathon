@@ -14,7 +14,7 @@
 
 	// 웹서버 컨테이너 경로
 	// String root = request.getSession().getServletContext().getRealPath("/");
-	//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/"; 	
+	//String root = "/Users/sonjaehyeong/eclipse-workspace/TodamTodam/WebContent/";
 	String root = "/dodam/";
 	// 파일 저장 경로(ex : /home/tour/web/ROOT/upload)
 	//  String savePath = root + "upload";
@@ -31,37 +31,59 @@
 	FileOutputStream fout = null;
 	long currentTime = System.currentTimeMillis();
 	SimpleDateFormat simDf = new SimpleDateFormat("yyyyMMddHHmmss");
+	String wavRoot = "/var/lib/tomcat8/webapps/ROOT/";
 
 	try {
 
-		MultipartRequest multi = new MultipartRequest(request, savePath + "wav/2", maxSize, "UTF-8",
+		MultipartRequest multi = new MultipartRequest(request, wavRoot + "wav/2", maxSize, "UTF-8",
 				new DefaultFileRenamePolicy());
+
+				Runtime.getRuntime().exec("sudo chmod 777 -R /var/lib/tomcat8/webapps/ROOT/");
+
+				File file3 = new File(wavRoot + "/wav/2/1.wav");
+				File file4 = new File(wavRoot + "/wav/2/2.wav"); //음성
+
+				if (!file3.renameTo(file4)) {
+					System.err.println("이름 변경 에러 : ");
+				}
+
+
+				File file1 = new File(wavRoot + "/wav/2/blob");
+				File file2 = new File(wavRoot + "/wav/2/1.wav"); //음성
+
+				if (!file1.renameTo(file2)) {
+					System.err.println("이름 변경 에러 : " + file1);
+				}
+
+
+
+
 		/**
 		// 전송받은 parameter의 한글깨짐 방지
 		String title = multi.getParameter("title");
 		title = new String(title.getBytes("8859_1"), "UTF-8");
-		
+
 		// 파일업로드
 		uploadFile = multi.getFilesystemName("uploadFile");
-		
+
 		//uploadFile="test.wav";
 		// 실제 저장할 파일명(ex : 20140819151221.zip)
 		newFileName = simDf.format(new Date(currentTime)) +"."+ uploadFile.substring(uploadFile.lastIndexOf(".")+1);
-		
-		 
+
+
 		// 업로드된 파일 객체 생성
 		File oldFile = new File(savePath + uploadFile);
-		
-		 
+
+
 		// 실제 저장될 파일 객체 생성
 		File newFile = new File(savePath + newFileName);
-		 
-		
+
+
 		// 파일명 rename
 		if(!oldFile.renameTo(newFile)){
-		
+
 		    // rename이 되지 않을경우 강제로 파일을 복사하고 기존파일은 삭제
-		
+
 		    buf = new byte[1024];
 		    fin = new FileInputStream(oldFile);
 		    fout = new FileOutputStream(newFile);
@@ -69,16 +91,18 @@
 		    while((read=fin.read(buf,0,buf.length))!=-1){
 		fout.write(buf, 0, read);
 		    }
-		     
+
 		    fin.close();
 		    fout.close();
 		    oldFile.delete();
-		} 
-		
-		
+		}
+
+
 		*/
 
 	} catch (Exception e) {
 		e.printStackTrace();
 	}
+
+
 %>
