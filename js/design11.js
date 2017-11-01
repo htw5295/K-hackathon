@@ -702,7 +702,7 @@ function onFairyTale1Click(){
   fairyTaleStory04.style.display = "none";
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "none";
-
+  recordedFairyTalePic01.src = "./img/11/rFairyTale01BTN.png";
 
 
 
@@ -730,8 +730,7 @@ function onFairyTale1Click(){
   bgFairyTale04Btn.style.display="none";
   bgFairyTale05Btn.style.display="none";
   bgFairyTale06Btn.style.display="none";
-  fairyTaleCountUnder.innerHTML = fairyTaleCount1Text.innerHTML;
-  mainTitle.innerHTML="토끼와 거북이";
+  mainTitle.innerHTML="<br>토끼와 거북이";
 }
 
 function onFairyTale2Click(){
@@ -780,6 +779,7 @@ function onFairyTale2Click(){
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "none";
     mainTitle.innerHTML="Magic Castle<br>마법의성";
+      recordedFairyTalePic01.src = "./img/11/rFairyTale02BTN.png";
 }
 function onFairyTale3Click(){
 
@@ -831,7 +831,8 @@ function onFairyTale3Click(){
     fairyTaleStory04.style.display = "none";
     fairyTaleStory05.style.display = "none";
     fairyTaleStory06.style.display = "none";
-        mainTitle.innerHTML="두더지의 여행";
+        mainTitle.innerHTML="<br>두더지의 여행";
+          recordedFairyTalePic01.src = "./img/11/rFairyTale03BTN.png";
 }
 
 function onFairyTale4Click(){
@@ -878,7 +879,8 @@ function onFairyTale4Click(){
     fairyTaleStory05.style.display = "none";
     fairyTaleStory06.style.display = "none";
         fairyTaleCountUnder.innerHTML = fairyTaleCount4Text.innerHTML;
-            mainTitle.innerHTML="바다 여행";
+            mainTitle.innerHTML="<br>바다 여행";
+              recordedFairyTalePic01.src = "./img/11/rFairyTale04BTN.png";
 }
 
 function onFairyTale5Click(){
@@ -925,7 +927,8 @@ function onFairyTale5Click(){
         fairyTaleStory04.style.display = "none";
         fairyTaleStory05.style.display = "block";
         fairyTaleStory06.style.display = "none";
-mainTitle.innerHTML="장난감 파티";
+  mainTitle.innerHTML="<br>장난감 파티";
+    recordedFairyTalePic01.src = "./img/11/rFairyTale05BTN.png";
 
 }
 function onFairyTale6Click(){
@@ -980,9 +983,12 @@ function onFairyTale6Click(){
   fairyTaleStory04.style.display = "none";
   fairyTaleStory05.style.display = "none";
   fairyTaleStory06.style.display = "block";
-mainTitle.innerHTML="바다 여행";
+mainTitle.innerHTML="<br>도형의 비밀";
+  recordedFairyTalePic01.src = "./img/11/rFairyTale06BTN.png";
 
 }
+  mainTitle.innerHTML="<br>토끼와 거북이";
+  recordedFairyTalePic01.src = "./img/11/rFairyTale01BTN.png";
 function recordedFairyTalePlayBtnClick() {
   var popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
 
@@ -994,10 +1000,13 @@ function recordedFairyTalePlayBtnClick() {
     popUrl = "3-1.jsp";
   }else if(index==4){
     alert("저장된 녹음이 없습니다.");
+    return;
   }else if(index==5){
     alert("저장된 녹음이 없습니다.");
+    return;
   }else if(index==6){
     alert("저장된 녹음이 없습니다.");
+    return;
   }
 
   	var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
