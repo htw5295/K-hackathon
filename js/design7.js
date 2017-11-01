@@ -1161,7 +1161,7 @@ function unSelectedMypageBtnClick(){
   location.href="playPage.jsp";
 }
 function recordingBtn1Click(){
-	location.href="recordFairyTale.html";
+	location.href="recordFairyTale1.html";
 }
 function recordingBtn2Click(){
 	location.href="recordFairyTale.html";
@@ -1170,13 +1170,13 @@ function recordingBtn3Click(){
 	location.href="recordFairyTale.html";
 }
 function recordingBtn4Click(){
-	location.href="recordFairyTale.html";
+	alert("준비중 입니다.");
 }
 function recordingBtn5Click(){
-
+	alert("준비중 입니다.");
 }
 function recordingBtn6Click(){
-
+	alert("준비중 입니다.");
 }
 function loginBtnClick(){
   location.href="login.html";
