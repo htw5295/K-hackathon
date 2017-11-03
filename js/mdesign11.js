@@ -10,7 +10,7 @@ var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
 var mStory01,mStory02,mStory03,mStory04;
 var select,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
-var mFairyTale,mStory,index;
+var mFairyTale,mStory,index=1;
 var mLogo,mContactUsBtn,mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg11Img = document.getElementById("mbg11");
@@ -315,16 +315,13 @@ function mRecordedFairyTalePlayBtnClick() {
 
   if(index==1){
    popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
-   var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
-     window.open(popUrl,"",popOption);
+   href.location(popUrl);
   }else if(index==2){
     popUrl = "2-1.jsp";
-    var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
-      window.open(popUrl,"",popOption);
+    href.location(popUrl);
   }else if(index==3){
     popUrl = "3-1.jsp";
-    var popOption = "width=580, height=360, resizable=yes, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
-      window.open(popUrl,"",popOption);
+    href.location(popUrl);
   }else if(index==4){
     alert("저장된 녹음이 없습니다.");
 
