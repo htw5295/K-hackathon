@@ -10,7 +10,7 @@ var mFairyTale01Btn,mFairyTale02Btn,mFairyTale03Btn,mFairyTale04Btn;
 var mFairyTaleBig01Btn,mFairyTaleBig02Btn,mFairyTaleBig03Btn,mFairyTaleBig04Btn;
 var mStory01,mStory02,mStory03,mStory04;
 var select,recordedFairyTalePic01,recordedFairyTalePic02,recordedFairyTalePic03;
-var mFairyTale,mStory;
+var mFairyTale,mStory,index;
 var mLogo,mContactUsBtn,mMenuCloseBtn,mMenuSlide,mMenuBar,mMenuMainBtn,mMenuBarDiaryBtn,mMenuBarFairyTaleBtn,mMenuBarMarketBtn,mMenuBarMypageBtn,mMenuBarSettingBtn;
 function onload(){
   mbg11Img = document.getElementById("mbg11");
@@ -262,6 +262,7 @@ function mFairyTale01BtnClick() {
   mStory02.style.display="none";
   mStory03.style.display="none";
   mStory04.style.display="none";
+  index = 1;
 }
 function mFairyTale02BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -276,6 +277,7 @@ function mFairyTale02BtnClick() {
   mStory02.style.display="block";
   mStory03.style.display="none";
   mStory04.style.display="none";
+  index = 2;
 }
 function mFairyTale03BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -290,6 +292,7 @@ function mFairyTale03BtnClick() {
   mStory02.style.display="none";
   mStory03.style.display="block";
   mStory04.style.display="none";
+  index = 3;
 }
 function mFairyTale04BtnClick() {
   mFairyTale01Btn.style.display="block";
@@ -304,6 +307,7 @@ function mFairyTale04BtnClick() {
   mStory02.style.display="none";
   mStory03.style.display="none";
   mStory04.style.display="block";
+  index = 4;
 }
 
 function mRecordedFairyTalePlayBtnClick() {
