@@ -13,7 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <iframe id="fa"width="560" height="315" src="https://www.youtube.com/embed/DSoWS81e1Qw" frameborder="0" allowfullscreen></iframe>
+  <iframe id="fa"width="560" height="315" src="https://www.youtube.com/embed/WJqVpPioTxI" frameborder="0" allowfullscreen></iframe>
 	<audio controls="controls">
     <source src="../wav/1/1.wav" type="audio/wav" />
 </audio>
@@ -49,7 +49,7 @@
 			}
 		%>
 		<script type="text/javascript">
-			var animel = "<%=line%>";
+			var animel = '<%=line%>';
 			var flag=0;
 			for(var i=0;i<animel.length;i++){
 				if(animel=="사자"){
