@@ -315,13 +315,13 @@ function mRecordedFairyTalePlayBtnClick() {
 
   if(index==1){
    popUrl = "1-1.jsp";	//팝업창에 출력될 페이지 URL
-   href.location(popUrl);
+   location.href=popUrl;
   }else if(index==2){
     popUrl = "2-1.jsp";
-    href.location(popUrl);
+    location.href=popUrl;
   }else if(index==3){
     popUrl = "3-1.jsp";
-    href.location(popUrl);
+    location.href=popUrl;
   }else if(index==4){
     alert("저장된 녹음이 없습니다.");
 
