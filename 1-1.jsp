@@ -13,11 +13,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DSoWS81e1Qw" frameborder="0" allowfullscreen></iframe>
+  <iframe id="fa"width="560" height="315" src="https://www.youtube.com/embed/DSoWS81e1Qw" frameborder="0" allowfullscreen></iframe>
 	<audio controls="controls">
     <source src="../wav/1/1.wav" type="audio/wav" />
 </audio>
-
 
 
 <!--<audio controls autoplay loop>-->
@@ -60,8 +59,13 @@
 			}
 			if(flag==1){
 				console.log("사자페이지주소로 변경");
+				fa.src = "https://www.youtube.com/embed/WJqVpPioTxI";
 			}else{
 				console.log("토끼페이지로 이동");
+				var fa = document.getElementById("fa");
+				fa.src = "https://www.youtube.com/embed/eFfb9lmC0K8";
+
+
 			}
 
 
